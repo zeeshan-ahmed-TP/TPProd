@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Product_issue_rule</fullName>
-    <active>true</active>
-    <errorConditionFormula>INCLUDES(  Area__c , &quot;Product issue&quot;)  &amp;&amp;   ISBLANK( Product_Issue_Sub_Area__c )</errorConditionFormula>
-    <errorDisplayField>Product_Issue_Sub_Area__c</errorDisplayField>
-    <errorMessage>Please fill in the Product issue Sub-Area field.</errorMessage>
-</ValidationRule>

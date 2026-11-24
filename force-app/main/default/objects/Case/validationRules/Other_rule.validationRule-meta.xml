@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Other_rule</fullName>
-    <active>true</active>
-    <errorConditionFormula>INCLUDES(  Area__c , &quot;Other&quot;) &amp;&amp; ISBLANK( Other_Sub_Area__c )</errorConditionFormula>
-    <errorDisplayField>Other_Sub_Area__c</errorDisplayField>
-    <errorMessage>Please fill in the Other Sub-Area Field</errorMessage>
-</ValidationRule>

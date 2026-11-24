@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Is_HV_Product__c</fullName>
-    <externalId>false</externalId>
-    <formula>IF( OR(CASESAFEID(PricebookEntryId) = &apos;01uOL00000EgbXrYAJ&apos;,CASESAFEID(PricebookEntryId) = &apos;01uOL00000Ege93YAB&apos;) , TRUE, FALSE)</formula>
-    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>Is HV Product?</label>
-    <type>Checkbox</type>
-</CustomField>

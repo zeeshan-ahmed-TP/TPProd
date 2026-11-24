@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>DoNotEditUser</fullName>
-    <active>true</active>
-    <errorConditionFormula>NOT(ISNEW()) &amp;&amp;    CONTAINS(  $User.ProfileId  , &apos;00e7i000000pidmAAA&apos;)</errorConditionFormula>
-    <errorMessage>You cannot edit the user</errorMessage>
-</ValidationRule>

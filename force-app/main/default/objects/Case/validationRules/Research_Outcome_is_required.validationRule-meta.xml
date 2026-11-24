@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Research_Outcome_is_required</fullName>
-    <active>false</active>
-    <description>Research Outcome is required when case status is closed</description>
-    <errorConditionFormula>AND( ISBLANK( TEXT( Research_Outcome__c) ),  ISPICKVAL( Status , &quot;Closed&quot;), ISPICKVAL( Type , &quot;Research&quot;) )</errorConditionFormula>
-    <errorDisplayField>Research_Outcome__c</errorDisplayField>
-    <errorMessage>Research Outcome is Required when Status is Closed</errorMessage>
-</ValidationRule>
