@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Review_Sub_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Billing Review Sub Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billing and Account info (Self-Serve)</fullName>
+                <default>false</default>
+                <label>Billing/Account Info (Self-Serve)</label>
+            </value>
+            <value>
+                <fullName>CC on Wrong Account</fullName>
+                <default>false</default>
+                <label>CC on Wrong Account</label>
+            </value>
+            <value>
+                <fullName>Credit Request</fullName>
+                <default>false</default>
+                <label>Credit Request</label>
+            </value>
+            <value>
+                <fullName>Discussed Account/Charges</fullName>
+                <default>false</default>
+                <label>Discussed Account/Charges</label>
+            </value>
+            <value>
+                <fullName>Double Billed</fullName>
+                <default>false</default>
+                <label>Double Billed</label>
+            </value>
+            <value>
+                <fullName>Finance Refund Request</fullName>
+                <default>false</default>
+                <label>Finance Refund Request</label>
+            </value>
+            <value>
+                <fullName>Price Increase</fullName>
+                <default>false</default>
+                <label>Price Increase</label>
+            </value>
+            <value>
+                <fullName>Reactivation</fullName>
+                <default>false</default>
+                <label>Reactivation</label>
+            </value>
+            <value>
+                <fullName>Refund Request</fullName>
+                <default>false</default>
+                <label>Refund Request</label>
+            </value>
+            <value>
+                <fullName>Sent invoices</fullName>
+                <default>false</default>
+                <label>Sent invoices</label>
+            </value>
+            <value>
+                <fullName>Wrong Price</fullName>
+                <default>false</default>
+                <label>Wrong Price</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

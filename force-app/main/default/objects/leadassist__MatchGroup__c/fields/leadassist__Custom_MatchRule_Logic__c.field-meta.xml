@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__Custom_MatchRule_Logic__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Required when MatchRule Logic set to CUSTOM. Set the logic for how you want MatchRules to be evaluated here. e.g. (1 AND 2) OR (1 AND 3), where the numbers correspond to the MatchRule Rule Number.</inlineHelpText>
+    <label>Custom MatchRule Logic</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

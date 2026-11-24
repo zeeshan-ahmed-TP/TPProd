@@ -1,0 +1,12 @@
+.THIS .leftPaddingClass {
+    padding-left: 2rem;
+}
+ 
+.THIS .pillSize{
+    width:100%;
+}
+.THIS .pillStyle{
+    width: 6rem;
+    font-size: 11px;
+    height: 0.5rem;
+}

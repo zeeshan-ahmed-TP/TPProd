@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_For_Account_Address</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(  SBQQ__Account__r.BillingStreet  )
+|| ISBLANK(   SBQQ__Account__r.ShippingStreet   )
+|| ISBLANK(   SBQQ__Account__r.BillingPostalCode   )
+|| ISBLANK(   SBQQ__Account__r.ShippingPostalCode   )
+|| ISBLANK(   SBQQ__Account__r.BillingState   )
+|| ISBLANK(    SBQQ__Account__r.ShippingState    )</errorConditionFormula>
+    <errorDisplayField>SBQQ__Account__c</errorDisplayField>
+    <errorMessage>Please fill the Billing and Shipping address of this Account.</errorMessage>
+</ValidationRule>

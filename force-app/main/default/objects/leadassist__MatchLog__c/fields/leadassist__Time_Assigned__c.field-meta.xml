@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__Time_Assigned__c</fullName>
+    <defaultValue>NOW()</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The date/time SuperRoundRobin assigned this lead</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date/time SuperRoundRobin assigned this lead</inlineHelpText>
+    <label>Time Assigned</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

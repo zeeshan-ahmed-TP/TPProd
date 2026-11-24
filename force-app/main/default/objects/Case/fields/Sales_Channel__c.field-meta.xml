@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Channel__c</fullName>
+    <description>Case Field used by ProSoft Service Team to identify what team sold the Customer the Products. (CRM-1707, There is no automation to this field, Teams will manually select the value.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Which sales team sold to this Customer?</inlineHelpText>
+    <label>Sales Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ListHub</fullName>
+                <default>false</default>
+                <label>ListHub</label>
+            </value>
+            <value>
+                <fullName>RDC</fullName>
+                <default>false</default>
+                <label>RDC</label>
+            </value>
+            <value>
+                <fullName>Vancouver</fullName>
+                <default>false</default>
+                <label>Vancouver</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

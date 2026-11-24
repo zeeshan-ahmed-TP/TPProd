@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancel Only</fullName>
+                <default>false</default>
+                <label>Cancel Only</label>
+            </value>
+            <value>
+                <fullName>Cancel with Credit to Account</fullName>
+                <default>false</default>
+                <label>Cancel with Credit to Account</label>
+            </value>
+            <value>
+                <fullName>Cancel with Refund to Card</fullName>
+                <default>false</default>
+                <label>Cancel with Refund to Card</label>
+            </value>
+            <value>
+                <fullName>Refund to Card only</fullName>
+                <default>false</default>
+                <label>Refund to Card only</label>
+            </value>
+            <value>
+                <fullName>Credit to Account only</fullName>
+                <default>false</default>
+                <label>Credit to Account only</label>
+            </value>
+            <value>
+                <fullName>Extension</fullName>
+                <default>false</default>
+                <label>Extension</label>
+            </value>
+            <value>
+                <fullName>Flex to Fast</fullName>
+                <default>false</default>
+                <label>Flex to Fast</label>
+            </value>
+            <value>
+                <fullName>Contract length reduction</fullName>
+                <default>false</default>
+                <label>Contract length reduction</label>
+            </value>
+            <value>
+                <fullName>Inventory Reduction</fullName>
+                <default>false</default>
+                <label>Inventory Reduction</label>
+            </value>
+            <value>
+                <fullName>Amend</fullName>
+                <default>false</default>
+                <label>Amend</label>
+            </value>
+            <value>
+                <fullName>Onyx Entry</fullName>
+                <default>false</default>
+                <label>Onyx Entry</label>
+            </value>
+            <value>
+                <fullName>Refund/Rebill</fullName>
+                <default>false</default>
+                <label>Refund/Rebill</label>
+            </value>
+            <value>
+                <fullName>Onyx Entry - ps-TNT</fullName>
+                <default>false</default>
+                <label>Onyx Entry - ps-TNT</label>
+            </value>
+            <value>
+                <fullName>Agent Audit</fullName>
+                <default>false</default>
+                <label>Agent Audit</label>
+            </value>
+            <value>
+                <fullName>Transaction Dispute</fullName>
+                <default>false</default>
+                <label>Transaction Dispute</label>
+            </value>
+            <value>
+                <fullName>Transaction Request</fullName>
+                <default>false</default>
+                <label>Transaction Request</label>
+            </value>
+            <value>
+                <fullName>Possible Duplicate</fullName>
+                <default>false</default>
+                <label>Possible Duplicate</label>
+            </value>
+            <value>
+                <fullName>Referral of Referral</fullName>
+                <default>false</default>
+                <label>Referral of Referral</label>
+            </value>
+            <value>
+                <fullName>Release Request</fullName>
+                <default>false</default>
+                <label>Release Request</label>
+            </value>
+            <value>
+                <fullName>Unidentified Payment/Closing Doc</fullName>
+                <default>false</default>
+                <label>Unidentified Payment/Closing Doc</label>
+            </value>
+            <value>
+                <fullName>Lease</fullName>
+                <default>false</default>
+                <label>Lease</label>
+            </value>
+            <value>
+                <fullName>Create New Account</fullName>
+                <default>false</default>
+                <label>Create New Account</label>
+            </value>
+            <value>
+                <fullName>Other/Special</fullName>
+                <default>false</default>
+                <label>Other/Special</label>
+            </value>
+            <value>
+                <fullName>Unidentified Payment</fullName>
+                <default>false</default>
+                <label>Unidentified Payment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

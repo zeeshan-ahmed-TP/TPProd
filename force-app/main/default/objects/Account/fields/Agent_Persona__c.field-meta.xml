@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent_Persona__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(Lead_Enrichment_Data_Date__c),&quot;&quot;,IF(AND(ISBLANK(MLS_ID__c), ISBLANK(Office_Name__c) ,ISBLANK(MLS_System__c), Years_of_Experience__c=0, Historical_Transaction_Count__c=0), Experience_Persona__c, Experience_Persona__c &amp; &quot; - &quot; &amp; Performance_Persona__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Agent Persona</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SOLD.com</fullName>
+        <default>false</default>
+        <label>SOLD.com</label>
+    </customValue>
+    <customValue>
+        <fullName>Jeff Lobb</fullName>
+        <default>false</default>
+        <label>Jeff Lobb</label>
+    </customValue>
+    <customValue>
+        <fullName>Agent Publishing</fullName>
+        <default>false</default>
+        <label>Agent Publishing</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Momentum</fullName>
+        <default>false</default>
+        <label>Real Momentum</label>
+    </customValue>
+    <customValue>
+        <fullName>Kaplan Real Estate</fullName>
+        <default>false</default>
+        <label>Kaplan Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>TheClose</fullName>
+        <default>false</default>
+        <label>TheClose</label>
+    </customValue>
+    <customValue>
+        <fullName>CEShop</fullName>
+        <default>false</default>
+        <label>CEShop</label>
+    </customValue>
+    <customValue>
+        <fullName>Winback 2024</fullName>
+        <default>false</default>
+        <label>Winback 2024</label>
+    </customValue>
+    <customValue>
+        <fullName>Fits Small Business</fullName>
+        <default>false</default>
+        <label>Fits Small Business</label>
+    </customValue>
+    <customValue>
+        <fullName>FSB</fullName>
+        <default>false</default>
+        <label>FSB</label>
+    </customValue>
+    <customValue>
+        <fullName>Mainstreet Organization of Realtors</fullName>
+        <default>false</default>
+        <label>Mainstreet Organization of Realtors</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+    </customValue>
+    <customValue>
+        <fullName>California Association of Realtors</fullName>
+        <default>false</default>
+        <label>California Association of Realtors</label>
+    </customValue>
+    <customValue>
+        <fullName>Capterra</fullName>
+        <default>false</default>
+        <label>Capterra</label>
+    </customValue>
+    <masterLabel>Referral Partner</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

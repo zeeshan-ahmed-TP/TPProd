@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brokerage__c</fullName>
+    <description>ProSoft Service Team will use this field to select the Customers Brokerage if applicable.</description>
+    <externalId>false</externalId>
+    <label>Brokerage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allen Tate</fullName>
+                <default>false</default>
+                <label>Allen Tate</label>
+            </value>
+            <value>
+                <fullName>Bailey Properties</fullName>
+                <default>false</default>
+                <label>Bailey Properties</label>
+            </value>
+            <value>
+                <fullName>Better Homes &amp; Garden</fullName>
+                <default>false</default>
+                <label>Better Homes &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Brodkin Realty One</fullName>
+                <default>false</default>
+                <label>Brodkin Realty One</label>
+            </value>
+            <value>
+                <fullName>Broker Account</fullName>
+                <default>false</default>
+                <label>Broker Account</label>
+            </value>
+            <value>
+                <fullName>Brown Harris Stevens</fullName>
+                <default>false</default>
+                <label>Brown Harris Stevens</label>
+            </value>
+            <value>
+                <fullName>Coldwell Banker Select</fullName>
+                <default>false</default>
+                <label>Coldwell Banker Select</label>
+            </value>
+            <value>
+                <fullName>Gloria Nilson</fullName>
+                <default>false</default>
+                <label>Gloria Nilson</label>
+            </value>
+            <value>
+                <fullName>Grubb Company</fullName>
+                <default>false</default>
+                <label>Grubb Company</label>
+            </value>
+            <value>
+                <fullName>Halstead</fullName>
+                <default>false</default>
+                <label>Halstead</label>
+            </value>
+            <value>
+                <fullName>Higgins Group</fullName>
+                <default>false</default>
+                <label>Higgins Group</label>
+            </value>
+            <value>
+                <fullName>JP &amp; Associates</fullName>
+                <default>false</default>
+                <label>JP &amp; Associates</label>
+            </value>
+            <value>
+                <fullName>Keller Williams Miami Beach</fullName>
+                <default>false</default>
+                <label>Keller Williams Miami Beach</label>
+            </value>
+            <value>
+                <fullName>Keller Williams Realty Partners SW</fullName>
+                <default>false</default>
+                <label>Keller Williams Realty Partners SW</label>
+            </value>
+            <value>
+                <fullName>Northwood</fullName>
+                <default>false</default>
+                <label>Northwood</label>
+            </value>
+            <value>
+                <fullName>Palmerhouse Properties &amp; Associates</fullName>
+                <default>false</default>
+                <label>Palmerhouse Properties &amp; Associates</label>
+            </value>
+            <value>
+                <fullName>RE/Max Integra</fullName>
+                <default>false</default>
+                <label>RE/Max Integra</label>
+            </value>
+            <value>
+                <fullName>RE/Max Leading Edge</fullName>
+                <default>false</default>
+                <label>RE/Max Leading Edge</label>
+            </value>
+            <value>
+                <fullName>RE/Max Masterpiece</fullName>
+                <default>false</default>
+                <label>RE/Max Masterpiece</label>
+            </value>
+            <value>
+                <fullName>RE/Max Metro</fullName>
+                <default>false</default>
+                <label>RE/Max Metro</label>
+            </value>
+            <value>
+                <fullName>RE/MAX Preferred</fullName>
+                <default>false</default>
+                <label>RE/MAX Preferred</label>
+            </value>
+            <value>
+                <fullName>RE/MAX Professionals</fullName>
+                <default>false</default>
+                <label>RE/MAX Professionals</label>
+            </value>
+            <value>
+                <fullName>RE/Max Realty Group &amp; RE/Max 100</fullName>
+                <default>false</default>
+                <label>RE/Max Realty Group &amp; RE/Max 100</label>
+            </value>
+            <value>
+                <fullName>Realty Associates</fullName>
+                <default>false</default>
+                <label>Realty Associates</label>
+            </value>
+            <value>
+                <fullName>Sierra Sotheby&apos;s</fullName>
+                <default>false</default>
+                <label>Sierra Sotheby&apos;s</label>
+            </value>
+            <value>
+                <fullName>Tomlinson Group</fullName>
+                <default>false</default>
+                <label>Tomlinson Group</label>
+            </value>
+            <value>
+                <fullName>Tomlinson Sandpoint Sotheby’s</fullName>
+                <default>false</default>
+                <label>Tomlinson Sandpoint Sotheby’s</label>
+            </value>
+            <value>
+                <fullName>Washington Fine Properties</fullName>
+                <default>false</default>
+                <label>Washington Fine Properties</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

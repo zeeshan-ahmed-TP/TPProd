@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_OtherPhone_to_E_164_Format</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(CONTAINS($User.Username, &apos;api.user@topproducersoftware.com&apos;)) &amp;&amp;
+NOT(ISNEW()) &amp;&amp;
+NOT(REGEX(OtherPhone ,&quot;^((\\d{10})|([1]?\\d{10})|(\\+)(\\d{10}|\\d{11}|\\d{12}|\\d{13}))?$&quot;))</errorConditionFormula>
+    <errorDisplayField>OtherPhone</errorDisplayField>
+    <errorMessage>Please enter a valid phone number as per this format.
+[+][country code][number including area code]</errorMessage>
+</ValidationRule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>blng__All1</fullName>
+    <columns>blng__InvoiceDate__c</columns>
+    <columns>NAME</columns>
+    <columns>blng__Account__c</columns>
+    <columns>blng__TaxAmount__c</columns>
+    <columns>blng__Balance__c</columns>
+    <columns>blng__DaysOutstanding__c</columns>
+    <columns>blng__InvoiceStatus__c</columns>
+    <columns>blng__PaymentBatch__c</columns>
+    <columns>blng__PaymentStatus__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>blng__PaymentRunId__c</columns>
+    <columns>blng__DeclinedPaymentRunCount__c</columns>
+    <columns>Shipping_State__c</columns>
+    <columns>Shipping_Country__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

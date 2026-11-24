@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Systems__c</fullName>
+    <description>CRM-4388 - this field will be used to track which of the various systems a new RS Customer is billing.</description>
+    <externalId>false</externalId>
+    <label>Billing Systems</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FiveStreet</fullName>
+                <default>false</default>
+                <label>FiveStreet</label>
+            </value>
+            <value>
+                <fullName>Onyx</fullName>
+                <default>false</default>
+                <label>Onyx</label>
+            </value>
+            <value>
+                <fullName>SFDC</fullName>
+                <default>false</default>
+                <label>SFDC</label>
+            </value>
+            <value>
+                <fullName>Stripes</fullName>
+                <default>false</default>
+                <label>Stripes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

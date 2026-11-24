@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Month_Marketing_TNT_Leads</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>Call_back_date__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Original_Source__c</columns>
+    <columns>Original_Source_drill_down_1__c</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_MONTH</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Already Customer,Working - Open Deal,Unqualified</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>notEqual</operation>
+        <value>Other Campaigns</value>
+    </filters>
+    <label>Previous Month Marketing/TNT Leads</label>
+    <sharedTo>
+        <group>Account_Executives</group>
+    </sharedTo>
+</ListView>

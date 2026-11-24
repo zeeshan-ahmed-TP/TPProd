@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Month_Marketing_TNT_Leads</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Call_back_date__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Original_Source__c</columns>
+    <columns>Original_Source_drill_down_1__c</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Nurture,Working - Open Deal,Unqualified,Already Customer</value>
+    </filters>
+    <filters>
+        <field>Original_Source__c</field>
+        <operation>equals</operation>
+        <value>Organic Search,Paid Search,Email Marketing,Organic Social,Referrals,Other Campaigns,Direct Traffic,Offline Sources,Paid Social</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>TNT</value>
+    </filters>
+    <label>Current Month Marketing/TNT Leads</label>
+    <sharedTo>
+        <group>Account_Executives</group>
+    </sharedTo>
+</ListView>

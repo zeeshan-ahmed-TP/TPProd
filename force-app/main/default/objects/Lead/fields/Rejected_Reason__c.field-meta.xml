@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Rejected Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Already Customer</fullName>
+                <default>false</default>
+                <label>Already Customer</label>
+            </value>
+            <value>
+                <fullName>Bad Contact Info (Phone/E-Mail)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bad Contact Info (Phone/E-Mail)</label>
+            </value>
+            <value>
+                <fullName>Bad Email</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bad Email</label>
+            </value>
+            <value>
+                <fullName>Bad Info</fullName>
+                <default>false</default>
+                <label>Bad Info</label>
+            </value>
+            <value>
+                <fullName>Bad Phone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bad Phone</label>
+            </value>
+            <value>
+                <fullName>Bad Timing</fullName>
+                <default>false</default>
+                <label>Bad Timing</label>
+            </value>
+            <value>
+                <fullName>Campaign closed by Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Campaign closed by Admin</label>
+            </value>
+            <value>
+                <fullName>Closed by Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed by Admin</label>
+            </value>
+            <value>
+                <fullName>Compliance / Legal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Compliance / Legal</label>
+            </value>
+            <value>
+                <fullName>Contract Term</fullName>
+                <default>false</default>
+                <label>Contract Term</label>
+            </value>
+            <value>
+                <fullName>Covid-19</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Covid-19</label>
+            </value>
+            <value>
+                <fullName>Customer Looking for Support</fullName>
+                <default>false</default>
+                <label>Customer Looking for Support</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t see need</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t See Need</label>
+            </value>
+            <value>
+                <fullName>Do Not Call</fullName>
+                <default>false</default>
+                <label>Do Not Call</label>
+            </value>
+            <value>
+                <fullName>Do Not Call (opt out)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Do Not Call (opt out)</label>
+            </value>
+            <value>
+                <fullName>Do Not Sign</fullName>
+                <default>false</default>
+                <label>Do Not Sign</label>
+            </value>
+            <value>
+                <fullName>Duplicate / Test Lead</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Duplicate / Test Lead</label>
+            </value>
+            <value>
+                <fullName>Duplicate Lead</fullName>
+                <default>false</default>
+                <label>Duplicate Lead</label>
+            </value>
+            <value>
+                <fullName>Fake Lead (All Contact Info Bad)</fullName>
+                <default>false</default>
+                <label>Fake Lead (All Contact Info Bad)</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>Lender</fullName>
+                <default>false</default>
+                <label>Lender</label>
+            </value>
+            <value>
+                <fullName>Missing Feature(s)</fullName>
+                <default>false</default>
+                <label>Missing Feature(s)</label>
+            </value>
+            <value>
+                <fullName>MLS Not Available</fullName>
+                <default>false</default>
+                <label>MLS Not Available</label>
+            </value>
+            <value>
+                <fullName>Needs Lead Generation</fullName>
+                <default>false</default>
+                <label>Needs Lead Generation</label>
+            </value>
+            <value>
+                <fullName>NI - Preferred Competitor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NI - Preferred Competitor</label>
+            </value>
+            <value>
+                <fullName>No Budget At this Time</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Budget At this Time</label>
+            </value>
+            <value>
+                <fullName>No Inventory Due to Opcity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Inventory Due to Opcity</label>
+            </value>
+            <value>
+                <fullName>Not a Real Estate Agent/Broker</fullName>
+                <default>false</default>
+                <label>Not a Real Estate Agent/Broker</label>
+            </value>
+            <value>
+                <fullName>Not a Realtor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not a Realtor</label>
+            </value>
+            <value>
+                <fullName>Not a US/CAN Realtor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not a US/CAN Realtor</label>
+            </value>
+            <value>
+                <fullName>Not Authorized Buyer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Authorized Buyer</label>
+            </value>
+            <value>
+                <fullName>Not Decision Maker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Decision Maker</label>
+            </value>
+            <value>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>No Trial available</fullName>
+                <default>false</default>
+                <label>No Trial available</label>
+            </value>
+            <value>
+                <fullName>Only Wants Seller Leads</fullName>
+                <default>false</default>
+                <label>Only Wants Seller Leads</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Prefers Competitor</fullName>
+                <default>false</default>
+                <label>Prefers Competitor</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+                <label>Reviews</label>
+            </value>
+            <value>
+                <fullName>Test Lead</fullName>
+                <default>false</default>
+                <label>Test Lead</label>
+            </value>
+            <value>
+                <fullName>Test Leads</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test Leads</label>
+            </value>
+            <value>
+                <fullName>Too expensive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Too expensive</label>
+            </value>
+            <value>
+                <fullName>Unable to Connect (After 20 attempts)</fullName>
+                <default>false</default>
+                <label>Unable to Connect (After 20 attempts)</label>
+            </value>
+            <value>
+                <fullName>Unauthorized Buyer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unauthorized Buyer</label>
+            </value>
+            <value>
+                <fullName>Unqualified / Bad Fit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unqualified / Bad Fit</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Wrong/Bad Phone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wrong/Bad Phone</label>
+            </value>
+            <value>
+                <fullName>Wrong Phone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wrong Phone</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Already Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Bad Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Bad Timing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Contract Term</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Customer Looking for Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Doesn&apos;t see need</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Do Not Call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Do Not Sign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Duplicate Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Fake Lead (All Contact Info Bad)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Lender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Missing Feature(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>MLS Not Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Needs Lead Generation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Not a Real Estate Agent/Broker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Not interested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>No Trial available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Only Wants Seller Leads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Prefers Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Reviews</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Test Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Unable to Connect (After 20 attempts)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unqualified</controllingFieldValue>
+            <valueName>Unresponsive</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

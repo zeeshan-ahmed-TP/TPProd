@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(RecordTypeId, &quot;012OL000008ZhAY&quot;, &quot;https://payments.zurple.com/?ns_id=&quot;&amp; CASESAFEID(Id) , &quot;012OL000008ZhAX&quot;, &quot;https://update.z57.com/?ns_id=&quot;&amp; CASESAFEID(Id) ,&quot;012OL000008ZhAW&quot;,&quot;https://update.torchx.com/?ns_id=&quot;&amp; CASESAFEID(Id) ,&quot;https://payments.constellation1.com/?ns_id=&quot;&amp; CASESAFEID(Id) )</formula>
+    <inlineHelpText>Link for customers to update payment information that is unique for their account.</inlineHelpText>
+    <label>Payment Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

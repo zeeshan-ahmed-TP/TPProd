@@ -1,0 +1,10 @@
+<aura:event type="COMPONENT" description="by this event we are pass the selected sObject(lookup list record) in the parent component">
+    <aura:attribute name="recordByEvent" type="string" description="id of the selected record"/>
+    <aura:attribute name="recordByEventMLS" type="string[]" description="id of the selected record"/>
+    <aura:attribute name="index" type="integer" description="id of the selected record"/>
+    <aura:attribute name="productVal" type="string" description="Selected Product from list"/>
+    <aura:attribute name="numberVal" type="integer" description="Value entered in field"/>
+    <aura:attribute name="SelectedType" type="String" description="Value selected in picklist"/>
+    <aura:attribute name="AccountDetailsEve" type="sObject" />
+    <aura:attribute name="recordByEventSub" type="string" description="id of the selected subscription record"/>
+</aura:event>

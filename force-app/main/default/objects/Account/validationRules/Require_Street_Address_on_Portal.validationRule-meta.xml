@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Street_Address_on_Portal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK( BillingStreet ),$Profile.Name = &quot;TP Customer Community Plus Login&quot;)</errorConditionFormula>
+    <errorDisplayField>BillingStreet</errorDisplayField>
+    <errorMessage>Street is required.</errorMessage>
+</ValidationRule>

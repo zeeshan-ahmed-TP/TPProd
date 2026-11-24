@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eastern_Timezone_Opportunity_Master_List</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>GoLocal_GMT_Offset__c</columns>
+    <columns>GoLocal_State__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>GoLocal_GMT_Offset__c</field>
+        <operation>equals</operation>
+        <value>-05:00</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Closed Won,Duplicate</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.LAST_UPDATE</field>
+        <operation>equals</operation>
+        <value>LAST_90_DAYS</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>jake,sam,moosa,rabyin,king,jay,rush,kathy,ruchika,allan,aaron,ashley</value>
+    </filters>
+    <label>Eastern Timezone Opportunity Master List</label>
+    <sharedTo>
+        <group>Sales_Ops</group>
+    </sharedTo>
+</ListView>

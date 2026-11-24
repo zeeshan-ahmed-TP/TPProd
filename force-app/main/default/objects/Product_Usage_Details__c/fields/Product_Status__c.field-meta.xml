@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISNULL( Product_Closure_Date__c ),&quot;Active&quot;,
+IF(DATE(YEAR(Product_Start_Date__c)+1,MONTH(Product_Start_Date__c),DAY(Product_Start_Date__c))&gt;Product_Closure_Date__c,&quot;Closed - In Term&quot;,&quot;Closed - Out of Term&quot;))</formula>
+    <label>Product Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

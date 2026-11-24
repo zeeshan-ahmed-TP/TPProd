@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X8th_Feb_Webinar_2024</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>GLOC__Location_GMT__c</columns>
+    <columns>GLOC__Location_State__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Outbound_Campaign__c</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Outbound_Campaign__c</field>
+        <operation>equals</operation>
+        <value>8th Feb Webinar 2024</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Unqualified</value>
+    </filters>
+    <label>8th Feb Webinar 2024</label>
+</ListView>

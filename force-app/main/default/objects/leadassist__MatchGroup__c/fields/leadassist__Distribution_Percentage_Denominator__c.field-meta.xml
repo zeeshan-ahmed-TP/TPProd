@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__Distribution_Percentage_Denominator__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Used by SuperRoundRobin under the hood to calculate the percentage distribution from the distribution ratio.</description>
+    <externalId>false</externalId>
+    <label>Distribution Percentage Denominator</label>
+    <summarizedField>leadassist__Assignee__c.leadassist__Distribution_Ratio__c</summarizedField>
+    <summaryForeignKey>leadassist__Assignee__c.leadassist__MatchGroup__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

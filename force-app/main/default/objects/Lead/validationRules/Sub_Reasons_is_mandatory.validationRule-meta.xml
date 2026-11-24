@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Reasons_is_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Email  &lt;&gt; &apos;api.user@topproducersoftware.com&apos;, OR( ISPICKVAL( Rejected_Reason__c , &quot;Missing Feature(s)&quot;),ISPICKVAL( Rejected_Reason__c , &quot;Other&quot;) )  &amp;&amp; 
+ ISBLANK( Sub_Reasons__c ))</errorConditionFormula>
+    <errorDisplayField>Sub_Reasons__c</errorDisplayField>
+    <errorMessage>Please fill in the Sub-Reasons field.</errorMessage>
+</ValidationRule>

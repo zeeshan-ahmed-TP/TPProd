@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Guide_Downloads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Original_Source__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Attempting to Connect,Connected,Pitch - Booked,Pitch - Presented</value>
+    </filters>
+    <filters>
+        <field>Original_Source__c</field>
+        <operation>equals</operation>
+        <value>Email Marketing,Other Campaigns,Direct Traffic,Offline Sources</value>
+    </filters>
+    <filters>
+        <field>First_Conversion__c</field>
+        <operation>contains</operation>
+        <value>MQL,Newsletter,Lead Marvels</value>
+    </filters>
+    <label>Guide Downloads</label>
+</ListView>

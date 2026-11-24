@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amazon_Contact_Record__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://topproducer.my.connect.aws/contact-trace-records/details/&quot; &amp; CallObject &amp; &quot;?tz=America/Los_Angeles&quot;,&quot;Listen&quot;,&quot;_blank&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Open Amazon Contact Record</inlineHelpText>
+    <label>Amazon Contact Record</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Location_Radius</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Product__c , &apos;Social Connect&apos;), NOT(ISBLANK( Location_Radius__c )), OR(Location_Radius__c &lt; 15, Location_Radius__c &gt;50) )</errorConditionFormula>
+    <errorDisplayField>Location_Radius__c</errorDisplayField>
+    <errorMessage>The location Radius must be between 15 - 50 Miles.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Request_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Cancellation Request Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent leaving the business</fullName>
+                <default>false</default>
+                <label>Agent leaving the business</label>
+            </value>
+            <value>
+                <fullName>CRM not meeting expectations</fullName>
+                <default>false</default>
+                <label>CRM not meeting expectations</label>
+            </value>
+            <value>
+                <fullName>Dissatisfaction with customer experience</fullName>
+                <default>false</default>
+                <label>Dissatisfaction with customer experience</label>
+            </value>
+            <value>
+                <fullName>Dissatisfaction with sales expectations</fullName>
+                <default>false</default>
+                <label>Dissatisfaction with sales expectations</label>
+            </value>
+            <value>
+                <fullName>Financial Reasons</fullName>
+                <default>false</default>
+                <label>Financial Reasons</label>
+            </value>
+            <value>
+                <fullName>Lead quality not meeting expectations</fullName>
+                <default>false</default>
+                <label>Lead quality not meeting expectations</label>
+            </value>
+            <value>
+                <fullName>Not meeting the minimum monthly lead guarantee</fullName>
+                <default>false</default>
+                <label>Not meeting the minimum monthly lead guarantee</label>
+            </value>
+            <value>
+                <fullName>Prefers Competitor</fullName>
+                <default>false</default>
+                <label>Prefers Competitor</label>
+            </value>
+            <value>
+                <fullName>Price Increase</fullName>
+                <default>false</default>
+                <label>Price Increase</label>
+            </value>
+            <value>
+                <fullName>Rescind</fullName>
+                <default>false</default>
+                <label>Rescind</label>
+            </value>
+            <value>
+                <fullName>Retiring</fullName>
+                <default>false</default>
+                <label>Retiring</label>
+            </value>
+            <value>
+                <fullName>Technical Issues</fullName>
+                <default>false</default>
+                <label>Technical Issues</label>
+            </value>
+            <value>
+                <fullName>Team member leaving</fullName>
+                <default>false</default>
+                <label>Team member leaving</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

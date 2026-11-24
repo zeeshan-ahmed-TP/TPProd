@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__CapacityModel__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>CapacityModel</label>
+    <referenceTo>leadassist__CapacityModel__c</referenceTo>
+    <relationshipLabel>MatchGroups</relationshipLabel>
+    <relationshipName>MatchGroup_CapacityModels</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

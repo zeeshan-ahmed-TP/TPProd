@@ -1,0 +1,263 @@
+<aura:component controller="Agentaccountscreen" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="options" type="List" default="[
+                                                        {'label': 'Agent', 'value': 'Agent'},
+                                                        {'label': 'Team', 'value': 'Team'}
+                                                        ]"/>
+    <aura:attribute name="recordOption" type="List" default="[
+                                                             {'label': 'Agent to Team', 'value': 'Team'}
+                                                             ]"/>
+    <aura:attribute name="AccountDetails" type="sObject" default="{'name':'Account'}"/>
+    <aura:attribute name="AccountDetailsFinal" type="sObject" default="{'name':'Account'}"/>
+    <aura:attribute name="valueChanged" type="boolean" default="true"/>
+    <aura:attribute name="showModal" type="boolean" default="false"/>
+    <aura:attribute name="recordTypeModal" type="boolean" default="false"/>
+    <aura:attribute name="SObjectList" type= "Object[]" default="[{AccountVal:'', 
+                                                                 Product:'', 
+                                                                 Numb:'',
+                                                                 exist:'',
+                                                                 MLS:[],
+                                                                 stateVal:'',
+                                                                 SharedType:'',
+                                                                 subId:''}]"/>
+    <aura:attribute name="recordTypeSelected" type="String" default=""/>
+    <aura:attribute name="seletedChangeRecordType" type="String" default=""/>
+    <aura:attribute name="selectedValue" type="String" access="global"/>
+    <aura:attribute name="recordTypeId" type="String" access="global"/>
+    <aura:attribute name="numberValue" type="Integer" access="global"/>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="picklistvalue" default=",, ,," type="String[]" access="global"/>
+    <aura:attribute name="curIndex" type="integer" access="global"/>
+    <aura:handler event="force:refreshView" action="{!c.isRefreshed}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:handler name="oSelectedRecordEvent" event="c:selectedsObjectRecordEventAgentLicense" action="{!c.handleComponentEvent}"/>
+    
+    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate" style="padding-bottom: 0.5%;text-align: center; font-size: 27px;">Available License List</h2>
+    <aura:if isTrue="{! v.AccountDetailsFinal.Fivestreet > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                Five street :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.Fivestreet} / {!v.AccountDetailsFinal.Fivestreet}</div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{! v.AccountDetailsFinal.MarketSnapshot > 0 }">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                Market Snapshot :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.MarketSnapshot} / {!v.AccountDetailsFinal.MarketSnapshot}</div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{! v.AccountDetailsFinal.TopProducerAssistantLicense > 0 }">
+        <div class="slds-grid slds-gutters" style="font-size:17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                Top Producer Assistant License :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.TopProducerAssistantLicense} / {!v.AccountDetailsFinal.TopProducerAssistantLicense}</div>
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{! v.AccountDetailsFinal.TopProducerCRM > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                Top Producer CRM :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.TopProducerCRM} / {!v.AccountDetailsFinal.TopProducerCRM}</div>
+        </div>
+    </aura:if>  
+    <aura:if isTrue="{! v.AccountDetailsFinal.TopProducerWebsites > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                Top Producer Website :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.TopProducerWebsites} / {!v.AccountDetailsFinal.TopProducerWebsites}</div>
+        </div>
+    </aura:if>  
+    <aura:if isTrue="{! v.AccountDetailsFinal.IDXAccessFee > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                IDX Access Fee :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.IDXAccessFee} / {!v.AccountDetailsFinal.IDXAccessFee}</div>
+        </div>
+    </aura:if> 
+    <aura:if isTrue="{! v.AccountDetailsFinal.SocialConnect > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                Social Connect:
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.SocialConnect} / {!v.AccountDetailsFinal.SocialConnect}</div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{! v.AccountDetailsFinal.HomeIntel > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                HomeIntelle :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.HomeIntel} / {!v.AccountDetailsFinal.HomeIntel}</div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{! v.AccountDetailsFinal.HomeIntelleHub > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                HomeIntelle Hub :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.HomeIntelleHub} / {!v.AccountDetailsFinal.HomeIntelleHub}</div>
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue="{! v.AccountDetailsFinal.HouseValues > 0}">
+        <div class="slds-grid slds-gutters" style="font-size: 17px;">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">
+                House Values :
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_2-of-6">{!v.AccountDetails.HouseValues} / {!v.AccountDetailsFinal.HouseValues}</div>
+        </div>
+    </aura:if>
+    
+    
+    <div>&nbsp;</div>
+    
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_9-of-12">
+            <h1 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate" style="padding-bottom: 0.5%;text-align: center; font-size: 27px;">Assign License</h1>
+        </div>
+        <div class="slds-col slds-size_3-of-12">
+            
+            <lightning:button class="slds-m-left_large" variant="brand" label="Save" title="Success" onclick="{! c.insertUserEntitlements }"/>
+            <lightning:button class="slds-m-left_large"  label="New Agent" title="Success" onclick="{! c.addAnotherRecord }"/>
+            
+        </div>
+    </div>
+    <aura:iteration items="{!v.SObjectList}" var="record" indexVar="indx">
+        <aura:if isTrue="{!record.exist}">
+            <div style="text-align:center;align-item:center; color:red;">
+                <span>Please change the record type from Agent to Team to assign more license</span>
+                <lightning:button class="slds-m-left_large btn" label="Convert" title="Success" onclick="{! c.openChangeRecordTypeModal }"/>
+            </div>
+        </aura:if>
+        <div class="slds-grid slds-gutters slds-p-around_xxx-small">
+            <div class="slds-col slds-size_1-of-12">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning:buttonIcon  class="slds-m-top_large " iconName="utility:add" value="{!indx}" variant="border-filled" onclick="{! c.addRows }" alternativeText="Add Row" title="Add Row" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning:buttonIcon  class="slds-m-top_large" iconName="utility:delete" value="{!indx}" variant="border-filled" onclick="{! c.delRows }" alternativeText="Delete Row" title="Delete Row" disabled="{!v.SObjectList.length == 1}"/>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_11-of-12">
+                <div class="slds-grid slds-gutters">
+                    <div class="{! record.Product == 'HouseValues' ? 'slds-col slds-size_1-of-7' : 'slds-col slds-size_1-of-6' }"> 
+                        <c:customLookupForAgentLicense objectAPIName="Account" showPill="false" recordFromParentId="{!v.recordId}" index="{!indx}" IconName="standard:account" label="Account Name"/>
+                    </div>
+                  
+                    <div class="{! record.Product == 'HouseValues' ? 'slds-col slds-size_3-of-7' : 'slds-col slds-size_3-of-6' }" data-index="{!indx}" >
+                        <c:ProductListNumberInputAgentLicenseScreen  index="{!indx}" picklistvalue="{!v.picklistvalue}" AccountDetails="{!v.AccountDetails}"/>
+                    </div>
+                    <aura:if isTrue="{!record.Product == 'HouseValues'}">
+                        <div class="{! record.Product == 'HouseValues' ? 'slds-col slds-size_1-of-7' : 'slds-col slds-size_1-of-6' }">
+                            <c:customLookupForAgentLicense 
+                                                           objectAPIName="SBQQ__Subscription__c" 
+                                                           prodName="{!record.Product}" 
+                                                           showPill="false" 
+                                                           accId="{!record.AccountVal}" 
+                                                           index="{!indx}" 
+                                                           subId="{!record.subId}"
+                                                           IconName="standard:service_contract" 
+                                                           label="Subscription"/>
+                        </div>
+                    </aura:if>
+                    <div class="{! record.Product == 'HouseValues' ? 'slds-col slds-size_1-of-7' : 'slds-col slds-size_1-of-6' }"> 
+                        <lightning:input name="inputState" label="Billing State:" value="{!record.stateVal}"/>
+                    </div>
+                    <div class="{! record.Product == 'HouseValues' ? 'slds-col slds-size_1-of-7' : 'slds-col slds-size_1-of-6' }"> 
+                        <c:customLookupForAgentLicense objectAPIName="MLS_Association__c" prodName="{!record.Product}" stateVal="{!record.stateVal}" showPill="true" accId="{!record.AccountVal}" index="{!indx}" IconName="custom:custom67" label="MLS Association"/>
+                    </div>
+                    
+                </div>
+            </div>         
+            
+        </div>
+        <aura:if isTrue="{!v.recordTypeModal}">
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.closeModal }"
+                                              alternativeText="close"
+                                              variant="bare-inverse"
+                                              class="slds-modal__close"/>
+                        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Convert Record</h2>
+                        
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <lightning:radioGroup data-ind="{!indx}" name="radioGroup"
+                                              label="From:"
+                                              options="{! v.recordOption }"
+                                              value="{! v.seletedChangeRecordType}"
+                                              type="radio"/>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                        <button class="slds-button slds-button_brand" data-ind="{!indx}" onclick="{!c.convertRecordType}">Convert</button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </aura:if>
+    </aura:iteration>
+    
+    
+    
+    <aura:if isTrue="{!v.showModal}">
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.closeModal }"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Select Record Type</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning:radioGroup name="radioGroup"
+                                          label="Select From:"
+                                          options="{! v.options }"
+                                          value="{! v.recordTypeSelected }"
+                                          onchange="{! c.fetchRecordType}"
+                                          type="radio"/>
+                </div>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick="{!c.proceed}">Next</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    
+    
+</aura:component>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Error_Email</name>
+        <label>Send Error Email</label>
+        <locationX>783</locationX>
+        <locationY>419</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>team@soljit.com,zeeshan.ahmed@topproducersoftware.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Flow Update Payment Information in Invoice</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Update Payment Information in Invoice {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Payment Information in Invoice</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Invoice_Information</name>
+        <label>Update Invoice Information</label>
+        <locationX>445</locationX>
+        <locationY>396</locationY>
+        <faultConnector>
+            <targetReference>Send_Error_Email</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.blng__Invoice__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Auth_Code__c</field>
+            <value>
+                <elementReference>$Record.blng__PaymentMethod__r.blng__CardLastFour__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Payment_Date__c</field>
+            <value>
+                <elementReference>$Record.blng__PaymentDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Payment_Method__c</field>
+            <value>
+                <elementReference>$Record.blng__PaymentMethod__r.blng__PaymentType__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Transaction_Status__c</field>
+            <value>
+                <elementReference>$Record.blng__Transaction__r.blng__Status__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Transcation_ID__c</field>
+            <value>
+                <elementReference>$Record.blng__GatewayID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>blng__Invoice__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>305</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Update_Invoice_Information</targetReference>
+        </connector>
+        <filterFormula>AND( NOT(ISBLANK({!$Record.blng__Invoice__c})),
+OR (IsNew(), 
+ISCHANGED({!$Record.blng__PaymentDate__c}),
+ISCHANGED({!$Record.blng__PaymentMethod__c}),
+ISCHANGED({!$Record.blng__GatewayID__c}),
+ISCHANGED({!$Record.blng__Transaction__r.blng__Status__c}),
+ISCHANGED({!$Record.blng__PaymentAuthorization__c})
+))</filterFormula>
+        <object>blng__Payment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;{!$Label.Error_Message_Screen_Flow} {!$Flow.FaultMessage}&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

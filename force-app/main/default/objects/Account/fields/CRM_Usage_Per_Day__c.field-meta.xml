@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Usage_Per_Day__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NULLVALUE(CRM_Usage_Minutes_Per_Day__c,0)=0,&quot;No Usage&quot;,
+ IF(NULLVALUE(CRM_Usage_Minutes_Per_Day__c,0)&lt;5,&quot;&lt;5 min&quot;,
+  IF(NULLVALUE(CRM_Usage_Minutes_Per_Day__c,0)&lt;=15,&quot;6-15 min&quot;,
+   IF(NULLVALUE(CRM_Usage_Minutes_Per_Day__c,0)&lt;=30,&quot;16-30 min&quot;,&quot;&gt;30 min&quot;)
+  )
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CRM Usage Per Day</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

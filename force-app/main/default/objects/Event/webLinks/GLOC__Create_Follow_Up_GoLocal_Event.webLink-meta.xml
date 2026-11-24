@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLOC__Create_Follow_Up_GoLocal_Event</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Create Follow Up GoLocal Event</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/gloc__scheduler?evt5={!Event.Subject}&amp;evt12={!Event.Location}&amp;who_id={!Event.Who}&amp;what_id={!Event.What}&amp;aid={!Event.OwnerId}&amp;retURL={!Event.Id}</url>
+</WebLink>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Payment_Sub_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Update Payment Sub Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Change Billing Date</fullName>
+                <default>false</default>
+                <label>Change Billing Date</label>
+            </value>
+            <value>
+                <fullName>How to update online</fullName>
+                <default>false</default>
+                <label>How to update online</label>
+            </value>
+            <value>
+                <fullName>Price Adjustment/Discount Request</fullName>
+                <default>false</default>
+                <label>Price Adjustment/Discount Request</label>
+            </value>
+            <value>
+                <fullName>Update Credit Card</fullName>
+                <default>false</default>
+                <label>Update Credit Card</label>
+            </value>
+            <value>
+                <fullName>Update Splits</fullName>
+                <default>false</default>
+                <label>Update Splits</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>$40 CRM FB Retargeting</fullName>
+        <default>false</default>
+        <label>$40 CRM FB Retargeting</label>
+    </customValue>
+    <customValue>
+        <fullName>$40 CRM Promo</fullName>
+        <default>false</default>
+        <label>$40 CRM Promo</label>
+    </customValue>
+    <customValue>
+        <fullName>$5 WS WITH $45CRM</fullName>
+        <default>false</default>
+        <label>$5 WS WITH $45CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>$55.95 MS</fullName>
+        <default>false</default>
+        <label>$55.95 MS</label>
+    </customValue>
+    <customValue>
+        <fullName>100% off Website - $65 bundle</fullName>
+        <default>false</default>
+        <label>100% off Website - $65 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>100% off Website - $70 bundle</fullName>
+        <default>false</default>
+        <label>100% off Website - $70 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>100% off Website - $75 bundle</fullName>
+        <default>false</default>
+        <label>100% off Website - $75 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>100% off Website - $85 bundle</fullName>
+        <default>false</default>
+        <label>100% off Website - $85 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>100% off WS in $40 CM Bundle</fullName>
+        <default>false</default>
+        <label>100% off WS in $40 CM Bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>100% off WS in $65 BF Bundle</fullName>
+        <default>false</default>
+        <label>100% off WS in $65 BF Bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>10off_CRM_EssAgent</fullName>
+        <default>false</default>
+        <label>10off_CRM_EssAgent</label>
+    </customValue>
+    <customValue>
+        <fullName>11485TPCRM</fullName>
+        <default>false</default>
+        <label>11485TPCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>15off_CRM_EssAgent</fullName>
+        <default>false</default>
+        <label>15off_CRM_EssAgent</label>
+    </customValue>
+    <customValue>
+        <fullName>1FREEFIVESTREETLICENSE---30% Off FS Bundle CRM MS 5ST</fullName>
+        <default>false</default>
+        <label>1FREEFIVESTREETLICENSE---30% Off FS Bundle CRM MS 5ST</label>
+    </customValue>
+    <customValue>
+        <fullName>1FREEFIVESTREETLICENSE---55% BUNDLE FS CRM MS</fullName>
+        <default>false</default>
+        <label>1FREEFIVESTREETLICENSE---55% BUNDLE FS CRM MS</label>
+    </customValue>
+    <customValue>
+        <fullName>1FREEFIVESTREETLICENSE---ASR Only - 25 OFF FS</fullName>
+        <default>false</default>
+        <label>1FREEFIVESTREETLICENSE---ASR Only - 25 OFF FS</label>
+    </customValue>
+    <customValue>
+        <fullName>1FREEFIVESTREETLICENSE---FSFREECBC</fullName>
+        <default>false</default>
+        <label>1FREEFIVESTREETLICENSE---FSFREECBC</label>
+    </customValue>
+    <customValue>
+        <fullName>20% off MS with CFB</fullName>
+        <default>false</default>
+        <label>20% off MS with CFB</label>
+    </customValue>
+    <customValue>
+        <fullName>20FCMAB</fullName>
+        <default>false</default>
+        <label>20FCMAB</label>
+    </customValue>
+    <customValue>
+        <fullName>20OFFPROSOFTSNAPSHOT</fullName>
+        <default>false</default>
+        <label>20OFFPROSOFTSNAPSHOT</label>
+    </customValue>
+    <customValue>
+        <fullName>20OFFPROSOFTTPCRM</fullName>
+        <default>false</default>
+        <label>20OFFPROSOFTTPCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>25% of MS - $75 bundle</fullName>
+        <default>false</default>
+        <label>25% of MS - $75 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>25% of MS - $85 bundle</fullName>
+        <default>false</default>
+        <label>25% of MS - $85 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>25% off CRM - $75 bundle</fullName>
+        <default>false</default>
+        <label>25% off CRM - $75 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>25% off CRM - $85 bundle</fullName>
+        <default>false</default>
+        <label>25% off CRM - $85 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>30% of MS - $70 bundle</fullName>
+        <default>false</default>
+        <label>30% of MS - $70 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>30% off CRM - $70 bundle</fullName>
+        <default>false</default>
+        <label>30% off CRM - $70 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>30% Off CRM Bundle CRM MS 5ST</fullName>
+        <default>false</default>
+        <label>30% Off CRM Bundle CRM MS 5ST</label>
+    </customValue>
+    <customValue>
+        <fullName>30% Off FS Bundle CRM MS 5ST</fullName>
+        <default>false</default>
+        <label>30% Off FS Bundle CRM MS 5ST</label>
+    </customValue>
+    <customValue>
+        <fullName>30% Off MS Bundle CRM MS 5ST</fullName>
+        <default>false</default>
+        <label>30% Off MS Bundle CRM MS 5ST</label>
+    </customValue>
+    <customValue>
+        <fullName>30% OFF TP CRM PROSOFT BUNDLE</fullName>
+        <default>false</default>
+        <label>30% OFF TP CRM PROSOFT BUNDLE</label>
+    </customValue>
+    <customValue>
+        <fullName>30OFFPROSOFTSNAPSHOT</fullName>
+        <default>false</default>
+        <label>30OFFPROSOFTSNAPSHOT</label>
+    </customValue>
+    <customValue>
+        <fullName>30OFFPROSOFTTPCRM</fullName>
+        <default>false</default>
+        <label>30OFFPROSOFTTPCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>3495TOPCRM---ASC Only - 10 OFF CRM</fullName>
+        <default>false</default>
+        <label>3495TOPCRM---ASC Only - 10 OFF CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>3495TOPCRMNEW</fullName>
+        <default>false</default>
+        <label>3495TOPCRMNEW</label>
+    </customValue>
+    <customValue>
+        <fullName>35% of MS - $65 bundle</fullName>
+        <default>false</default>
+        <label>35% of MS - $65 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>35% off CRM - $65 bundle</fullName>
+        <default>false</default>
+        <label>35% off CRM - $65 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>35% off CRM in $65 BF Bundle</fullName>
+        <default>false</default>
+        <label>35% off CRM in $65 BF Bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>35% off CRM in $65 Bundle</fullName>
+        <default>false</default>
+        <label>35% off CRM in $65 Bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>35% off MS in $65 BF Bundle</fullName>
+        <default>false</default>
+        <label>35% off MS in $65 BF Bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>35% off MS in $65 Bundle</fullName>
+        <default>false</default>
+        <label>35% off MS in $65 Bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>35.05% off CRM MS</fullName>
+        <default>false</default>
+        <label>35.05% off CRM MS</label>
+    </customValue>
+    <customValue>
+        <fullName>35.05% off MS CRM</fullName>
+        <default>false</default>
+        <label>35.05% off MS CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>40% BUNDLE WS MS CRM AND FS</fullName>
+        <default>false</default>
+        <label>40% BUNDLE WS MS CRM AND FS</label>
+    </customValue>
+    <customValue>
+        <fullName>50% of MS</fullName>
+        <default>false</default>
+        <label>50% of MS</label>
+    </customValue>
+    <customValue>
+        <fullName>50% off FS - $85 bundle</fullName>
+        <default>false</default>
+        <label>50% off FS - $85 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>55% BUNDLE CRM MS FS AND WS</fullName>
+        <default>false</default>
+        <label>55% BUNDLE CRM MS FS AND WS</label>
+    </customValue>
+    <customValue>
+        <fullName>55% BUNDLE FS CRM MS AND WS</fullName>
+        <default>false</default>
+        <label>55% BUNDLE FS CRM MS AND WS</label>
+    </customValue>
+    <customValue>
+        <fullName>55% BUNDLE MS CRM FS AND WS</fullName>
+        <default>false</default>
+        <label>55% BUNDLE MS CRM FS AND WS</label>
+    </customValue>
+    <customValue>
+        <fullName>5ST AND MS BUNDLE - 20%</fullName>
+        <default>false</default>
+        <label>5ST AND MS BUNDLE - 20%</label>
+    </customValue>
+    <customValue>
+        <fullName>5ST AND MS BUNDLE - 20%---1FREEFIVESTREETLICENSE</fullName>
+        <default>false</default>
+        <label>5ST AND MS BUNDLE - 20%---1FREEFIVESTREETLICENSE</label>
+    </customValue>
+    <customValue>
+        <fullName>5ST AND TPCRM  BUNDLE - 20%</fullName>
+        <default>false</default>
+        <label>5ST AND TPCRM  BUNDLE - 20%</label>
+    </customValue>
+    <customValue>
+        <fullName>85.71% off CRM MS Website</fullName>
+        <default>false</default>
+        <label>85.71% off CRM MS Website</label>
+    </customValue>
+    <customValue>
+        <fullName>ASC Only - 10 OFF CRM</fullName>
+        <default>false</default>
+        <label>ASC Only - 10 OFF CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>ASC Only - 10 OFF MS</fullName>
+        <default>false</default>
+        <label>ASC Only - 10 OFF MS</label>
+    </customValue>
+    <customValue>
+        <fullName>ASC Only - 25 OFF CRM</fullName>
+        <default>false</default>
+        <label>ASC Only - 25 OFF CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF CRM</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF CRM---3495TOPCRM</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF CRM---3495TOPCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF CRM---Cyber Monday $35 CRM Promo</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF CRM---Cyber Monday $35 CRM Promo</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF FS</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF FS</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF FS---1FREEFIVESTREETLICENSE</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF FS---1FREEFIVESTREETLICENSE</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF MS</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF MS</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF MS---MS AND TPCRM BUNDLE - 20%</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF MS---MS AND TPCRM BUNDLE - 20%</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 10 OFF WS</fullName>
+        <default>false</default>
+        <label>ASR Only - 10 OFF WS</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 25 OFF CRM</fullName>
+        <default>false</default>
+        <label>ASR Only - 25 OFF CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 25 OFF CRM---25% off CRM - $75 bundle</fullName>
+        <default>false</default>
+        <label>ASR Only - 25 OFF CRM---25% off CRM - $75 bundle</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 25 OFF FS</fullName>
+        <default>false</default>
+        <label>ASR Only - 25 OFF FS</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 25 OFF FS---1FREEFIVESTREETLICENSE</fullName>
+        <default>false</default>
+        <label>ASR Only - 25 OFF FS---1FREEFIVESTREETLICENSE</label>
+    </customValue>
+    <customValue>
+        <fullName>ASR Only - 25 OFF WS</fullName>
+        <default>false</default>
+        <label>ASR Only - 25 OFF WS</label>
+    </customValue>
+    <customValue>
+        <fullName>BHHS 10% off CRM</fullName>
+        <default>false</default>
+        <label>BHHS 10% off CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Friday MS Promo</fullName>
+        <default>false</default>
+        <label>Black Friday MS Promo</label>
+    </customValue>
+    <customValue>
+        <fullName>Cyber Monday $35 CRM Promo</fullName>
+        <default>false</default>
+        <label>Cyber Monday $35 CRM Promo</label>
+    </customValue>
+    <customValue>
+        <fullName>FSFREECBC</fullName>
+        <default>false</default>
+        <label>FSFREECBC</label>
+    </customValue>
+    <customValue>
+        <fullName>KW 16.74% off MS</fullName>
+        <default>false</default>
+        <label>KW 16.74% off MS</label>
+    </customValue>
+    <customValue>
+        <fullName>MS AND 5ST BUNDLE - 20%</fullName>
+        <default>false</default>
+        <label>MS AND 5ST BUNDLE - 20%</label>
+    </customValue>
+    <customValue>
+        <fullName>MS AND TPCRM BUNDLE - 20%</fullName>
+        <default>false</default>
+        <label>MS AND TPCRM BUNDLE - 20%</label>
+    </customValue>
+    <customValue>
+        <fullName>MS10OFFREMAX</fullName>
+        <default>false</default>
+        <label>MS10OFFREMAX</label>
+    </customValue>
+    <customValue>
+        <fullName>MSLoyalty - 41.66% off</fullName>
+        <default>false</default>
+        <label>MSLoyalty - 41.66% off</label>
+    </customValue>
+    <customValue>
+        <fullName>QRTOPCRM</fullName>
+        <default>false</default>
+        <label>QRTOPCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>QRTOPMRKSNP</fullName>
+        <default>false</default>
+        <label>QRTOPMRKSNP</label>
+    </customValue>
+    <customValue>
+        <fullName>RD Promo - 50% Off CRM</fullName>
+        <default>false</default>
+        <label>RD Promo - 50% Off CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>RD Promo - 50% Off FS</fullName>
+        <default>false</default>
+        <label>RD Promo - 50% Off FS</label>
+    </customValue>
+    <customValue>
+        <fullName>RD Promo - 50% Off MS</fullName>
+        <default>false</default>
+        <label>RD Promo - 50% Off MS</label>
+    </customValue>
+    <customValue>
+        <fullName>REMAX 10% off CRM</fullName>
+        <default>false</default>
+        <label>REMAX 10% off CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>REMAX 10% off MS</fullName>
+        <default>false</default>
+        <label>REMAX 10% off MS</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLEFIVESTREET</fullName>
+        <default>false</default>
+        <label>RSBUNDLEFIVESTREET</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLEFIVESTREET---1FREEFIVESTREETLICENSE</fullName>
+        <default>false</default>
+        <label>RSBUNDLEFIVESTREET---1FREEFIVESTREETLICENSE</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLESTDFIVESTREET</fullName>
+        <default>false</default>
+        <label>RSBUNDLESTDFIVESTREET</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLESTDTOPCRM</fullName>
+        <default>false</default>
+        <label>RSBUNDLESTDTOPCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLESTDTOPMRKSNP</fullName>
+        <default>false</default>
+        <label>RSBUNDLESTDTOPMRKSNP</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLETOPCRM</fullName>
+        <default>false</default>
+        <label>RSBUNDLETOPCRM</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLETOPMRKSNP</fullName>
+        <default>false</default>
+        <label>RSBUNDLETOPMRKSNP</label>
+    </customValue>
+    <customValue>
+        <fullName>RSBUNDLETOPMRKSNP---ASC Only - 25 OFF MS</fullName>
+        <default>false</default>
+        <label>RSBUNDLETOPMRKSNP---ASC Only - 25 OFF MS</label>
+    </customValue>
+    <customValue>
+        <fullName>TOPCRM1MONTHFREE</fullName>
+        <default>false</default>
+        <label>TOPCRM1MONTHFREE</label>
+    </customValue>
+    <customValue>
+        <fullName>TP CRM AND 5ST BUNDLE - 20.0%</fullName>
+        <default>false</default>
+        <label>TP CRM AND 5ST BUNDLE - 20.0%</label>
+    </customValue>
+    <customValue>
+        <fullName>TP CRM AND MS BUNDLE- 20.0%</fullName>
+        <default>false</default>
+        <label>TP CRM AND MS BUNDLE- 20.0%</label>
+    </customValue>
+    <customValue>
+        <fullName>TP CRM AND MS BUNDLE- 20.0%---ASR Only - 10 OFF CRM</fullName>
+        <default>false</default>
+        <label>TP CRM AND MS BUNDLE- 20.0%---ASR Only - 10 OFF CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>TPCRM10OFFREMAXORBHHS</fullName>
+        <default>false</default>
+        <label>TPCRM10OFFREMAXORBHHS</label>
+    </customValue>
+    <customValue>
+        <fullName>a2Y7i000000e5PNEAY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>a2Y7i000000e5PNEAY</label>
+    </customValue>
+    <customValue>
+        <fullName>a2Y7i000000e5PKEAY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>a2Y7i000000e5PKEAY</label>
+    </customValue>
+    <description>Not in use</description>
+    <masterLabel>Promo Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

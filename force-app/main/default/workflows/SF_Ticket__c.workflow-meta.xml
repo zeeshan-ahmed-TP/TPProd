@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_SF_Ticket_Owner_of_Status_Change_to_Implemented</fullName>
+        <description>Notify SF Ticket Owner of Status Change to Implemented</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Salesforce_Ticket_Update_Implemented</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_SF_Ticket_Owner_of_Status_Change_to_Rejected</fullName>
+        <description>Notify SF Ticket Owner of Status Change to Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Salesforce_Ticket_Update_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Sales_Ops_of_Ticket_Creation</fullName>
+        <description>Notify Sales Ops of Ticket Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Sales_Ops</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Salesforce_Ticket_Creation_Notification</template>
+    </alerts>
+</Workflow>

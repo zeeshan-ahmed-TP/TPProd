@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Subscriptions</fullName>
+    <columns>NAME</columns>
+    <columns>SBQQ__ProductName__c</columns>
+    <columns>SBQQ__Quantity__c</columns>
+    <columns>SBQQ__StartDate__c</columns>
+    <columns>Billing_Amount_Per_Period__c</columns>
+    <columns>SBQQ__BillingFrequency__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Subscription_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <label>My Subscriptions</label>
+    <sharedTo>
+        <allCustomerPortalUsers></allCustomerPortalUsers>
+    </sharedTo>
+</ListView>

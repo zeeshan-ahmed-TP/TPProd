@@ -1,0 +1,4 @@
+<design:component>
+	  <design:attribute name="recordId" label="record Id" default="" />
+    <design:attribute name="RelatedList" label="Related List" default="" />
+</design:component>

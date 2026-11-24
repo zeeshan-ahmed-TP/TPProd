@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HubSpot_Latest_Lead_Subsource__c</fullName>
+    <externalId>false</externalId>
+    <label>Hubspot Latest Lead Subsource</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent Advice</fullName>
+                <default>false</default>
+                <label>Agent Advice</label>
+            </value>
+            <value>
+                <fullName>Agent Publishing</fullName>
+                <default>false</default>
+                <label>Agent Publishing</label>
+            </value>
+            <value>
+                <fullName>AI Referrals</fullName>
+                <default>false</default>
+                <label>AI Referrals</label>
+            </value>
+            <value>
+                <fullName>Bing Ads</fullName>
+                <default>false</default>
+                <label>Bing Ads</label>
+            </value>
+            <value>
+                <fullName>CAR</fullName>
+                <default>false</default>
+                <label>CAR</label>
+            </value>
+            <value>
+                <fullName>Customer Email</fullName>
+                <default>false</default>
+                <label>Customer Email</label>
+            </value>
+            <value>
+                <fullName>Direct Traffic</fullName>
+                <default>false</default>
+                <label>Direct Traffic</label>
+            </value>
+            <value>
+                <fullName>Facebook Ads</fullName>
+                <default>false</default>
+                <label>Facebook Ads</label>
+            </value>
+            <value>
+                <fullName>Fit Small Business</fullName>
+                <default>false</default>
+                <label>Fit Small Business</label>
+            </value>
+            <value>
+                <fullName>Forbes Advisor</fullName>
+                <default>false</default>
+                <label>Forbes Advisor</label>
+            </value>
+            <value>
+                <fullName>Google Ads</fullName>
+                <default>false</default>
+                <label>Google Ads</label>
+            </value>
+            <value>
+                <fullName>HousingWire</fullName>
+                <default>false</default>
+                <label>HousingWire</label>
+            </value>
+            <value>
+                <fullName>In-Product</fullName>
+                <default>false</default>
+                <label>In-Product</label>
+            </value>
+            <value>
+                <fullName>Kaplan</fullName>
+                <default>false</default>
+                <label>Kaplan</label>
+            </value>
+            <value>
+                <fullName>LinkedIn Ads</fullName>
+                <default>false</default>
+                <label>LinkedIn Ads</label>
+            </value>
+            <value>
+                <fullName>Mainstreet</fullName>
+                <default>false</default>
+                <label>Mainstreet</label>
+            </value>
+            <value>
+                <fullName>Organic Search</fullName>
+                <default>false</default>
+                <label>Organic Search</label>
+            </value>
+            <value>
+                <fullName>Organic Social</fullName>
+                <default>false</default>
+                <label>Organic Social</label>
+            </value>
+            <value>
+                <fullName>Prospect Email</fullName>
+                <default>false</default>
+                <label>Prospect Email</label>
+            </value>
+            <value>
+                <fullName>SkySlope</fullName>
+                <default>false</default>
+                <label>SkySlope</label>
+            </value>
+            <value>
+                <fullName>Sold.com</fullName>
+                <default>false</default>
+                <label>Sold.com</label>
+            </value>
+            <value>
+                <fullName>Sold.com New Agent Users</fullName>
+                <default>false</default>
+                <label>Sold.com New Agent Users</label>
+            </value>
+            <value>
+                <fullName>The Close</fullName>
+                <default>false</default>
+                <label>The Close</label>
+            </value>
+            <value>
+                <fullName>Winback Email</fullName>
+                <default>false</default>
+                <label>Winback Email</label>
+            </value>
+            <value>
+                <fullName>Winback Facebook Campaign</fullName>
+                <default>false</default>
+                <label>Winback Facebook Campaign</label>
+            </value>
+            <value>
+                <fullName>Sold.com - New Agent Users - MQL+</fullName>
+                <default>false</default>
+                <label>Sold.com - New Agent Users - MQL+</label>
+            </value>
+            <value>
+                <fullName>Google Ads - Branded</fullName>
+                <default>false</default>
+                <label>Google Ads - Branded</label>
+            </value>
+            <value>
+                <fullName>ChatGPT Ads</fullName>
+                <default>false</default>
+                <label>ChatGPT Ads</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

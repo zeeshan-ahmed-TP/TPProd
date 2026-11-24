@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sent_to_Outside_Collections__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the customer&apos;s past due balance has been sent to an outside collections agency.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the customer&apos;s past due balance has been sent to an outside collections agency.</inlineHelpText>
+    <label>Sent to Outside Collections</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

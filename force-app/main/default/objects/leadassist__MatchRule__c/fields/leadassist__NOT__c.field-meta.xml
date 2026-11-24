@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__NOT__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This sets the rule as a NOT Rule.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this for matching something you DO NOT want to be assigned to this MatchGroup.  e.g. if this MatchRule is &apos;Country EQUALS FR&apos; and NOT is checked, then any Lead where the country isn&apos;t FR will be matched to this MatchGroup.</inlineHelpText>
+    <label>NOT</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

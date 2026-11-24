@@ -1,0 +1,83 @@
+<apex:page standardController="Case" recordSetVar="Cases">
+<script>
+var IDs = new Array();
+<apex:repeat value="{!selected}" var="obj">
+var nullChecker;
+nullChecker = '{!obj.ContactId}';
+if(nullChecker != '') {
+IDs.push('{!obj.ContactId}');
+}
+</apex:repeat>
+function beginDial() {
+var ids_input = document.getElementById("contactids");
+ids_input.value = IDs.join();
+var options = "height=900,width=975,top=0,left=0,location=no,menubar=no,resizable=1,scrollbars=1,status=no,titlebar=no,toolbar=no,directories=no";
+window.open("","PBWin",options);
+window.setTimeout("document.getElementById('PBForm').submit();",500);
+}
+</script>
+<form method="POST" action="https://www.phoneburner.com/home/pb/force/login" target="PBWin" id="PBForm">
+<input type="hidden" name="app_version" value="1.6" />
+<input type="hidden" name="object_type" value="contact" />
+<input type="hidden" name="contactids" id="contactids" value="" />
+
+
+<apex:slds />
+<div class="slds-scope">
+<div class="slds-page-header">
+<div class="slds-media">
+<div class="slds-media__figure">
+<apex:image url="{!$Resource.PhoneBurner__PBIcon}" width="35" height="35"/>
+</div>
+<div class="slds-media__body">
+<h1 class="slds-page-header__title slds-truncate slds-align-middle" title="PhoneBurner">PhoneBurner</h1>
+<p class="slds-text-body_small slds-line-height_reset">setup your dial-session</p></div>
+</div>
+</div>
+<div class="slds-grid" style="background-color:#fff;">
+<div class="slds-col">
+<div class="slds-m-left_xx-large">
+<apex:outputPanel rendered="{! resultsize == 0}">
+<div class="slds-text-heading_medium slds-m-top_large">
+<b>Oops.  We need someone to call.</b>
+</div>
+I'm sorry, it looks as though you have not selected any Cases.
+To begin dialing, you'll first need to select some Cases from your Cases tab.
+</apex:outputPanel>
+<apex:outputPanel rendered="{!resultsize != 0}">
+<div class="slds-text-heading_medium slds-m-top_large">
+<b>Great... you're ready to start dialing with PhoneBurner.</b>
+</div>
+<dl class="slds-list_stacked slds-wrap slds-p-top_large">
+<dt class="slds-item_label slds-truncate" title="Cases To Call">
+Selected Cases to call :
+</dt>
+<dd class="slds-item_detail slds-truncate" title="Description for Cases to call">
+<div class="slds-text-heading_large"><b>{!resultsize}</b></div>
+</dd>
+<dt class="slds-item_label slds-truncate slds-m-top_medium" title="Estimated Savings">
+Projected average time savings * :
+</dt>
+<dd class="slds-item_detail slds-truncate" title="Description for estimated savings">
+<div class="slds-text-heading_large"><b>{!ceiling(resultsize * 2.18)}</b> minutes</div>
+</dd>
+</dl>
+<button onclick="beginDial()" class="slds-button slds-button_brand slds-m-top_large">
+Start My Dial Session &gt;
+</button>
+</apex:outputPanel>
+<div class="slds-text-color_weak slds-m-top_medium">
+Need help? Call (888) 928-7637
+</div>
+<div class="slds-text-color_weak slds-m-top_medium">
+* Please contact us for a custom savings report for your business.
+</div>
+</div>
+</div>
+<div class="slds-col">
+<img class="slds-float_right slds-m-top_large" src="https://www.phoneburner.com/usercontent/32526762/homepage/salesforce/img/sf-app-splash.png" />
+</div>
+</div>
+</div>
+</form>
+</apex:page>

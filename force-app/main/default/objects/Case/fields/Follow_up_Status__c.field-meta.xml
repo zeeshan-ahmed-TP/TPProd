@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_up_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Follow up Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>48 hour AE notification</fullName>
+                <default>false</default>
+                <label>48 hour AE notification</label>
+            </value>
+            <value>
+                <fullName>Assign to Tier 2</fullName>
+                <default>false</default>
+                <label>Assign to Tier 2</label>
+            </value>
+            <value>
+                <fullName>Call Back</fullName>
+                <default>false</default>
+                <label>Call Back</label>
+            </value>
+            <value>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+                <label>Cancel</label>
+            </value>
+            <value>
+                <fullName>Checked</fullName>
+                <default>false</default>
+                <label>Checked</label>
+            </value>
+            <value>
+                <fullName>COS</fullName>
+                <default>false</default>
+                <label>COS</label>
+            </value>
+            <value>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+            <value>
+                <fullName>Lead Suspension</fullName>
+                <default>false</default>
+                <label>Lead Suspension</label>
+            </value>
+            <value>
+                <fullName>Left Final Message</fullName>
+                <default>false</default>
+                <label>Left Final Message</label>
+            </value>
+            <value>
+                <fullName>LM 1</fullName>
+                <default>false</default>
+                <label>LM 1</label>
+            </value>
+            <value>
+                <fullName>LM 2 &amp; Sent Email</fullName>
+                <default>false</default>
+                <label>LM 2 &amp; Sent Email</label>
+            </value>
+            <value>
+                <fullName>LM 3</fullName>
+                <default>false</default>
+                <label>LM 3</label>
+            </value>
+            <value>
+                <fullName>LM 4 &amp; Sent Email</fullName>
+                <default>false</default>
+                <label>LM 4 &amp; Sent Email</label>
+            </value>
+            <value>
+                <fullName>LM 5</fullName>
+                <default>false</default>
+                <label>LM 5</label>
+            </value>
+            <value>
+                <fullName>LM 6 &amp; Sent Email</fullName>
+                <default>false</default>
+                <label>LM 6 &amp; Sent Email</label>
+            </value>
+            <value>
+                <fullName>LM7</fullName>
+                <default>false</default>
+                <label>LM7</label>
+            </value>
+            <value>
+                <fullName>LM8</fullName>
+                <default>false</default>
+                <label>LM8</label>
+            </value>
+            <value>
+                <fullName>LM9</fullName>
+                <default>false</default>
+                <label>LM9</label>
+            </value>
+            <value>
+                <fullName>LM10</fullName>
+                <default>false</default>
+                <label>LM10</label>
+            </value>
+            <value>
+                <fullName>Manager Called</fullName>
+                <default>false</default>
+                <label>Manager Called</label>
+            </value>
+            <value>
+                <fullName>Manager Escalation</fullName>
+                <default>false</default>
+                <label>Manager Escalation</label>
+            </value>
+            <value>
+                <fullName>Non-Responsive</fullName>
+                <default>false</default>
+                <label>Non-Responsive</label>
+            </value>
+            <value>
+                <fullName>No Active Assets</fullName>
+                <default>false</default>
+                <label>No Active Assets</label>
+            </value>
+            <value>
+                <fullName>Not Contacted</fullName>
+                <default>false</default>
+                <label>Not Contacted</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Payment Plan</fullName>
+                <default>false</default>
+                <label>Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Pays by Check</fullName>
+                <default>false</default>
+                <label>Pays by Check</label>
+            </value>
+            <value>
+                <fullName>Pending Finance Review</fullName>
+                <default>false</default>
+                <label>Pending Finance Review</label>
+            </value>
+            <value>
+                <fullName>Priority Call</fullName>
+                <default>false</default>
+                <label>Priority Call</label>
+            </value>
+            <value>
+                <fullName>Rejected Cancel-Insufficient Calls</fullName>
+                <default>false</default>
+                <label>Rejected Cancel-Insufficient Calls</label>
+            </value>
+            <value>
+                <fullName>Rejected Cancel-Insufficient Emails</fullName>
+                <default>false</default>
+                <label>Rejected Cancel-Insufficient Emails</label>
+            </value>
+            <value>
+                <fullName>Rejected-See Case Notes</fullName>
+                <default>false</default>
+                <label>Rejected-See Case Notes</label>
+            </value>
+            <value>
+                <fullName>Sent Email 1</fullName>
+                <default>false</default>
+                <label>Sent Email 1</label>
+            </value>
+            <value>
+                <fullName>Sent Email 2</fullName>
+                <default>false</default>
+                <label>Sent Email 2</label>
+            </value>
+            <value>
+                <fullName>Sent Email 3</fullName>
+                <default>false</default>
+                <label>Sent Email 3</label>
+            </value>
+            <value>
+                <fullName>Spoke to</fullName>
+                <default>false</default>
+                <label>Spoke to</label>
+            </value>
+            <value>
+                <fullName>White Glove Payment Plan</fullName>
+                <default>false</default>
+                <label>White Glove Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Working With Sales</fullName>
+                <default>false</default>
+                <label>Working With Sales</label>
+            </value>
+            <value>
+                <fullName>Working with Retention</fullName>
+                <default>false</default>
+                <label>Working with Retention</label>
+            </value>
+            <value>
+                <fullName>LS LM 1</fullName>
+                <default>false</default>
+                <label>LS LM 1</label>
+            </value>
+            <value>
+                <fullName>LS LM 2</fullName>
+                <default>false</default>
+                <label>LS LM 2</label>
+            </value>
+            <value>
+                <fullName>LS LM 3</fullName>
+                <default>false</default>
+                <label>LS LM 3</label>
+            </value>
+            <value>
+                <fullName>LS LM 4</fullName>
+                <default>false</default>
+                <label>LS LM 4</label>
+            </value>
+            <value>
+                <fullName>LS LM 5</fullName>
+                <default>false</default>
+                <label>LS LM 5</label>
+            </value>
+            <value>
+                <fullName>LS LM 6</fullName>
+                <default>false</default>
+                <label>LS LM 6</label>
+            </value>
+            <value>
+                <fullName>LS LM 7</fullName>
+                <default>false</default>
+                <label>LS LM 7</label>
+            </value>
+            <value>
+                <fullName>LS LM 8</fullName>
+                <default>false</default>
+                <label>LS LM 8</label>
+            </value>
+            <value>
+                <fullName>LS LM 9</fullName>
+                <default>false</default>
+                <label>LS LM 9</label>
+            </value>
+            <value>
+                <fullName>LS LM 10</fullName>
+                <default>false</default>
+                <label>LS LM 10</label>
+            </value>
+            <value>
+                <fullName>LS LM 11</fullName>
+                <default>false</default>
+                <label>LS LM 11</label>
+            </value>
+            <value>
+                <fullName>LS LM 12</fullName>
+                <default>false</default>
+                <label>LS LM 12</label>
+            </value>
+            <value>
+                <fullName>LS LM 13</fullName>
+                <default>false</default>
+                <label>LS LM 13</label>
+            </value>
+            <value>
+                <fullName>LS LM 14</fullName>
+                <default>false</default>
+                <label>LS LM 14</label>
+            </value>
+            <value>
+                <fullName>LS Spoke To</fullName>
+                <default>false</default>
+                <label>LS Spoke To</label>
+            </value>
+            <value>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+                <label>Left Message</label>
+            </value>
+            <value>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+                <label>No Answer</label>
+            </value>
+            <value>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+                <label>Transfer</label>
+            </value>
+            <value>
+                <fullName>Follow Up Scheduled - Pitched</fullName>
+                <default>false</default>
+                <label>Follow Up Scheduled - Pitched</label>
+            </value>
+            <value>
+                <fullName>Transferred</fullName>
+                <default>false</default>
+                <label>Transferred</label>
+            </value>
+            <value>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+                <label>Account Maintenance</label>
+            </value>
+            <value>
+                <fullName>Rejected Cancel</fullName>
+                <default>false</default>
+                <label>Rejected Cancel</label>
+            </value>
+            <value>
+                <fullName>LM 2</fullName>
+                <default>false</default>
+                <label>LM 2</label>
+            </value>
+            <value>
+                <fullName>Final Five</fullName>
+                <default>false</default>
+                <label>Final Five</label>
+            </value>
+            <value>
+                <fullName>Final Five LM1</fullName>
+                <default>false</default>
+                <label>Final Five LM1</label>
+            </value>
+            <value>
+                <fullName>Final Five LM2</fullName>
+                <default>false</default>
+                <label>Final Five LM2</label>
+            </value>
+            <value>
+                <fullName>Follow up Scheduled- Pitched</fullName>
+                <default>false</default>
+                <label>Follow up Scheduled- Pitched</label>
+            </value>
+            <value>
+                <fullName>Bad Phone Number</fullName>
+                <default>false</default>
+                <label>Bad Phone Number</label>
+            </value>
+            <value>
+                <fullName>Disqualified - BANT</fullName>
+                <default>false</default>
+                <label>Disqualified - BANT</label>
+            </value>
+            <value>
+                <fullName>Sold / Sale Pending</fullName>
+                <default>false</default>
+                <label>Sold / Sale Pending</label>
+            </value>
+            <value>
+                <fullName>Follow up Scheduled- no Pitch</fullName>
+                <default>false</default>
+                <label>Follow up Scheduled- no Pitch</label>
+            </value>
+            <value>
+                <fullName>Waitlisted/PreAuth</fullName>
+                <default>false</default>
+                <label>Waitlisted/PreAuth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

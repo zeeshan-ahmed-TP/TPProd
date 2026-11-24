@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancel_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Line Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unable to Afford</fullName>
+                <default>false</default>
+                <label>Unable to Afford</label>
+            </value>
+            <value>
+                <fullName>Cancellation Terms</fullName>
+                <default>false</default>
+                <label>Cancellation Terms</label>
+            </value>
+            <value>
+                <fullName>Contract Length</fullName>
+                <default>false</default>
+                <label>Contract Length</label>
+            </value>
+            <value>
+                <fullName>Authorized Buyer - Unauthorized Purchase</fullName>
+                <default>false</default>
+                <label>Authorized Buyer - Unauthorized Purchase</label>
+            </value>
+            <value>
+                <fullName>Auto-Renewal Terms</fullName>
+                <default>false</default>
+                <label>Auto-Renewal Terms</label>
+            </value>
+            <value>
+                <fullName>Poor ROI</fullName>
+                <default>false</default>
+                <label>Poor ROI</label>
+            </value>
+            <value>
+                <fullName>Exceeded Budget</fullName>
+                <default>false</default>
+                <label>Exceeded Budget</label>
+            </value>
+            <value>
+                <fullName>Lost Team</fullName>
+                <default>false</default>
+                <label>Lost Team</label>
+            </value>
+            <value>
+                <fullName>Changed Mind - Cost Reason</fullName>
+                <default>false</default>
+                <label>Changed Mind - Cost Reason</label>
+            </value>
+            <value>
+                <fullName>Changed Mind - Timing Reason</fullName>
+                <default>false</default>
+                <label>Changed Mind - Timing Reason</label>
+            </value>
+            <value>
+                <fullName>Sunset Indirect</fullName>
+                <default>false</default>
+                <label>Sunset Indirect</label>
+            </value>
+            <value>
+                <fullName>ROI/Conversion Rate</fullName>
+                <default>false</default>
+                <label>ROI/Conversion Rate</label>
+            </value>
+            <value>
+                <fullName>Lost Co-Marketer</fullName>
+                <default>false</default>
+                <label>Lost Co-Marketer</label>
+            </value>
+            <value>
+                <fullName>Moved Under Broker/Team Product</fullName>
+                <default>false</default>
+                <label>Moved Under Broker/Team Product</label>
+            </value>
+            <value>
+                <fullName>Reallocation</fullName>
+                <default>false</default>
+                <label>Reallocation</label>
+            </value>
+            <value>
+                <fullName>Temporary/Medical</fullName>
+                <default>false</default>
+                <label>Temporary/Medical</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Billing Disrupted - System Error</fullName>
+                <default>false</default>
+                <label>Billing Disrupted - System Error</label>
+            </value>
+            <value>
+                <fullName>Fix Order Error</fullName>
+                <default>false</default>
+                <label>Fix Order Error</label>
+            </value>
+            <value>
+                <fullName>Lead Volume - Under Delivery</fullName>
+                <default>false</default>
+                <label>Lead Volume - Under Delivery</label>
+            </value>
+            <value>
+                <fullName>Lead Quality - Low Value Listings</fullName>
+                <default>false</default>
+                <label>Lead Quality - Low Value Listings</label>
+            </value>
+            <value>
+                <fullName>Unhappy with Shared Leads</fullName>
+                <default>false</default>
+                <label>Unhappy with Shared Leads</label>
+            </value>
+            <value>
+                <fullName>Lead Quality - Non-Responsive</fullName>
+                <default>false</default>
+                <label>Lead Quality - Non-Responsive</label>
+            </value>
+            <value>
+                <fullName>Lead Quality - Duplicate Leads</fullName>
+                <default>false</default>
+                <label>Lead Quality - Duplicate Leads</label>
+            </value>
+            <value>
+                <fullName>Usability/Complexity</fullName>
+                <default>false</default>
+                <label>Usability/Complexity</label>
+            </value>
+            <value>
+                <fullName>Shared vs Not-Shared Leads</fullName>
+                <default>false</default>
+                <label>Shared vs Not-Shared Leads</label>
+            </value>
+            <value>
+                <fullName>Consolidated Billing Errors</fullName>
+                <default>false</default>
+                <label>Consolidated Billing Errors</label>
+            </value>
+            <value>
+                <fullName>Didn&apos;t Receive Training</fullName>
+                <default>false</default>
+                <label>Didn&apos;t Receive Training</label>
+            </value>
+            <value>
+                <fullName>MLS / IDX Down or Not Available</fullName>
+                <default>false</default>
+                <label>MLS / IDX Down or Not Available</label>
+            </value>
+            <value>
+                <fullName>Unattractive Market</fullName>
+                <default>false</default>
+                <label>Unattractive Market</label>
+            </value>
+            <value>
+                <fullName>Permanently</fullName>
+                <default>false</default>
+                <label>Permanently</label>
+            </value>
+            <value>
+                <fullName>Temporarily</fullName>
+                <default>false</default>
+                <label>Temporarily</label>
+            </value>
+            <value>
+                <fullName>Split Percentage Errors</fullName>
+                <default>false</default>
+                <label>Split Percentage Errors</label>
+            </value>
+            <value>
+                <fullName>Unauthorized Buyer</fullName>
+                <default>false</default>
+                <label>Unauthorized Buyer</label>
+            </value>
+            <value>
+                <fullName>Prefers Competitor</fullName>
+                <default>false</default>
+                <label>Prefers Competitor</label>
+            </value>
+            <value>
+                <fullName>Product Features</fullName>
+                <default>false</default>
+                <label>Product Features</label>
+            </value>
+            <value>
+                <fullName>No Active Listings</fullName>
+                <default>false</default>
+                <label>No Active Listings</label>
+            </value>
+            <value>
+                <fullName>Already Owns Same Product</fullName>
+                <default>false</default>
+                <label>Already Owns Same Product</label>
+            </value>
+            <value>
+                <fullName>Negative Brand Sentiment</fullName>
+                <default>false</default>
+                <label>Negative Brand Sentiment</label>
+            </value>
+            <value>
+                <fullName>Lack of Follow Up</fullName>
+                <default>false</default>
+                <label>Lack of Follow Up</label>
+            </value>
+            <value>
+                <fullName>Natural Disaster</fullName>
+                <default>false</default>
+                <label>Natural Disaster</label>
+            </value>
+            <value>
+                <fullName>Incorrect Market</fullName>
+                <default>false</default>
+                <label>Incorrect Market</label>
+            </value>
+            <value>
+                <fullName>Incorrect Account</fullName>
+                <default>false</default>
+                <label>Incorrect Account</label>
+            </value>
+            <value>
+                <fullName>Not Seeing Impressions</fullName>
+                <default>false</default>
+                <label>Not Seeing Impressions</label>
+            </value>
+            <value>
+                <fullName>Bundled w/ Cancelled CfB</fullName>
+                <default>false</default>
+                <label>Bundled w/ Cancelled CfB</label>
+            </value>
+            <value>
+                <fullName>Client Thinks Double Billed</fullName>
+                <default>false</default>
+                <label>Client Thinks Double Billed</label>
+            </value>
+            <value>
+                <fullName>Non-Responsive/Unknown</fullName>
+                <default>false</default>
+                <label>Non-Responsive/Unknown</label>
+            </value>
+            <value>
+                <fullName>Sunset Direct</fullName>
+                <default>false</default>
+                <label>Sunset Direct</label>
+            </value>
+            <value>
+                <fullName>Billing Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billing Issues</label>
+            </value>
+            <value>
+                <fullName>CPQVariable-TEST</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CPQVariable-TEST</label>
+            </value>
+            <value>
+                <fullName>Client Claims Terms Misrepresented</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Client Claims Terms Misrepresented</label>
+            </value>
+            <value>
+                <fullName>Contract Reduction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract Reduction</label>
+            </value>
+            <value>
+                <fullName>Customer Service issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Service issues</label>
+            </value>
+            <value>
+                <fullName>Improper expectations by AE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Improper expectations by AE</label>
+            </value>
+            <value>
+                <fullName>Lead Quality</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lead Quality</label>
+            </value>
+            <value>
+                <fullName>Leaving business</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Leaving business</label>
+            </value>
+            <value>
+                <fullName>License Quantity Adjustment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>License Quantity Adjustment</label>
+            </value>
+            <value>
+                <fullName>Migrated to OpCity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Migrated to OpCity</label>
+            </value>
+            <value>
+                <fullName>NAR/BBB/Legal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NAR/BBB/Legal</label>
+            </value>
+            <value>
+                <fullName>Non Responsive / Unknown</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non Responsive / Unknown</label>
+            </value>
+            <value>
+                <fullName>Non Responsive/Unknown</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non Responsive/Unknown</label>
+            </value>
+            <value>
+                <fullName>Oder Error/Billing Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oder Error/Billing Issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Refusal to Pay-Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refusal to Pay-Other</label>
+            </value>
+            <value>
+                <fullName>Refuses to Pay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refuses to Pay</label>
+            </value>
+            <value>
+                <fullName>Unauthorized Purchase or Renewal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unauthorized Purchase or Renewal</label>
+            </value>
+            <value>
+                <fullName>Useability/Complexity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Useability/Complexity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

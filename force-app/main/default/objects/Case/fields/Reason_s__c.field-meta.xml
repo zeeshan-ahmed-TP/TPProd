@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_s__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason(s)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non Responsive/Unknown/Other</fullName>
+                <default>false</default>
+                <label>Non Responsive/Unknown/Other</label>
+            </value>
+            <value>
+                <fullName>Unable to temporary suspend account or billing</fullName>
+                <default>false</default>
+                <label>Unable to temporary suspend account or billing</label>
+            </value>
+            <value>
+                <fullName>Cancelling due to Coronavirus (COVID-19)</fullName>
+                <default>false</default>
+                <label>Cancelling due to Coronavirus (COVID-19)</label>
+            </value>
+            <value>
+                <fullName>Receiving a lot of mobile home leads</fullName>
+                <default>false</default>
+                <label>Receiving a lot of mobile home leads</label>
+            </value>
+            <value>
+                <fullName>Low Value Leads/listing value of leads is too low</fullName>
+                <default>false</default>
+                <label>Low Value Leads/listing value of leads is too low</label>
+            </value>
+            <value>
+                <fullName>Low Lead Volume/receiving too few leads</fullName>
+                <default>false</default>
+                <label>Low Lead Volume/receiving too few leads</label>
+            </value>
+            <value>
+                <fullName>Unable to compete on shared leads</fullName>
+                <default>false</default>
+                <label>Unable to compete on shared leads</label>
+            </value>
+            <value>
+                <fullName>Too many parties have already contacted the lead</fullName>
+                <default>false</default>
+                <label>Too many parties have already contacted the lead</label>
+            </value>
+            <value>
+                <fullName>Too many agent leads being received</fullName>
+                <default>false</default>
+                <label>Too many agent leads being received</label>
+            </value>
+            <value>
+                <fullName>Has better success with competitor(s)</fullName>
+                <default>false</default>
+                <label>Has better success with competitor(s)</label>
+            </value>
+            <value>
+                <fullName>Leads are unreachable/non-responsive</fullName>
+                <default>false</default>
+                <label>Leads are unreachable/non-responsive</label>
+            </value>
+            <value>
+                <fullName>Duplicate Leads - getting too many duplicate leads</fullName>
+                <default>false</default>
+                <label>Duplicate Leads - getting too many duplicate leads</label>
+            </value>
+            <value>
+                <fullName>Their broker is providing them with leads</fullName>
+                <default>false</default>
+                <label>Their broker is providing them with leads</label>
+            </value>
+            <value>
+                <fullName>DSC set the wrong expectation</fullName>
+                <default>false</default>
+                <label>DSC set the wrong expectation</label>
+            </value>
+            <value>
+                <fullName>Buying on a different account</fullName>
+                <default>false</default>
+                <label>Buying on a different account</label>
+            </value>
+            <value>
+                <fullName>Lost agents/team members in the market</fullName>
+                <default>false</default>
+                <label>Lost agents/team members in the market</label>
+            </value>
+            <value>
+                <fullName>Price increased</fullName>
+                <default>false</default>
+                <label>Price increased</label>
+            </value>
+            <value>
+                <fullName>AE entered the wrong contract term</fullName>
+                <default>false</default>
+                <label>AE entered the wrong contract term</label>
+            </value>
+            <value>
+                <fullName>Set up issues</fullName>
+                <default>false</default>
+                <label>Set up issues</label>
+            </value>
+            <value>
+                <fullName>Leaving the business</fullName>
+                <default>false</default>
+                <label>Leaving the business</label>
+            </value>
+            <value>
+                <fullName>Relocating to another state</fullName>
+                <default>false</default>
+                <label>Relocating to another state</label>
+            </value>
+            <value>
+                <fullName>Over their budget - overextended</fullName>
+                <default>false</default>
+                <label>Over their budget - overextended</label>
+            </value>
+            <value>
+                <fullName>Lender no longer sees value</fullName>
+                <default>false</default>
+                <label>Lender no longer sees value</label>
+            </value>
+            <value>
+                <fullName>Lost lender contribution</fullName>
+                <default>false</default>
+                <label>Lost lender contribution</label>
+            </value>
+            <value>
+                <fullName>Sunset Direct</fullName>
+                <default>false</default>
+                <label>Sunset Direct</label>
+            </value>
+            <value>
+                <fullName>Sunset Indirect</fullName>
+                <default>false</default>
+                <label>Sunset Indirect</label>
+            </value>
+            <value>
+                <fullName>CPL too high</fullName>
+                <default>false</default>
+                <label>CPL too high</label>
+            </value>
+            <value>
+                <fullName>Bad lead data (fake emails, fake phone #, etc.)</fullName>
+                <default>false</default>
+                <label>Bad lead data (fake emails, fake phone #, etc.)</label>
+            </value>
+            <value>
+                <fullName>No followup system</fullName>
+                <default>false</default>
+                <label>No followup system</label>
+            </value>
+            <value>
+                <fullName>Not properly setup (CRM integration, etc.)</fullName>
+                <default>false</default>
+                <label>Not properly setup (CRM integration, etc.)</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t have enough listings</fullName>
+                <default>false</default>
+                <label>Don&apos;t have enough listings</label>
+            </value>
+            <value>
+                <fullName>Moving to a different account</fullName>
+                <default>false</default>
+                <label>Moving to a different account</label>
+            </value>
+            <value>
+                <fullName>Unhappy with zones</fullName>
+                <default>false</default>
+                <label>Unhappy with zones</label>
+            </value>
+            <value>
+                <fullName>Moving to competition</fullName>
+                <default>false</default>
+                <label>Moving to competition</label>
+            </value>
+            <value>
+                <fullName>Unable to claim live transfers</fullName>
+                <default>false</default>
+                <label>Unable to claim live transfers</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t see my ad on Facebook</fullName>
+                <default>false</default>
+                <label>Don&apos;t see my ad on Facebook</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t see my ad on Mobile</fullName>
+                <default>false</default>
+                <label>Don&apos;t see my ad on Mobile</label>
+            </value>
+            <value>
+                <fullName>Home seller could not find the ad</fullName>
+                <default>false</default>
+                <label>Home seller could not find the ad</label>
+            </value>
+            <value>
+                <fullName>The email form does not work</fullName>
+                <default>false</default>
+                <label>The email form does not work</label>
+            </value>
+            <value>
+                <fullName>Cannot market listings across multiple markets</fullName>
+                <default>false</default>
+                <label>Cannot market listings across multiple markets</label>
+            </value>
+            <value>
+                <fullName>Didn&apos;t receive the impressions I was expecting</fullName>
+                <default>false</default>
+                <label>Didn&apos;t receive the impressions I was expecting</label>
+            </value>
+            <value>
+                <fullName>Prefers Competitor or wants to advertise elsewhere</fullName>
+                <default>false</default>
+                <label>Prefers Competitor or wants to advertise elsewhere</label>
+            </value>
+            <value>
+                <fullName>Inadequate or inaccurate reporting</fullName>
+                <default>false</default>
+                <label>Inadequate or inaccurate reporting</label>
+            </value>
+            <value>
+                <fullName>Couldn&apos;t select my listings/Listings don&apos;t display</fullName>
+                <default>false</default>
+                <label>Couldn&apos;t select my listings/Listings don&apos;t display</label>
+            </value>
+            <value>
+                <fullName>Phone number is not displayed</fullName>
+                <default>false</default>
+                <label>Phone number is not displayed</label>
+            </value>
+            <value>
+                <fullName>clicks dont go where they intend (website/listing)</fullName>
+                <default>false</default>
+                <label>clicks dont go where they intend (website/listing)</label>
+            </value>
+            <value>
+                <fullName>I would like to display videos in the space</fullName>
+                <default>false</default>
+                <label>I would like to display videos in the space</label>
+            </value>
+            <value>
+                <fullName>Not user friendly/hard to setup,configure,manage</fullName>
+                <default>false</default>
+                <label>Not user friendly/hard to setup,configure,manage</label>
+            </value>
+            <value>
+                <fullName>Agent/Broker no longer works in that area</fullName>
+                <default>false</default>
+                <label>Agent/Broker no longer works in that area</label>
+            </value>
+            <value>
+                <fullName>Didn&apos;t help me generate more listings</fullName>
+                <default>false</default>
+                <label>Didn&apos;t help me generate more listings</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t have any listings to display</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t have any listings to display</label>
+            </value>
+            <value>
+                <fullName>It is too expensive</fullName>
+                <default>false</default>
+                <label>It is too expensive</label>
+            </value>
+            <value>
+                <fullName>Didn&apos;t receive any inquiries</fullName>
+                <default>false</default>
+                <label>Didn&apos;t receive any inquiries</label>
+            </value>
+            <value>
+                <fullName>Product Pricing</fullName>
+                <default>false</default>
+                <label>Product Pricing</label>
+            </value>
+            <value>
+                <fullName>Unable to temporarily suspend account/billing</fullName>
+                <default>false</default>
+                <label>Unable to temporarily suspend account/billing</label>
+            </value>
+            <value>
+                <fullName>Lead Quality - Non-Responsive</fullName>
+                <default>false</default>
+                <label>Lead Quality - Non-Responsive</label>
+            </value>
+            <value>
+                <fullName>Not Seeing Conversions</fullName>
+                <default>false</default>
+                <label>Not Seeing Conversions</label>
+            </value>
+            <value>
+                <fullName>Lead Quality - Low Value Listings</fullName>
+                <default>false</default>
+                <label>Lead Quality - Low Value Listings</label>
+            </value>
+            <value>
+                <fullName>Prefers Competitor</fullName>
+                <default>false</default>
+                <label>Prefers Competitor</label>
+            </value>
+            <value>
+                <fullName>Moved Under Broker/Team Product</fullName>
+                <default>false</default>
+                <label>Moved Under Broker/Team Product</label>
+            </value>
+            <value>
+                <fullName>Lead Quality - Duplicate Leads</fullName>
+                <default>false</default>
+                <label>Lead Quality - Duplicate Leads</label>
+            </value>
+            <value>
+                <fullName>Usability/Complexity</fullName>
+                <default>false</default>
+                <label>Usability/Complexity</label>
+            </value>
+            <value>
+                <fullName>No Active Listings</fullName>
+                <default>false</default>
+                <label>No Active Listings</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: 3rd party not supported</fullName>
+                <default>false</default>
+                <label>Non-Payment: 3rd party not supported</label>
+            </value>
+            <value>
+                <fullName>Non-payment: Doesn&apos;t like look</fullName>
+                <default>false</default>
+                <label>Non-payment: Doesn&apos;t like look</label>
+            </value>
+            <value>
+                <fullName>Non-payment: Downtime/ technical issues</fullName>
+                <default>false</default>
+                <label>Non-payment: Downtime/ technical issues</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: Lack of ROI</fullName>
+                <default>false</default>
+                <label>Non-Payment: Lack of ROI</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: Missing functionality</fullName>
+                <default>false</default>
+                <label>Non-Payment: Missing functionality</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: MLS Down</fullName>
+                <default>false</default>
+                <label>Non-Payment: MLS Down</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: MLS not supported</fullName>
+                <default>false</default>
+                <label>Non-Payment: MLS not supported</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: Outdated</fullName>
+                <default>false</default>
+                <label>Non-Payment: Outdated</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: Price</fullName>
+                <default>false</default>
+                <label>Non-Payment: Price</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: Too complex</fullName>
+                <default>false</default>
+                <label>Non-Payment: Too complex</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: Unsubscribe/Spam Issues</fullName>
+                <default>false</default>
+                <label>Non-Payment: Unsubscribe/Spam Issues</label>
+            </value>
+            <value>
+                <fullName>Non-Payment: Non-Responsive/Unknown</fullName>
+                <default>false</default>
+                <label>Non-Payment: Non-Responsive/Unknown</label>
+            </value>
+            <value>
+                <fullName>PPP Order Error</fullName>
+                <default>false</default>
+                <label>PPP Order Error</label>
+            </value>
+            <value>
+                <fullName>Over budget</fullName>
+                <default>false</default>
+                <label>Over budget</label>
+            </value>
+            <value>
+                <fullName>Overbudget/Overextended</fullName>
+                <default>false</default>
+                <label>Overbudget/Overextended</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

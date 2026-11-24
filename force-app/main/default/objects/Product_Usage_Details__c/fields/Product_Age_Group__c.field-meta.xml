@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Age_Group__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Product_Age_In_Days__c&lt;=30, &quot;First 30 Days&quot;, 
+ IF( Product_Age_In_Days__c&lt;=365, &quot;First Year&quot;,
+  IF( Product_Age_In_Days__c&lt;=365*3, &quot;1-3 Years&quot;,
+   IF( Product_Age_In_Days__c&lt;=365*5, &quot;3-5 Years&quot;,
+    IF( Product_Age_In_Days__c&lt;=365*10, &quot;5-10 Years&quot;,
+     IF( Product_Age_In_Days__c&gt;365*10, &quot;10+ Years&quot;,&quot;Other&quot;))))) 
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product Age Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

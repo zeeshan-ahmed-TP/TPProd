@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DaScoopComposer__New_Domain_Block_List_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates if the feature is enabled for a profile</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the feature is enabled for a profile</inlineHelpText>
+    <label>New_Domain_Block_List_Enabled</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

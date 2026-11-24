@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1st Attempt</fullName>
+        <default>false</default>
+        <label>1st Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>2nd Attempt</fullName>
+        <default>false</default>
+        <label>2nd Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>3rd Attempt</fullName>
+        <default>false</default>
+        <label>3rd Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>4th Attempt</fullName>
+        <default>false</default>
+        <label>4th Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>5th Attempt</fullName>
+        <default>false</default>
+        <label>5th Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>6th Attempt</fullName>
+        <default>false</default>
+        <label>6th Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>7th Attempt</fullName>
+        <default>false</default>
+        <label>7th Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>8th Attempt</fullName>
+        <default>false</default>
+        <label>8th Attempt</label>
+    </customValue>
+    <customValue>
+        <fullName>Callback</fullName>
+        <default>false</default>
+        <label>Callback</label>
+    </customValue>
+    <customValue>
+        <fullName>Demo&apos;d</fullName>
+        <default>false</default>
+        <label>Demo&apos;d</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery Stage</fullName>
+        <default>false</default>
+        <label>Discovery Stage</label>
+    </customValue>
+    <customValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+    </customValue>
+    <customValue>
+        <fullName>Open Stage</fullName>
+        <default>false</default>
+        <label>Open Stage</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - Do Not Call</fullName>
+        <default>false</default>
+        <label>Unqualified - Do Not Call</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - Duplicate/Current Client</fullName>
+        <default>false</default>
+        <label>Unqualified - Duplicate/Current Client</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - No Contact</fullName>
+        <default>false</default>
+        <label>Unqualified - No Contact</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - Not Interested</fullName>
+        <default>false</default>
+        <label>Unqualified - Not Interested</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - International</fullName>
+        <default>false</default>
+        <label>Unqualified - International</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - Invalid</fullName>
+        <default>false</default>
+        <label>Unqualified - Invalid</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - No Board</fullName>
+        <default>false</default>
+        <label>Unqualified - No Board</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - Not an Agent</fullName>
+        <default>false</default>
+        <label>Unqualified - Not an Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>Unqualified - Not Now</fullName>
+        <default>false</default>
+        <label>Unqualified - Not Now</label>
+    </customValue>
+    <masterLabel>Last Sales Call Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

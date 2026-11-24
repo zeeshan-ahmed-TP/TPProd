@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nature__c</fullName>
+    <description>The ProSoft Service team will use this to select the Nature of the request.</description>
+    <externalId>false</externalId>
+    <label>Nature</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>How-to</fullName>
+                <default>false</default>
+                <label>How-to</label>
+            </value>
+            <value>
+                <fullName>Tech Issue</fullName>
+                <default>false</default>
+                <label>Tech Issue</label>
+            </value>
+            <value>
+                <fullName>Program Suggestion</fullName>
+                <default>false</default>
+                <label>Program Suggestion</label>
+            </value>
+            <value>
+                <fullName>Account / Billing</fullName>
+                <default>false</default>
+                <label>Account / Billing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Pipeline_AEs</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Docusign_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_DAYS:30</value>
+    </filters>
+    <filters>
+        <field>SBQQ__Renewal__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Campaign_12sg__c</field>
+        <operation>notEqual</operation>
+        <value>Customer Upsell Opportunities</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>amendment,renewal,test,trial</value>
+    </filters>
+    <filters>
+        <field>Record_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Zurple</value>
+    </filters>
+    <label>Opportunity Pipeline - AEs</label>
+    <sharedTo>
+        <group>Sales_Manager</group>
+    </sharedTo>
+</ListView>

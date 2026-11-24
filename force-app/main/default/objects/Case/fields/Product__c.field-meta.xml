@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <description>The ProSoft Service team will use this to select the Nature of the request.</description>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Top Producer 8i</fullName>
+                <default>false</default>
+                <label>Top Producer 8i</label>
+            </value>
+            <value>
+                <fullName>Top Producer X</fullName>
+                <default>false</default>
+                <label>Top Producer X</label>
+            </value>
+            <value>
+                <fullName>Market Snapshot</fullName>
+                <default>false</default>
+                <label>Market Snapshot</label>
+            </value>
+            <value>
+                <fullName>Five Street</fullName>
+                <default>false</default>
+                <label>Five Street</label>
+            </value>
+            <value>
+                <fullName>Setup Fee</fullName>
+                <default>false</default>
+                <label>Setup Fee</label>
+            </value>
+            <value>
+                <fullName>Top Producer Website</fullName>
+                <default>false</default>
+                <label>Top Producer Website</label>
+            </value>
+            <value>
+                <fullName>Social Connect</fullName>
+                <default>false</default>
+                <label>Social Connect</label>
+            </value>
+            <value>
+                <fullName>Smart Targeting</fullName>
+                <default>false</default>
+                <label>Smart Targeting</label>
+            </value>
+            <value>
+                <fullName>HomeIntel</fullName>
+                <default>false</default>
+                <label>HomeIntel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

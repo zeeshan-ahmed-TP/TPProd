@@ -1,0 +1,1526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HomeIntel</fullName>
+    <active>true</active>
+    <description>Used for HomeIntel Hub</description>
+    <label>HomeIntel</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Cold Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email - Nurture Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email or Call to Zurple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LiveChat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Adwords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Agent Advice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Agent Publishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Bing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - DotDash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Fit Small Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - HousingWire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Mktg Interest - Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Real Estate Bees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Real Estate Spice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Small Biz Genius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - The Close</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - The Close Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TNT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web - Blog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web - Mktg Interest - Download</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web - Popup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web - Zurple%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Sub_Type__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Prefrence__c</picklist>
+        <values>
+            <fullName>Arrears-CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrears-Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC-Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice-CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice-Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice-Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPC-Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPC-Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RNP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_State__c</picklist>
+        <values>
+            <fullName>AB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Group__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top Producer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DaScoopComposer__Account_Tags__c</picklist>
+        <values>
+            <fullName>Churned Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cur%2E Effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting%2C no Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Untouched</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DaScoopComposer__Engagement_Status__c</picklist>
+        <values>
+            <fullName>No Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recent Engagement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Follow_up_Status__c</picklist>
+        <values>
+            <fullName>Account Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Phone Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contacted - Callback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified - BANT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up Scheduled- Pitched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up Scheduled- no Pitch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitched%2F Disqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sold %2F Sale Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spoke to no pitch %2FDisqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spoke to%2FDisqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waitlisted - Pre Auth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waitlisted - Warm%2FHot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waitlisted%2FPreAuth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Franchise_Type__c</picklist>
+        <values>
+            <fullName>Berkshire Hathaway Fox %26 Roach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Berkshire Hathaway HomeServices %28BHHS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Century 21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coldwell Banker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ERA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXP Realty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keller Williams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE%2FMAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Royal LePage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sotheby%27s</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HV_Provisioning_Status__c</picklist>
+        <values>
+            <fullName>Escalated to Dev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HV_Waiting_on_Sales__c</picklist>
+        <values>
+            <fullName>CC Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Updated Docusign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Missed Promo Submission</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InquiryType__c</picklist>
+        <values>
+            <fullName>Dummy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Last_sales_Call_Status__c</picklist>
+        <values>
+            <fullName>1st Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4th Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5th Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6th Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7th Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8th Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Callback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo%27d</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discovery Stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Stage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Do Not Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Duplicate%2FCurrent Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - No Board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - No Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Not Now</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified - Not an Agent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource__c</picklist>
+        <values>
+            <fullName>Dummy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NET__c</picklist>
+        <values>
+            <fullName>NET 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NET 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Onboarding_Call_Attempt__c</picklist>
+        <values>
+            <fullName>1st Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Onboarding_Type__c</picklist>
+        <values>
+            <fullName>Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concierge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Concierge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Type__c</picklist>
+        <values>
+            <fullName>Cheque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Phone__c</picklist>
+        <values>
+            <fullName>Home Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Inquiry_Type_Accounts__c</picklist>
+        <values>
+            <fullName>Lead Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Inquiry %28Free Trial%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating__c</picklist>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Care Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White Glove</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Partner__c</picklist>
+        <values>
+            <fullName>Agent Publishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEShop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fits Small Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeff Lobb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaplan Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mainstreet Organization of Realtors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Momentum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLD%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TheClose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Winback 2024</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reject_reason__c</picklist>
+        <values>
+            <fullName>Already Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Contact Info %28Phone%2FE-Mail%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Timing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate %2F Test Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MLS Not Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Feature%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a Realtor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefers Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Connect %28After 20 attempts%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__CoTerminationEvent__c</picklist>
+        <values>
+            <fullName>Add-on</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ContractCoTermination__c</picklist>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Prompt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalModel__c</picklist>
+        <values>
+            <fullName>Asset Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Based</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalPricingMethod__c</picklist>
+        <values>
+            <fullName>List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Uplift</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__TaxExempt__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SC_Provisioning_Status__c</picklist>
+        <values>
+            <fullName>Escalated to Dev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SC_Waiting_on_Sales__c</picklist>
+        <values>
+            <fullName>CC Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Updated Docusign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Missed Promo Submission</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SMS_opt_in_Acc__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing Shutdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-Admin - Active</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Suspension_Status__c</picklist>
+        <values>
+            <fullName>Paused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Resume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Suspend</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TimeZone__c</picklist>
+        <values>
+            <fullName>-10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>-9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>User_Licensing_Status__c</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulfilled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Probation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VIP_Type__c</picklist>
+        <values>
+            <fullName>Former Top 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 100 %282024%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 100 Child %282024%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leadassist__Use_Round_Robin__c</picklist>
+        <values>
+            <fullName>ASSIGNED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FALSE</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>NOMATCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUEUED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRUE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

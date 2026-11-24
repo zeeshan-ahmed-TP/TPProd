@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TP_Product_Ownership</fullName>
+    <fields>Product_Status_CRM__c</fields>
+    <fields>Product_Status_HomeIntel__c</fields>
+    <fields>Product_Status_SC__c</fields>
+    <label>TP Product Ownership</label>
+</CompactLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>Check</name>
+        <label>Check</label>
+        <locationX>776</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Top_Producre</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.blng__PaymentBatch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Batch 1</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.blng__PaymentBatch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Batch 3</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.blng__PaymentBatch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Batch 4</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Payment_Batch</targetReference>
+            </connector>
+            <label>Top Producre</label>
+        </rules>
+        <rules>
+            <name>Zurple_failed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.blng__PaymentBatch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Zurple Batch</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Zurple_Payment_Batch_on_Invoice</targetReference>
+            </connector>
+            <label>Zurple failed</label>
+        </rules>
+        <rules>
+            <name>Torchx_failed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.blng__PaymentBatch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TorchX Batch</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Torchx_Payment_Batch_on_Invoice</targetReference>
+            </connector>
+            <label>Torchx failed</label>
+        </rules>
+        <rules>
+            <name>Z57_failed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.blng__PaymentBatch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Z57 Batch</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_z57_Payment_Batch_on_Invoice</targetReference>
+            </connector>
+            <label>Z57 failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Payment_Batch</name>
+        <label>Check Payment Batch</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Update_Payment_Batch_on_Invoice</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Ready for Write-Off</defaultConnectorLabel>
+        <rules>
+            <name>Ready_for_write_off</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.blng__PaymentBatch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Batch 4</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Failed_Payment_Transactions__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>4.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.blng__DueDate__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Past30Days</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Write_off_Batch_on_Invoice</targetReference>
+            </connector>
+            <label>Ready for write-off</label>
+        </rules>
+    </decisions>
+    <description>Update Payment Batch to Batch 4 IF Two payment Transactions Failed on an Invoice.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Past30Days</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() - 30</expression>
+    </formulas>
+    <interviewLabel>Update Payment Batch on Invoice {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Payment Batch on Invoice</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>If two transactions failed on invoice, then move it to Batch 4 to process it weekly</description>
+        <name>Update_Payment_Batch_on_Invoice</name>
+        <label>Update Payment Batch on Invoice</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>blng__PaymentBatch__c</field>
+            <value>
+                <stringValue>Batch 4</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If two transactions failed on invoice, then move it to Batch 4 to process it weekly</description>
+        <name>Update_Torchx_Payment_Batch_on_Invoice</name>
+        <label>Update Torchx Payment Batch on Invoice</label>
+        <locationX>842</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>blng__PaymentBatch__c</field>
+            <value>
+                <stringValue>TorchX Batch 4</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Write_off_Batch_on_Invoice</name>
+        <label>Update Write-off Batch on Invoice</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>blng__PaymentBatch__c</field>
+            <value>
+                <stringValue>Batch 5</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If two transactions failed on invoice, then move it to Batch 4 to process it weekly</description>
+        <name>Update_z57_Payment_Batch_on_Invoice</name>
+        <label>Update Z57 Payment Batch on Invoice</label>
+        <locationX>1106</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>blng__PaymentBatch__c</field>
+            <value>
+                <stringValue>Z57 Batch 4</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If two transactions failed on invoice, then move it to Batch 4 to process it weekly</description>
+        <name>Update_Zurple_Payment_Batch_on_Invoice</name>
+        <label>Update Zurple Payment Batch on Invoice</label>
+        <locationX>578</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>blng__PaymentBatch__c</field>
+            <value>
+                <stringValue>Zurple Batch 4</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2 OR 9 OR 6 OR 7 OR 8) AND 3 AND 4 AND 5</filterLogic>
+        <filters>
+            <field>blng__PaymentBatch__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Batch 1</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>blng__PaymentBatch__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Batch 3</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>blng__Balance__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Successful_Payment_Transactions__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Failed_Payment_Transactions__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>blng__PaymentBatch__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Zurple Batch</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>blng__PaymentBatch__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TorchX Batch</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>blng__PaymentBatch__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Z57 Batch</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>blng__PaymentBatch__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Batch 4</stringValue>
+            </value>
+        </filters>
+        <object>blng__Invoice__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

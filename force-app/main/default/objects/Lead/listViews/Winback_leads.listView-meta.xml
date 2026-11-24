@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Winback_leads</fullName>
+    <booleanFilter>1 AND 4 AND (2 OR 3)</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Marketing_Contact_Source__c</field>
+        <operation>contains</operation>
+        <value>winback</value>
+    </filters>
+    <filters>
+        <field>Time_Last_Seen__c</field>
+        <operation>greaterThan</operation>
+        <value>5/29/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Latest_Source_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>5/29/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Lifecycle_Stage__c</field>
+        <operation>equals</operation>
+        <value>Winback</value>
+    </filters>
+    <label>Winback leads</label>
+    <sharedTo>
+        <group>Sales_Ops</group>
+    </sharedTo>
+</ListView>

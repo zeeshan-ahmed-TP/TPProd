@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MS_Upsell_ON</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>Last_Call_Date__c</columns>
+    <columns>Call_back_date__c</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Attempting to Connect</value>
+    </filters>
+    <filters>
+        <field>Outbound_Campaign__c</field>
+        <operation>equals</operation>
+        <value>MS Upsell</value>
+    </filters>
+    <label>MS Upsell</label>
+</ListView>

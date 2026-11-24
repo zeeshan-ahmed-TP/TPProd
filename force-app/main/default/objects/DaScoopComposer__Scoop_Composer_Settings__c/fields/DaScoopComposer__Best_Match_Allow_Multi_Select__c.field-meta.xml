@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DaScoopComposer__Best_Match_Allow_Multi_Select__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Controls whether you want related to records can be multi-selected when performing a best match</inlineHelpText>
+    <label>Allow Best Match Multi Select</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

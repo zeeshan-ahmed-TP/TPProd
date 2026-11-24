@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RDC_Retention_Offer__c</fullName>
+    <externalId>false</externalId>
+    <label>RDC Retention Offer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amend term</fullName>
+                <default>false</default>
+                <label>Amend term</label>
+            </value>
+            <value>
+                <fullName>Reduction of slots</fullName>
+                <default>false</default>
+                <label>Reduction of slots</label>
+            </value>
+            <value>
+                <fullName>Flex to Fast/Fast to Flex Amendment</fullName>
+                <default>false</default>
+                <label>Flex to Fast/Fast to Flex Amendment</label>
+            </value>
+            <value>
+                <fullName>Reallocation or waitlist</fullName>
+                <default>false</default>
+                <label>Reallocation or waitlist</label>
+            </value>
+            <value>
+                <fullName>Stale pricing adjustment</fullName>
+                <default>false</default>
+                <label>Stale pricing adjustment</label>
+            </value>
+            <value>
+                <fullName>20% off</fullName>
+                <default>false</default>
+                <label>20% off</label>
+            </value>
+            <value>
+                <fullName>Buyout (45% fee)</fullName>
+                <default>false</default>
+                <label>Buyout (45% fee)</label>
+            </value>
+            <value>
+                <fullName>Make good (free slot)</fullName>
+                <default>false</default>
+                <label>Make good (free slot)</label>
+            </value>
+            <value>
+                <fullName>Payment Plan - collections only</fullName>
+                <default>false</default>
+                <label>Payment Plan - collections only</label>
+            </value>
+            <value>
+                <fullName>Credited extension</fullName>
+                <default>false</default>
+                <label>Credited extension</label>
+            </value>
+            <value>
+                <fullName>Approved account credit</fullName>
+                <default>false</default>
+                <label>Approved account credit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

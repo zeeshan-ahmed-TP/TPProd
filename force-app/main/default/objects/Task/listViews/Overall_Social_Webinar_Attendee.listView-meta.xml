@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Social_Webinar_Attendee</fullName>
+    <columns>SUBJECT</columns>
+    <columns>WHO_NAME</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>DUE_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>PRIORITY</columns>
+    <columns>STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SUBJECT</field>
+        <operation>equals</operation>
+        <value>Attended webinar Social Media Lead Generation Ideas</value>
+    </filters>
+    <label>Overall Social Webinar Attendee</label>
+</ListView>

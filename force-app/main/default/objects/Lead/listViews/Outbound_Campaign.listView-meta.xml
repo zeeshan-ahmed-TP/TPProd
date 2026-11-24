@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_Campaign</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Last_Call_Date__c</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Call_back_date__c</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Other Campaigns,TNT,Direct Traffic,Paid Search,Paid Social,Other Campaign,Organic Social,Email Marketing,Outbound Campaign,Inbound Call</value>
+    </filters>
+    <filters>
+        <field>Outbound_Campaign__c</field>
+        <operation>equals</operation>
+        <value>Recycled Leads</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Attempting to Connect,Connected,Pitch - Booked,Pitch - Presented</value>
+    </filters>
+    <label>Outbound Campaign - Recycled Leads</label>
+    <sharedTo>
+        <group>Account_Executives</group>
+        <group>Sales_Manager</group>
+    </sharedTo>
+</ListView>

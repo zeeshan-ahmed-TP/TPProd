@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MainAccountOwnerMustHaveAnEmail</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(Email) &amp;&amp;  Main_Account_Owner__c = true</errorConditionFormula>
+    <errorDisplayField>Email</errorDisplayField>
+    <errorMessage>Main Account Owner contact must have a valid email.</errorMessage>
+</ValidationRule>

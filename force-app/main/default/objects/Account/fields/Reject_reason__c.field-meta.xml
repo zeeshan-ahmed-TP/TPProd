@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reject_reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Reject reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Missing Feature(s)</fullName>
+                <default>false</default>
+                <label>Missing Feature(s)</label>
+            </value>
+            <value>
+                <fullName>Prefers Competitor</fullName>
+                <default>false</default>
+                <label>Prefers Competitor</label>
+            </value>
+            <value>
+                <fullName>Bad Timing</fullName>
+                <default>false</default>
+                <label>Bad Timing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Bad Contact Info (Phone/E-Mail)</fullName>
+                <default>false</default>
+                <label>Bad Contact Info (Phone/E-Mail)</label>
+            </value>
+            <value>
+                <fullName>Not a Realtor</fullName>
+                <default>false</default>
+                <label>Not a Realtor</label>
+            </value>
+            <value>
+                <fullName>Duplicate / Test Lead</fullName>
+                <default>false</default>
+                <label>Duplicate / Test Lead</label>
+            </value>
+            <value>
+                <fullName>Already Customer</fullName>
+                <default>false</default>
+                <label>Already Customer</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>MLS Not Available</fullName>
+                <default>false</default>
+                <label>MLS Not Available</label>
+            </value>
+            <value>
+                <fullName>Unable to Connect (After 20 attempts)</fullName>
+                <default>false</default>
+                <label>Unable to Connect (After 20 attempts)</label>
+            </value>
+            <value>
+                <fullName>Contract Term</fullName>
+                <default>false</default>
+                <label>Contract Term</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

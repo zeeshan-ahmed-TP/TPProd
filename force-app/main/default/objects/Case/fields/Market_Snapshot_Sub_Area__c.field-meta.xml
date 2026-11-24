@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Snapshot_Sub_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Market Snapshot Sub Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Agent Profile Issues</fullName>
+                <default>false</default>
+                <label>Agent Profile Issues</label>
+            </value>
+            <value>
+                <fullName>Auto Fulfillment</fullName>
+                <default>false</default>
+                <label>Auto Fulfillment</label>
+            </value>
+            <value>
+                <fullName>Automated Marketing</fullName>
+                <default>false</default>
+                <label>Automated Marketing</label>
+            </value>
+            <value>
+                <fullName>Cirrus migration</fullName>
+                <default>false</default>
+                <label>Cirrus migration</label>
+            </value>
+            <value>
+                <fullName>Create Snapshot</fullName>
+                <default>false</default>
+                <label>Create Snapshot</label>
+            </value>
+            <value>
+                <fullName>Email Delivery Issues</fullName>
+                <default>false</default>
+                <label>Email Delivery Issues</label>
+            </value>
+            <value>
+                <fullName>Failed MS</fullName>
+                <default>false</default>
+                <label>Failed MS</label>
+            </value>
+            <value>
+                <fullName>Geocoding/Mapping</fullName>
+                <default>false</default>
+                <label>Geocoding/Mapping</label>
+            </value>
+            <value>
+                <fullName>Hestia Update</fullName>
+                <default>false</default>
+                <label>Hestia Update</label>
+            </value>
+            <value>
+                <fullName>Incorrect Listing Status</fullName>
+                <default>false</default>
+                <label>Incorrect Listing Status</label>
+            </value>
+            <value>
+                <fullName>Incorrect Mapping</fullName>
+                <default>false</default>
+                <label>Incorrect Mapping</label>
+            </value>
+            <value>
+                <fullName>Incorrect MS Data</fullName>
+                <default>false</default>
+                <label>Incorrect MS Data</label>
+            </value>
+            <value>
+                <fullName>Incorrect MS Statistics</fullName>
+                <default>false</default>
+                <label>Incorrect MS Statistics</label>
+            </value>
+            <value>
+                <fullName>Incorrect Results</fullName>
+                <default>false</default>
+                <label>Incorrect Results</label>
+            </value>
+            <value>
+                <fullName>Inquiry Report</fullName>
+                <default>false</default>
+                <label>Inquiry Report</label>
+            </value>
+            <value>
+                <fullName>Landing Pages</fullName>
+                <default>false</default>
+                <label>Landing Pages</label>
+            </value>
+            <value>
+                <fullName>Lead Capture Forms</fullName>
+                <default>false</default>
+                <label>Lead Capture Forms</label>
+            </value>
+            <value>
+                <fullName>Listing Alerts</fullName>
+                <default>false</default>
+                <label>Listing Alerts</label>
+            </value>
+            <value>
+                <fullName>Listings Not matching Search Criteria</fullName>
+                <default>false</default>
+                <label>Listings Not matching Search Criteria</label>
+            </value>
+            <value>
+                <fullName>Market Snapshot failures</fullName>
+                <default>false</default>
+                <label>Market Snapshot failures</label>
+            </value>
+            <value>
+                <fullName>Missing Listings</fullName>
+                <default>false</default>
+                <label>Missing Listings</label>
+            </value>
+            <value>
+                <fullName>MS Failing</fullName>
+                <default>false</default>
+                <label>MS Failing</label>
+            </value>
+            <value>
+                <fullName>MS Missing Photos</fullName>
+                <default>false</default>
+                <label>MS Missing Photos</label>
+            </value>
+            <value>
+                <fullName>MS Status Report</fullName>
+                <default>false</default>
+                <label>MS Status Report</label>
+            </value>
+            <value>
+                <fullName>Performance Report</fullName>
+                <default>false</default>
+                <label>Performance Report</label>
+            </value>
+            <value>
+                <fullName>Pictures</fullName>
+                <default>false</default>
+                <label>Pictures</label>
+            </value>
+            <value>
+                <fullName>Preview Listings</fullName>
+                <default>false</default>
+                <label>Preview Listings</label>
+            </value>
+            <value>
+                <fullName>Program Suggestion</fullName>
+                <default>false</default>
+                <label>Program Suggestion</label>
+            </value>
+            <value>
+                <fullName>Search Criteria</fullName>
+                <default>false</default>
+                <label>Search Criteria</label>
+            </value>
+            <value>
+                <fullName>Setup</fullName>
+                <default>false</default>
+                <label>Setup</label>
+            </value>
+            <value>
+                <fullName>Setup &gt; Agent Profile</fullName>
+                <default>false</default>
+                <label>Setup &gt; Agent Profile</label>
+            </value>
+            <value>
+                <fullName>Setup &gt; Area Management</fullName>
+                <default>false</default>
+                <label>Setup &gt; Area Management</label>
+            </value>
+            <value>
+                <fullName>Setup &gt; MLS Setup</fullName>
+                <default>false</default>
+                <label>Setup &gt; MLS Setup</label>
+            </value>
+            <value>
+                <fullName>Setup &gt; MS Settings</fullName>
+                <default>false</default>
+                <label>Setup &gt; MS Settings</label>
+            </value>
+            <value>
+                <fullName>Setup &gt; TP 7i/8i account</fullName>
+                <default>false</default>
+                <label>Setup &gt; TP 7i/8i account</label>
+            </value>
+            <value>
+                <fullName>Subscription Issues</fullName>
+                <default>false</default>
+                <label>Subscription Issues</label>
+            </value>
+            <value>
+                <fullName>Survey</fullName>
+                <default>false</default>
+                <label>Survey</label>
+            </value>
+            <value>
+                <fullName>Timeout/Slowness</fullName>
+                <default>false</default>
+                <label>Timeout/Slowness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

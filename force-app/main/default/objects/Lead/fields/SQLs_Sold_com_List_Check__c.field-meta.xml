@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SQLs_Sold_com_List_Check__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(
+   Marketing_Contact_Source__c  = &quot;SOLD.com New Agent User - MQL&quot;,
+  AND(
+    NOT(ISPICKVAL( Lifecycle_Stage__c , &quot;Marketing Qualified Lead&quot;)),
+    ISBLANK(TEXT(Outbound_Campaign__c)),
+    OR(
+      ISPICKVAL(Status, &quot;New&quot;),
+      ISPICKVAL(Status, &quot;Attempting to Connect&quot;),
+      ISPICKVAL(Status, &quot;Connected&quot;),
+      ISPICKVAL(Status, &quot;Pitch - Presented&quot;),
+      ISPICKVAL(Status, &quot;Quoted&quot;)
+      
+    )
+  )
+)</formula>
+    <label>SQLs + Sold.com List Check</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

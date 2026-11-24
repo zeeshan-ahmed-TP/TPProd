@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Survey</name>
+        <label>Send Survey</label>
+        <locationX>242</locationX>
+        <locationY>492</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Update_Case_Set_Survey_Sent_to_True</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Get_Account.Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>fSenderEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>cSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>ttEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>logEmailOnSend</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>addThreadingTokenToBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <constants>
+        <name>cSubject</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Customer Satisfaction Survey</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Is_Email_on_Account_Given</name>
+        <label>Is Email on Account Given?</label>
+        <locationX>374</locationX>
+        <locationY>384</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Given</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account.Email__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Survey</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>fSenderEmail</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.Account.RecordType.DeveloperName} = &quot;Agent&quot; , &quot;support@topproducer.com&quot;, 
+ IF({!$Record.Account.RecordType.DeveloperName} = &quot;Zurple&quot; , &quot;no-reply@zurple.com&quot; ,&quot;support@topproducer.com&quot;)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fSuyrveyId</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.Account.RecordType.DeveloperName} = &quot;Agent&quot; , &quot;a5wOL000000eWcHYAU&quot;, 
+ IF({!$Record.Account.RecordType.DeveloperName} = &quot;Zurple&quot; , &quot;a5wOL000000ejfxYAA&quot; ,&quot;&quot;)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fTeamName</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.Account.RecordType.DeveloperName} = &quot;Agent&quot; , &quot;Top Producer CS Team&quot;, 
+ IF({!$Record.Account.RecordType.DeveloperName} = &quot;Zurple&quot; , &quot;Zurple CS Team&quot; ,&quot;Top Producer CS Team&quot;)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fURL</name>
+        <dataType>String</dataType>
+        <expression>&quot;https://topproducersoftwarecorp.my.salesforce-sites.com/survey/TakeSurvey?id=&quot; &amp; {!fSuyrveyId} &amp; &quot;&amp;cId=&quot; &amp; {!$Record.ContactId} &amp; &quot;&amp;caId=&quot; &amp; {!$Record.Id}</expression>
+    </formulas>
+    <interviewLabel>Case - Send Survey on Case Closure {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - Send Survey on Case Closure</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account</name>
+        <label>Get Account</label>
+        <locationX>374</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Email_on_Account_Given</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case_Set_Survey_Sent_to_True</name>
+        <label>Update Case Set Survey Sent to True</label>
+        <locationX>242</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Case_Closure_Survey_Sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(
+ OR({!$Record.Account.RecordType.DeveloperName} = &quot;Agent&quot;, {!$Record.Account.RecordType.DeveloperName} = &quot;Zurple&quot;),
+ OR({!$Record.RecordType.DeveloperName} = &quot;Tier_1&quot;, {!$Record.RecordType.DeveloperName} = &quot;Tier_2&quot;),
+ NOT(INCLUDES({!$Record.Area__c}, &quot;No Survey&quot;)) , NOT({!$Record.Case_Closure_Survey_Sent__c}), TEXT({!$Record.Status}) = &quot;Closed&quot;,
+ NOT(ISBLANK({!$Record.AccountId}))
+)</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Schedule_After_3_Hours</name>
+            <connector>
+                <targetReference>Get_Account</targetReference>
+            </connector>
+            <label>Schedule After 3 Hours</label>
+            <offsetNumber>3</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>ClosedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>ttEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!Get_Account.Name},
+
+Your feedback is essential to help us improve and align our services with your needs. Please take a moment to complete the survey, your responses are confidential, and your input helps shape our future.
+
+{!fURL}
+
+Best regards,
+{!fTeamName}</text>
+    </textTemplates>
+</Flow>

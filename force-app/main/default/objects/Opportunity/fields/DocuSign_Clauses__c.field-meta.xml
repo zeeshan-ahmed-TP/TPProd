@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSign_Clauses__c</fullName>
+    <externalId>false</externalId>
+    <label>DocuSign Clauses</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lead Volume Guarantee</fullName>
+                <default>false</default>
+                <label>Lead Volume Guarantee</label>
+            </value>
+            <value>
+                <fullName>Sold.com TP Pro Promo</fullName>
+                <default>false</default>
+                <label>Sold.com TP Pro Promo</label>
+            </value>
+            <value>
+                <fullName>25% Discount - First Two Months</fullName>
+                <default>false</default>
+                <label>25% Discount - First Two Months</label>
+            </value>
+            <value>
+                <fullName>Setup Fee Waived</fullName>
+                <default>false</default>
+                <label>Setup Fee Waived</label>
+            </value>
+            <value>
+                <fullName>25% Discount - First Three Months</fullName>
+                <default>false</default>
+                <label>25% Discount - First Three Months</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

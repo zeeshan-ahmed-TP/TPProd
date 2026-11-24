@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__Custom_Email_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the Unique Template Name of your custom Classic Email Template here.  The template must be saved in the SuperRoundRobin folder.  If you use merge fields in this template, make sure they correspond to the object named in the &apos;Object Type&apos; field above. i.e. if this is a MatchGroup for the Account object, a template that uses Lead merge fields won&apos;t work properly.</inlineHelpText>
+    <label>Custom Email Template</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_issue_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>INCLUDES(  Area__c , &quot;Service issue&quot;)  &amp;&amp;   ISBLANK( Service_Issue_Sub_Area__c )</errorConditionFormula>
+    <errorDisplayField>Service_Issue_Sub_Area__c</errorDisplayField>
+    <errorMessage>Please fill in the Service issue Sub-Area field.</errorMessage>
+</ValidationRule>

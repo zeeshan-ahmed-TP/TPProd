@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HomeIntel_Sub_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>HomeIntel Sub Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incorrect Valuation</fullName>
+                <default>false</default>
+                <label>Incorrect Valuation</label>
+            </value>
+            <value>
+                <fullName>Overview</fullName>
+                <default>false</default>
+                <label>Overview</label>
+            </value>
+            <value>
+                <fullName>Report not being Received</fullName>
+                <default>false</default>
+                <label>Report not being Received</label>
+            </value>
+            <value>
+                <fullName>Price Inquiry</fullName>
+                <default>false</default>
+                <label>Price Inquiry</label>
+            </value>
+            <value>
+                <fullName>Pre-launch</fullName>
+                <default>false</default>
+                <label>Pre-launch</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Error had Occurred</fullName>
+                <default>false</default>
+                <label>Error had Occurred</label>
+            </value>
+            <value>
+                <fullName>Turn off Autosend</fullName>
+                <default>false</default>
+                <label>Turn off Autosend</label>
+            </value>
+            <value>
+                <fullName>Settings</fullName>
+                <default>false</default>
+                <label>Settings</label>
+            </value>
+            <value>
+                <fullName>Gmail Deliverability</fullName>
+                <default>false</default>
+                <label>Gmail Deliverability</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

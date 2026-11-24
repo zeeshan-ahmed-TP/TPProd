@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Closed_Email</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Account Closed Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Second_Payment_Missed_1628772912049</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Probation_Email</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Account Probation Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/First_Payment_Missed_1649844209903</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Suspension_Email</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Account Suspension Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Payment_Missed_1628768001582</template>
+    </alerts>
+</Workflow>

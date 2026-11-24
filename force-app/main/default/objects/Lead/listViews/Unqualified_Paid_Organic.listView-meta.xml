@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified_Paid_Organic</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Last_Call_Date__c</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Lifecycle_Stage__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Outbound_Campaign__c</columns>
+    <columns>Lead_Details__c</columns>
+    <columns>Rejected_Reason__c</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>8/1/2023 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Unqualified</value>
+    </filters>
+    <filters>
+        <field>Rejected_Reason__c</field>
+        <operation>notEqual</operation>
+        <value>Not a Realtor,Do Not Call,Bad Phone,Fake Lead (All Contact Info Bad),Duplicate Lead,Test Lead,Duplicate / Test Lead,Bad Contact Info (Phone/E-Mail),Not a US/CAN Realtor</value>
+    </filters>
+    <filters>
+        <field>Original_Source__c</field>
+        <operation>equals</operation>
+        <value>Organic Search,Paid Search</value>
+    </filters>
+    <filters>
+        <field>Marketing_Contact_Source__c</field>
+        <operation>notContain</operation>
+        <value>Smart targeting,smart farming</value>
+    </filters>
+    <filters>
+        <field>Original_Source_drill_down_2__c</field>
+        <operation>notContain</operation>
+        <value>fb lead gen st 2022,fb lead gen st 2023</value>
+    </filters>
+    <label>Unqualified (Paid &amp; Organic)</label>
+</ListView>

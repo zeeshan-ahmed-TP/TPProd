@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Customer receives 25% off for the first two months.</fullName>
+        <default>false</default>
+        <label>Customer receives 25% off for the first two months.</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer will receive 180 leads (average of 30/month) over 6-month term.</fullName>
+        <default>false</default>
+        <label>Customer will receive 180 leads (average of 30/month) over 6-month term.</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer may request lead review upon completion of their contract term, to receive credit back in the event of under delivery.</fullName>
+        <default>false</default>
+        <label>Customer may request lead review upon completion of their contract term, to receive credit back in the event of under delivery.</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer receives 25% off for the first three months.</fullName>
+        <default>false</default>
+        <label>Customer receives 25% off for the first three months.</label>
+    </customValue>
+    <customValue>
+        <fullName>Setup fee has been waived.</fullName>
+        <default>false</default>
+        <label>Setup fee has been waived.</label>
+    </customValue>
+    <customValue>
+        <fullName>Sold.com promo includes the first six months of TP Pro free with the purchase of Leads.</fullName>
+        <default>false</default>
+        <label>Sold.com promo includes the first six months of TP Pro free with the purchase of Leads.</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Friday Promo of 50% off 2 months</fullName>
+        <default>false</default>
+        <label>Black Friday Promo of 50% off 2 months</label>
+    </customValue>
+    <masterLabel>DocuSign Verbiage</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

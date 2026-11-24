@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution__c</fullName>
+    <externalId>false</externalId>
+    <label>Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Close Found</fullName>
+                <default>false</default>
+                <label>Close Found</label>
+            </value>
+            <value>
+                <fullName>No Close</fullName>
+                <default>false</default>
+                <label>No Close</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Close Already Reported</fullName>
+                <default>false</default>
+                <label>Close Already Reported</label>
+            </value>
+            <value>
+                <fullName>Transaction Address Change</fullName>
+                <default>false</default>
+                <label>Transaction Address Change</label>
+            </value>
+            <value>
+                <fullName>Incorrectly Matched</fullName>
+                <default>false</default>
+                <label>Incorrectly Matched</label>
+            </value>
+            <value>
+                <fullName>Incorrect Transaction Type</fullName>
+                <default>false</default>
+                <label>Incorrect Transaction Type</label>
+            </value>
+            <value>
+                <fullName>Post 24 Month</fullName>
+                <default>false</default>
+                <label>Post 24 Month</label>
+            </value>
+            <value>
+                <fullName>Contract Addendum</fullName>
+                <default>false</default>
+                <label>Contract Addendum</label>
+            </value>
+            <value>
+                <fullName>Needs Additional Resources</fullName>
+                <default>false</default>
+                <label>Needs Additional Resources</label>
+            </value>
+            <value>
+                <fullName>test 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>test 2</label>
+            </value>
+            <value>
+                <fullName>unavailable resources</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>unavailable resources</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

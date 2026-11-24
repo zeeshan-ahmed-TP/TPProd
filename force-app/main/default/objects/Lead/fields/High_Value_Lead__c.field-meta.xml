@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Value_Lead__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(Experience_Persona__c!=&apos;Unknown Agent&apos;, ISNULL(Lead_Enrichment_Data_Date__c)=FALSE)
+,IF(OR(Recent_Transaction__c,Performance_Persona__c!=&apos;Underperforming&apos;,Recent_Transaction__c,Historical_Transaction_Count__c=0),TRUE,FALSE) 
+,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>High Value Lead</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__CaseSensitive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>For EQUALS and CONTAINS operators, specify whether you want the comparison to be case sensitive or not.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For EQUALS and CONTAINS operators, specify whether you want the comparison to be case sensitive or not.</inlineHelpText>
+    <label>CaseSensitive</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

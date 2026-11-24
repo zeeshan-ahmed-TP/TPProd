@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__All</fullName>
+    <columns>NAME</columns>
+    <columns>leadassist__Monday_Start_Time__c</columns>
+    <columns>leadassist__Monday_End_Time__c</columns>
+    <columns>leadassist__Tuesday_Start_Time__c</columns>
+    <columns>leadassist__Tuesday_End_Time__c</columns>
+    <columns>leadassist__Wednesday_Start_Time__c</columns>
+    <columns>leadassist__Wednesday_End_Time__c</columns>
+    <columns>leadassist__Thursday_Start_Time__c</columns>
+    <columns>leadassist__Thursday_End_Time__c</columns>
+    <columns>leadassist__Friday_Start_Time__c</columns>
+    <columns>leadassist__Friday_End_Time__c</columns>
+    <columns>leadassist__Saturday_Start_Time__c</columns>
+    <columns>leadassist__Saturday_End_Time__c</columns>
+    <columns>leadassist__Sunday_Start_Time__c</columns>
+    <columns>leadassist__Sunday_End_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,2270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zurple_MLS__c</fullName>
+    <externalId>false</externalId>
+    <label>Zurple MLS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acadiana MLS (LBRMLS)</fullName>
+                <default>false</default>
+                <label>Acadiana MLS (LBRMLS)</label>
+            </value>
+            <value>
+                <fullName>Adirondack-Champlain Valley MLS (ACVMLS)</fullName>
+                <default>false</default>
+                <label>Adirondack-Champlain Valley MLS (ACVMLS)</label>
+            </value>
+            <value>
+                <fullName>Alaska MLS (AKMLS)</fullName>
+                <default>false</default>
+                <label>Alaska MLS (AKMLS)</label>
+            </value>
+            <value>
+                <fullName>Albany Georgia MLS (AGMLS)</fullName>
+                <default>false</default>
+                <label>Albany Georgia MLS (AGMLS)</label>
+            </value>
+            <value>
+                <fullName>Albemarle MLS (ABMLS)</fullName>
+                <default>false</default>
+                <label>Albemarle MLS (ABMLS)</label>
+            </value>
+            <value>
+                <fullName>Allegheny Highland MLS (AHMLS)</fullName>
+                <default>false</default>
+                <label>Allegheny Highland MLS (AHMLS)</label>
+            </value>
+            <value>
+                <fullName>Altitude MLS (formerly Summit MLS)</fullName>
+                <default>false</default>
+                <label>Altitude MLS (formerly Summit MLS)</label>
+            </value>
+            <value>
+                <fullName>Amarillo MLS (AMMLS)</fullName>
+                <default>false</default>
+                <label>Amarillo MLS (AMMLS)</label>
+            </value>
+            <value>
+                <fullName>Amelia Island Nassau County MLS (AINCMLS)</fullName>
+                <default>false</default>
+                <label>Amelia Island Nassau County MLS (AINCMLS)</label>
+            </value>
+            <value>
+                <fullName>Ann Arbor Area MLS (AAAMLS) (USE MICHRIC)</fullName>
+                <default>false</default>
+                <label>Ann Arbor Area MLS (AAAMLS) (USE MICHRIC)</label>
+            </value>
+            <value>
+                <fullName>Antelope Valley MLS (ANTV)</fullName>
+                <default>false</default>
+                <label>Antelope Valley MLS (ANTV)</label>
+            </value>
+            <value>
+                <fullName>Arizona Regional Multiple Listing Service (ARMLS)</fullName>
+                <default>false</default>
+                <label>Arizona Regional Multiple Listing Service (ARMLS)</label>
+            </value>
+            <value>
+                <fullName>Arkansas Regional MLS (ARKMLS)</fullName>
+                <default>false</default>
+                <label>Arkansas Regional MLS (ARKMLS)</label>
+            </value>
+            <value>
+                <fullName>Arkansas Valley Board of REALTORS / Russellville Board of Realtors (RBR)</fullName>
+                <default>false</default>
+                <label>Arkansas Valley Board of REALTORS / Russellville Board of Realtors (RBR)</label>
+            </value>
+            <value>
+                <fullName>Ashland Kentucky MLS (AABRKYMLS)</fullName>
+                <default>false</default>
+                <label>Ashland Kentucky MLS (AABRKYMLS)</label>
+            </value>
+            <value>
+                <fullName>Aspen Glenwood Springs MLS (AGSMLS)</fullName>
+                <default>false</default>
+                <label>Aspen Glenwood Springs MLS (AGSMLS)</label>
+            </value>
+            <value>
+                <fullName>Athens Area MLS (AAMLS)</fullName>
+                <default>false</default>
+                <label>Athens Area MLS (AAMLS)</label>
+            </value>
+            <value>
+                <fullName>Augusta Georgia MLS (AUGMLS)</fullName>
+                <default>false</default>
+                <label>Augusta Georgia MLS (AUGMLS)</label>
+            </value>
+            <value>
+                <fullName>Awaiting MLS</fullName>
+                <default>false</default>
+                <label>Awaiting MLS</label>
+            </value>
+            <value>
+                <fullName>Badlands Board of Realtors</fullName>
+                <default>false</default>
+                <label>Badlands Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Baldwin County MLS (BCMLS)</fullName>
+                <default>false</default>
+                <label>Baldwin County MLS (BCMLS)</label>
+            </value>
+            <value>
+                <fullName>Baton Rouge MLS (BRMLS)</fullName>
+                <default>false</default>
+                <label>Baton Rouge MLS (BRMLS)</label>
+            </value>
+            <value>
+                <fullName>Bay Area Real Estate Info Services (BAREIS)</fullName>
+                <default>false</default>
+                <label>Bay Area Real Estate Info Services (BAREIS)</label>
+            </value>
+            <value>
+                <fullName>Bay East AOR</fullName>
+                <default>false</default>
+                <label>Bay East AOR</label>
+            </value>
+            <value>
+                <fullName>Bayou Board of Realtors</fullName>
+                <default>false</default>
+                <label>Bayou Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Beaches MLS</fullName>
+                <default>false</default>
+                <label>Beaches MLS</label>
+            </value>
+            <value>
+                <fullName>Beaumont MLS (BEAU)</fullName>
+                <default>false</default>
+                <label>Beaumont MLS (BEAU)</label>
+            </value>
+            <value>
+                <fullName>Big Bear MLS (BBVMLS)</fullName>
+                <default>false</default>
+                <label>Big Bear MLS (BBVMLS)</label>
+            </value>
+            <value>
+                <fullName>Big Sky County MLS (Gallatin MLS)</fullName>
+                <default>false</default>
+                <label>Big Sky County MLS (Gallatin MLS)</label>
+            </value>
+            <value>
+                <fullName>Billing MLS (BMTMLS)</fullName>
+                <default>false</default>
+                <label>Billing MLS (BMTMLS)</label>
+            </value>
+            <value>
+                <fullName>Bismarck-Mandan MLS (BMMLS)</fullName>
+                <default>false</default>
+                <label>Bismarck-Mandan MLS (BMMLS)</label>
+            </value>
+            <value>
+                <fullName>Black Hills MLS (Blackhills)</fullName>
+                <default>false</default>
+                <label>Black Hills MLS (Blackhills)</label>
+            </value>
+            <value>
+                <fullName>Bloomington-Normal MLS (BNARMLS)</fullName>
+                <default>false</default>
+                <label>Bloomington-Normal MLS (BNARMLS)</label>
+            </value>
+            <value>
+                <fullName>Bonita Springs Association of Realtors</fullName>
+                <default>false</default>
+                <label>Bonita Springs Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Brevard MLS (BMLS)</fullName>
+                <default>false</default>
+                <label>Brevard MLS (BMLS)</label>
+            </value>
+            <value>
+                <fullName>Bridge MLS</fullName>
+                <default>false</default>
+                <label>Bridge MLS</label>
+            </value>
+            <value>
+                <fullName>Bright MLS</fullName>
+                <default>false</default>
+                <label>Bright MLS</label>
+            </value>
+            <value>
+                <fullName>Brooklyn MLS (BNYMLS)</fullName>
+                <default>false</default>
+                <label>Brooklyn MLS (BNYMLS)</label>
+            </value>
+            <value>
+                <fullName>Brunswick County MLS (BRWC)</fullName>
+                <default>false</default>
+                <label>Brunswick County MLS (BRWC)</label>
+            </value>
+            <value>
+                <fullName>Bryan-College Station MLS (BCSMLS)</fullName>
+                <default>false</default>
+                <label>Bryan-College Station MLS (BCSMLS)</label>
+            </value>
+            <value>
+                <fullName>Burlington Alamance MLS (BURMLS) (use Triangle MLS)</fullName>
+                <default>false</default>
+                <label>Burlington Alamance MLS (BURMLS) (use Triangle MLS)</label>
+            </value>
+            <value>
+                <fullName>Butte MLS (Butte)</fullName>
+                <default>false</default>
+                <label>Butte MLS (Butte)</label>
+            </value>
+            <value>
+                <fullName>Calaveras County Assoc of Realtors</fullName>
+                <default>false</default>
+                <label>Calaveras County Assoc of Realtors</label>
+            </value>
+            <value>
+                <fullName>Calhoun County MLS (CCMLS)</fullName>
+                <default>false</default>
+                <label>Calhoun County MLS (CCMLS)</label>
+            </value>
+            <value>
+                <fullName>California Regional MLS (CRMLS)</fullName>
+                <default>false</default>
+                <label>California Regional MLS (CRMLS)</label>
+            </value>
+            <value>
+                <fullName>California Regional MLS (CRMLS) COMBINED</fullName>
+                <default>false</default>
+                <label>California Regional MLS (CRMLS) COMBINED</label>
+            </value>
+            <value>
+                <fullName>Cambria Somerset MLS (CSMLS)</fullName>
+                <default>false</default>
+                <label>Cambria Somerset MLS (CSMLS)</label>
+            </value>
+            <value>
+                <fullName>Campbell County Board of Realtors</fullName>
+                <default>false</default>
+                <label>Campbell County Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Canopy MLS (Formerly Carolina MLS CMLS)</fullName>
+                <default>false</default>
+                <label>Canopy MLS (Formerly Carolina MLS CMLS)</label>
+            </value>
+            <value>
+                <fullName>Cape Cod and Islands MLS (CCIMLS)</fullName>
+                <default>false</default>
+                <label>Cape Cod and Islands MLS (CCIMLS)</label>
+            </value>
+            <value>
+                <fullName>Cape Girardeau County MLS (CGCMLS)</fullName>
+                <default>false</default>
+                <label>Cape Girardeau County MLS (CGCMLS)</label>
+            </value>
+            <value>
+                <fullName>Cape May County MLS (CMCAOR)</fullName>
+                <default>false</default>
+                <label>Cape May County MLS (CMCAOR)</label>
+            </value>
+            <value>
+                <fullName>Catawba Valley MLS (CVMLS)</fullName>
+                <default>false</default>
+                <label>Catawba Valley MLS (CVMLS)</label>
+            </value>
+            <value>
+                <fullName>Cedar Rapids Area Association of REALTORS</fullName>
+                <default>false</default>
+                <label>Cedar Rapids Area Association of REALTORS</label>
+            </value>
+            <value>
+                <fullName>Central Georgia MLS</fullName>
+                <default>false</default>
+                <label>Central Georgia MLS</label>
+            </value>
+            <value>
+                <fullName>Central Illinois Board of Realtors (CIBR)</fullName>
+                <default>false</default>
+                <label>Central Illinois Board of Realtors (CIBR)</label>
+            </value>
+            <value>
+                <fullName>Central Jersey MLS</fullName>
+                <default>false</default>
+                <label>Central Jersey MLS</label>
+            </value>
+            <value>
+                <fullName>Central New York</fullName>
+                <default>false</default>
+                <label>Central New York</label>
+            </value>
+            <value>
+                <fullName>Central Oregon MLS (COMLS)</fullName>
+                <default>false</default>
+                <label>Central Oregon MLS (COMLS)</label>
+            </value>
+            <value>
+                <fullName>Central Panhandle Association of Realtors</fullName>
+                <default>false</default>
+                <label>Central Panhandle Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Central Texas MLS (CTXMLS)</fullName>
+                <default>false</default>
+                <label>Central Texas MLS (CTXMLS)</label>
+            </value>
+            <value>
+                <fullName>Central Virginia Regional MLS (CVRMLS)</fullName>
+                <default>false</default>
+                <label>Central Virginia Regional MLS (CVRMLS)</label>
+            </value>
+            <value>
+                <fullName>Central West Tennessee (CWTAR)</fullName>
+                <default>false</default>
+                <label>Central West Tennessee (CWTAR)</label>
+            </value>
+            <value>
+                <fullName>Central Wisconsin MLS (CWBRMLS)</fullName>
+                <default>false</default>
+                <label>Central Wisconsin MLS (CWBRMLS)</label>
+            </value>
+            <value>
+                <fullName>Centre County MLS (CCMLS)</fullName>
+                <default>false</default>
+                <label>Centre County MLS (CCMLS)</label>
+            </value>
+            <value>
+                <fullName>Chaffee County MLS (CCBMLS)</fullName>
+                <default>false</default>
+                <label>Chaffee County MLS (CCBMLS)</label>
+            </value>
+            <value>
+                <fullName>Champaign County MLS (CHMLS)</fullName>
+                <default>false</default>
+                <label>Champaign County MLS (CHMLS)</label>
+            </value>
+            <value>
+                <fullName>Charlottesville MLS (CAARMLS)</fullName>
+                <default>false</default>
+                <label>Charlottesville MLS (CAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Chattanooga MLS (CHTMLS)</fullName>
+                <default>false</default>
+                <label>Chattanooga MLS (CHTMLS)</label>
+            </value>
+            <value>
+                <fullName>Chesapeake Bay and Rivers MLS (CBRMLS)</fullName>
+                <default>false</default>
+                <label>Chesapeake Bay and Rivers MLS (CBRMLS)</label>
+            </value>
+            <value>
+                <fullName>Cheyenne MLS (CYMLS)</fullName>
+                <default>false</default>
+                <label>Cheyenne MLS (CYMLS)</label>
+            </value>
+            <value>
+                <fullName>CHS MLS</fullName>
+                <default>false</default>
+                <label>CHS MLS</label>
+            </value>
+            <value>
+                <fullName>Citrus County MLS (CCMLS)</fullName>
+                <default>false</default>
+                <label>Citrus County MLS (CCMLS)</label>
+            </value>
+            <value>
+                <fullName>Coastal Association MLS (CAMLS)</fullName>
+                <default>false</default>
+                <label>Coastal Association MLS (CAMLS)</label>
+            </value>
+            <value>
+                <fullName>Coastal Carolinas MLS (CCAR)</fullName>
+                <default>false</default>
+                <label>Coastal Carolinas MLS (CCAR)</label>
+            </value>
+            <value>
+                <fullName>Coeur d&apos;Alene MLS (CDMLS)</fullName>
+                <default>false</default>
+                <label>Coeur d&apos;Alene MLS (CDMLS)</label>
+            </value>
+            <value>
+                <fullName>Colorado Real Estate Network (CREN)</fullName>
+                <default>false</default>
+                <label>Colorado Real Estate Network (CREN)</label>
+            </value>
+            <value>
+                <fullName>Columbia Greene Northern Dutchess MLS (CGNDMLS)</fullName>
+                <default>false</default>
+                <label>Columbia Greene Northern Dutchess MLS (CGNDMLS)</label>
+            </value>
+            <value>
+                <fullName>Columbia MO MLS (CBORMLS)</fullName>
+                <default>false</default>
+                <label>Columbia MO MLS (CBORMLS)</label>
+            </value>
+            <value>
+                <fullName>Columbus and Central Ohio Regional MLS (CBRMLS)</fullName>
+                <default>false</default>
+                <label>Columbus and Central Ohio Regional MLS (CBRMLS)</label>
+            </value>
+            <value>
+                <fullName>Columbus Georgia MLS (COGALMLS)</fullName>
+                <default>false</default>
+                <label>Columbus Georgia MLS (COGALMLS)</label>
+            </value>
+            <value>
+                <fullName>Combined LA/Westside MLS (CRISNet) (use CRMLS - Combined)</fullName>
+                <default>false</default>
+                <label>Combined LA/Westside MLS (CRISNet) (use CRMLS - Combined)</label>
+            </value>
+            <value>
+                <fullName>Combined LA/Westside MLS (TheMLS/CLAW)</fullName>
+                <default>false</default>
+                <label>Combined LA/Westside MLS (TheMLS/CLAW)</label>
+            </value>
+            <value>
+                <fullName>Conejo Simi Moorpark Association of REALTORS</fullName>
+                <default>false</default>
+                <label>Conejo Simi Moorpark Association of REALTORS</label>
+            </value>
+            <value>
+                <fullName>Consolidated SC MLS (COLAMLS)</fullName>
+                <default>false</default>
+                <label>Consolidated SC MLS (COLAMLS)</label>
+            </value>
+            <value>
+                <fullName>Contra Costa (CCAR)</fullName>
+                <default>false</default>
+                <label>Contra Costa (CCAR)</label>
+            </value>
+            <value>
+                <fullName>Cooperative Arkansas (CARMLS)</fullName>
+                <default>false</default>
+                <label>Cooperative Arkansas (CARMLS)</label>
+            </value>
+            <value>
+                <fullName>Crystal Coast MLS (CCMLS)</fullName>
+                <default>false</default>
+                <label>Crystal Coast MLS (CCMLS)</label>
+            </value>
+            <value>
+                <fullName>Dayton MLS (DTON)</fullName>
+                <default>false</default>
+                <label>Dayton MLS (DTON)</label>
+            </value>
+            <value>
+                <fullName>Daytona Beach Area MLS (DAMLS)</fullName>
+                <default>false</default>
+                <label>Daytona Beach Area MLS (DAMLS)</label>
+            </value>
+            <value>
+                <fullName>Decatur MLS (DMLS)</fullName>
+                <default>false</default>
+                <label>Decatur MLS (DMLS)</label>
+            </value>
+            <value>
+                <fullName>Des Moines MLS (DMMLS)</fullName>
+                <default>false</default>
+                <label>Des Moines MLS (DMMLS)</label>
+            </value>
+            <value>
+                <fullName>Desert MLS (DTMLS)</fullName>
+                <default>false</default>
+                <label>Desert MLS (DTMLS)</label>
+            </value>
+            <value>
+                <fullName>Door County MLS (DoorMLS)</fullName>
+                <default>false</default>
+                <label>Door County MLS (DoorMLS)</label>
+            </value>
+            <value>
+                <fullName>Dothan MLS (DMLS)</fullName>
+                <default>false</default>
+                <label>Dothan MLS (DMLS)</label>
+            </value>
+            <value>
+                <fullName>East Alabama Board of REALTORS</fullName>
+                <default>false</default>
+                <label>East Alabama Board of REALTORS</label>
+            </value>
+            <value>
+                <fullName>East Central Iowa Association of REALTORS</fullName>
+                <default>false</default>
+                <label>East Central Iowa Association of REALTORS</label>
+            </value>
+            <value>
+                <fullName>East Tennessee Association of Realtors (Knoxville Association of Realtors)</fullName>
+                <default>false</default>
+                <label>East Tennessee Association of Realtors (Knoxville Association of Realtors)</label>
+            </value>
+            <value>
+                <fullName>Eastern New York Regional MLS</fullName>
+                <default>false</default>
+                <label>Eastern New York Regional MLS</label>
+            </value>
+            <value>
+                <fullName>Eastern New York Regional MLS (ENYRMLS)</fullName>
+                <default>false</default>
+                <label>Eastern New York Regional MLS (ENYRMLS)</label>
+            </value>
+            <value>
+                <fullName>Egyptian MLS (EMLS)</fullName>
+                <default>false</default>
+                <label>Egyptian MLS (EMLS)</label>
+            </value>
+            <value>
+                <fullName>Elko County MLS</fullName>
+                <default>false</default>
+                <label>Elko County MLS</label>
+            </value>
+            <value>
+                <fullName>Elmira-Corning MLS (ECMLS)</fullName>
+                <default>false</default>
+                <label>Elmira-Corning MLS (ECMLS)</label>
+            </value>
+            <value>
+                <fullName>Emerald Coast MLS (ECARMLS)</fullName>
+                <default>false</default>
+                <label>Emerald Coast MLS (ECARMLS)</label>
+            </value>
+            <value>
+                <fullName>Empire Access MLS (EAMLS)</fullName>
+                <default>false</default>
+                <label>Empire Access MLS (EAMLS)</label>
+            </value>
+            <value>
+                <fullName>FAR - Indian River</fullName>
+                <default>false</default>
+                <label>FAR - Indian River</label>
+            </value>
+            <value>
+                <fullName>FAR - New Smyrna (merged with Stellar MLS)</fullName>
+                <default>false</default>
+                <label>FAR - New Smyrna (merged with Stellar MLS)</label>
+            </value>
+            <value>
+                <fullName>FAR - Ocala (Use Stellar MLS)</fullName>
+                <default>false</default>
+                <label>FAR - Ocala (Use Stellar MLS)</label>
+            </value>
+            <value>
+                <fullName>FAR - Ponte Vedra</fullName>
+                <default>false</default>
+                <label>FAR - Ponte Vedra</label>
+            </value>
+            <value>
+                <fullName>FAR - Sanibel</fullName>
+                <default>false</default>
+                <label>FAR - Sanibel</label>
+            </value>
+            <value>
+                <fullName>Fargo-Moorhead Association of REALTORS (FMARMLS)</fullName>
+                <default>false</default>
+                <label>Fargo-Moorhead Association of REALTORS (FMARMLS)</label>
+            </value>
+            <value>
+                <fullName>Firelands MLS (FMLS)</fullName>
+                <default>false</default>
+                <label>Firelands MLS (FMLS)</label>
+            </value>
+            <value>
+                <fullName>First MLS (FMLS)</fullName>
+                <default>false</default>
+                <label>First MLS (FMLS)</label>
+            </value>
+            <value>
+                <fullName>Flagler County MLS (FLGMLS)</fullName>
+                <default>false</default>
+                <label>Flagler County MLS (FLGMLS)</label>
+            </value>
+            <value>
+                <fullName>Florida Gulf Coast MLS - Royal Palm Coast</fullName>
+                <default>false</default>
+                <label>Florida Gulf Coast MLS - Royal Palm Coast</label>
+            </value>
+            <value>
+                <fullName>Florida Keys MLS (FLKMLS)</fullName>
+                <default>false</default>
+                <label>Florida Keys MLS (FLKMLS)</label>
+            </value>
+            <value>
+                <fullName>Fort Lauderdale MLS (RAGFL)</fullName>
+                <default>false</default>
+                <label>Fort Lauderdale MLS (RAGFL)</label>
+            </value>
+            <value>
+                <fullName>Franklin and Gulf Counties MLS (RAFSGMLS)</fullName>
+                <default>false</default>
+                <label>Franklin and Gulf Counties MLS (RAFSGMLS)</label>
+            </value>
+            <value>
+                <fullName>Fresno MLS (Fresno)</fullName>
+                <default>false</default>
+                <label>Fresno MLS (Fresno)</label>
+            </value>
+            <value>
+                <fullName>Fulton County MLS (FCMLS)</fullName>
+                <default>false</default>
+                <label>Fulton County MLS (FCMLS)</label>
+            </value>
+            <value>
+                <fullName>Gainesville-Alachua County MLS (GACMLS)</fullName>
+                <default>false</default>
+                <label>Gainesville-Alachua County MLS (GACMLS)</label>
+            </value>
+            <value>
+                <fullName>Galveston MLS (GMLS)</fullName>
+                <default>false</default>
+                <label>Galveston MLS (GMLS)</label>
+            </value>
+            <value>
+                <fullName>Garden City MLS</fullName>
+                <default>false</default>
+                <label>Garden City MLS</label>
+            </value>
+            <value>
+                <fullName>Garden State MLS (GSMLS)</fullName>
+                <default>false</default>
+                <label>Garden State MLS (GSMLS)</label>
+            </value>
+            <value>
+                <fullName>Georgia MLS (GAMLS)</fullName>
+                <default>false</default>
+                <label>Georgia MLS (GAMLS)</label>
+            </value>
+            <value>
+                <fullName>Gillespie County MLS (GCMLS)</fullName>
+                <default>false</default>
+                <label>Gillespie County MLS (GCMLS)</label>
+            </value>
+            <value>
+                <fullName>Golden Empire/Bakersfield MLS (BKMLS)</fullName>
+                <default>false</default>
+                <label>Golden Empire/Bakersfield MLS (BKMLS)</label>
+            </value>
+            <value>
+                <fullName>Golden Isles Association of Realtors</fullName>
+                <default>false</default>
+                <label>Golden Isles Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Grand Forks Board of Realtors (GFBMLS)</fullName>
+                <default>false</default>
+                <label>Grand Forks Board of Realtors (GFBMLS)</label>
+            </value>
+            <value>
+                <fullName>Grand Island MLS</fullName>
+                <default>false</default>
+                <label>Grand Island MLS</label>
+            </value>
+            <value>
+                <fullName>Grand Junction MLS (GJMLS)</fullName>
+                <default>false</default>
+                <label>Grand Junction MLS (GJMLS)</label>
+            </value>
+            <value>
+                <fullName>Great Smoky Mountains MLS (GSMMLS)</fullName>
+                <default>false</default>
+                <label>Great Smoky Mountains MLS (GSMMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Alabama MLS / Birmingham Area MLS (BHAMMLS)</fullName>
+                <default>false</default>
+                <label>Greater Alabama MLS / Birmingham Area MLS (BHAMMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Alexandria Area MLS (GAARMLS)</fullName>
+                <default>false</default>
+                <label>Greater Alexandria Area MLS (GAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Augusta MLS (GAARMLS)</fullName>
+                <default>false</default>
+                <label>Greater Augusta MLS (GAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater El Paso MLS</fullName>
+                <default>false</default>
+                <label>Greater El Paso MLS</label>
+            </value>
+            <value>
+                <fullName>Greater Erie Board of Realtors</fullName>
+                <default>false</default>
+                <label>Greater Erie Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Greater Erie MLS</fullName>
+                <default>false</default>
+                <label>Greater Erie MLS</label>
+            </value>
+            <value>
+                <fullName>Greater Fairbanks BOR</fullName>
+                <default>false</default>
+                <label>Greater Fairbanks BOR</label>
+            </value>
+            <value>
+                <fullName>Greater Fairbanks MLS (GFMLS)</fullName>
+                <default>false</default>
+                <label>Greater Fairbanks MLS (GFMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Greenville MLS (GGMLS)</fullName>
+                <default>false</default>
+                <label>Greater Greenville MLS (GGMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Hudson Valley MLS (GHVMLS)</fullName>
+                <default>false</default>
+                <label>Greater Hudson Valley MLS (GHVMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Lansing (GLMLS)</fullName>
+                <default>false</default>
+                <label>Greater Lansing (GLMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Las Vegas MLS (GLVAR)</fullName>
+                <default>false</default>
+                <label>Greater Las Vegas MLS (GLVAR)</label>
+            </value>
+            <value>
+                <fullName>Greater Lehigh Valley MLS (GLVR MLS)</fullName>
+                <default>false</default>
+                <label>Greater Lehigh Valley MLS (GLVR MLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Northwoods Association of Realtors</fullName>
+                <default>false</default>
+                <label>Greater Northwoods Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Greater Pee Dee MLS (PDMLS)</fullName>
+                <default>false</default>
+                <label>Greater Pee Dee MLS (PDMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Pocatello Association of REALTORS</fullName>
+                <default>false</default>
+                <label>Greater Pocatello Association of REALTORS</label>
+            </value>
+            <value>
+                <fullName>Greater Sioux City MLS</fullName>
+                <default>false</default>
+                <label>Greater Sioux City MLS</label>
+            </value>
+            <value>
+                <fullName>Greater Southern MLS</fullName>
+                <default>false</default>
+                <label>Greater Southern MLS</label>
+            </value>
+            <value>
+                <fullName>Greater Tyler MLS (GTARMLS)</fullName>
+                <default>false</default>
+                <label>Greater Tyler MLS (GTARMLS)</label>
+            </value>
+            <value>
+                <fullName>Greater Wilkes Barre MLS (GWBMLS)</fullName>
+                <default>false</default>
+                <label>Greater Wilkes Barre MLS (GWBMLS)</label>
+            </value>
+            <value>
+                <fullName>Green Valley-Sahuarita (GRNVLYSAH)</fullName>
+                <default>false</default>
+                <label>Green Valley-Sahuarita (GRNVLYSAH)</label>
+            </value>
+            <value>
+                <fullName>Greenville Pitt MLS (GPMLS)</fullName>
+                <default>false</default>
+                <label>Greenville Pitt MLS (GPMLS)</label>
+            </value>
+            <value>
+                <fullName>Greenwich Association of Realtors</fullName>
+                <default>false</default>
+                <label>Greenwich Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Greenwood SC MLS (GWSCMLS)</fullName>
+                <default>false</default>
+                <label>Greenwood SC MLS (GWSCMLS)</label>
+            </value>
+            <value>
+                <fullName>Gulf Coast Alabama MLS (GCAMLS)</fullName>
+                <default>false</default>
+                <label>Gulf Coast Alabama MLS (GCAMLS)</label>
+            </value>
+            <value>
+                <fullName>Gulf South Real Estate Info Network (GSREIN)</fullName>
+                <default>false</default>
+                <label>Gulf South Real Estate Info Network (GSREIN)</label>
+            </value>
+            <value>
+                <fullName>Gunnison Country MLS (GCMLS)</fullName>
+                <default>false</default>
+                <label>Gunnison Country MLS (GCMLS)</label>
+            </value>
+            <value>
+                <fullName>Hamilton-Burlington Real Estate Board (RHAB)</fullName>
+                <default>false</default>
+                <label>Hamilton-Burlington Real Estate Board (RHAB)</label>
+            </value>
+            <value>
+                <fullName>Harrisonburg Rockingham MLS (HRMLS) (Use Charlottesville MLS)</fullName>
+                <default>false</default>
+                <label>Harrisonburg Rockingham MLS (HRMLS) (Use Charlottesville MLS)</label>
+            </value>
+            <value>
+                <fullName>Hattiesburg Area Association of Realtors (HAAR)</fullName>
+                <default>false</default>
+                <label>Hattiesburg Area Association of Realtors (HAAR)</label>
+            </value>
+            <value>
+                <fullName>Havre Hi Line</fullName>
+                <default>false</default>
+                <label>Havre Hi Line</label>
+            </value>
+            <value>
+                <fullName>Hawaii Central MLS (HiCentralMLS)</fullName>
+                <default>false</default>
+                <label>Hawaii Central MLS (HiCentralMLS)</label>
+            </value>
+            <value>
+                <fullName>Hawaii Info Service (HISMLS)</fullName>
+                <default>false</default>
+                <label>Hawaii Info Service (HISMLS)</label>
+            </value>
+            <value>
+                <fullName>Hazleton MLS (HAZMLS)</fullName>
+                <default>false</default>
+                <label>Hazleton MLS (HAZMLS)</label>
+            </value>
+            <value>
+                <fullName>Heart of Kentucky Association of REALTORS</fullName>
+                <default>false</default>
+                <label>Heart of Kentucky Association of REALTORS</label>
+            </value>
+            <value>
+                <fullName>Heartland Florida MLS (HLNFMLS)</fullName>
+                <default>false</default>
+                <label>Heartland Florida MLS (HLNFMLS)</label>
+            </value>
+            <value>
+                <fullName>Heartland MLS (HMLS)</fullName>
+                <default>false</default>
+                <label>Heartland MLS (HMLS)</label>
+            </value>
+            <value>
+                <fullName>Helena MLS (HMLS)</fullName>
+                <default>false</default>
+                <label>Helena MLS (HMLS)</label>
+            </value>
+            <value>
+                <fullName>Henderson Audubon MLS (HAMLS)</fullName>
+                <default>false</default>
+                <label>Henderson Audubon MLS (HAMLS)</label>
+            </value>
+            <value>
+                <fullName>Hernando County MLS (HCMLS)</fullName>
+                <default>false</default>
+                <label>Hernando County MLS (HCMLS)</label>
+            </value>
+            <value>
+                <fullName>High Country Association of Realtors (HCAOR)</fullName>
+                <default>false</default>
+                <label>High Country Association of Realtors (HCAOR)</label>
+            </value>
+            <value>
+                <fullName>Highland Lakes MLS (HLMLS)</fullName>
+                <default>false</default>
+                <label>Highland Lakes MLS (HLMLS)</label>
+            </value>
+            <value>
+                <fullName>Hinesville (HMLS)</fullName>
+                <default>false</default>
+                <label>Hinesville (HMLS)</label>
+            </value>
+            <value>
+                <fullName>Houston MLS (HAR)</fullName>
+                <default>false</default>
+                <label>Houston MLS (HAR)</label>
+            </value>
+            <value>
+                <fullName>Hudson County MLS (HCMLS)</fullName>
+                <default>false</default>
+                <label>Hudson County MLS (HCMLS)</label>
+            </value>
+            <value>
+                <fullName>Hutchinson MLS (HBORMLS)</fullName>
+                <default>false</default>
+                <label>Hutchinson MLS (HBORMLS)</label>
+            </value>
+            <value>
+                <fullName>i-Tech MLS Pasadena/Glendale (USE CRMLS - COMBINED)</fullName>
+                <default>false</default>
+                <label>i-Tech MLS Pasadena/Glendale (USE CRMLS - COMBINED)</label>
+            </value>
+            <value>
+                <fullName>Idaho Mountain Central MLS (IMCMLS)</fullName>
+                <default>false</default>
+                <label>Idaho Mountain Central MLS (IMCMLS)</label>
+            </value>
+            <value>
+                <fullName>Imagine MLS (formerly Lexington Bluegrass AOR)</fullName>
+                <default>false</default>
+                <label>Imagine MLS (formerly Lexington Bluegrass AOR)</label>
+            </value>
+            <value>
+                <fullName>Incline Village MLS (INCMLS)</fullName>
+                <default>false</default>
+                <label>Incline Village MLS (INCMLS)</label>
+            </value>
+            <value>
+                <fullName>Indiana Regional MLS (IRMLS)</fullName>
+                <default>false</default>
+                <label>Indiana Regional MLS (IRMLS)</label>
+            </value>
+            <value>
+                <fullName>Information and Real Estate Services (IRES)</fullName>
+                <default>false</default>
+                <label>Information and Real Estate Services (IRES)</label>
+            </value>
+            <value>
+                <fullName>Intermountain MLS (IMLS)</fullName>
+                <default>false</default>
+                <label>Intermountain MLS (IMLS)</label>
+            </value>
+            <value>
+                <fullName>International - Canada</fullName>
+                <default>false</default>
+                <label>International - Canada</label>
+            </value>
+            <value>
+                <fullName>International - Other</fullName>
+                <default>false</default>
+                <label>International - Other</label>
+            </value>
+            <value>
+                <fullName>Iowa City Area Association of Realtors</fullName>
+                <default>false</default>
+                <label>Iowa City Area Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>IRMLS - Bloomington</fullName>
+                <default>false</default>
+                <label>IRMLS - Bloomington</label>
+            </value>
+            <value>
+                <fullName>IRMLS - Greater South Bend - Mishawaka MLS (GSBMLS)</fullName>
+                <default>false</default>
+                <label>IRMLS - Greater South Bend - Mishawaka MLS (GSBMLS)</label>
+            </value>
+            <value>
+                <fullName>IRMLS - Lafayette MLS (LRAOR)</fullName>
+                <default>false</default>
+                <label>IRMLS - Lafayette MLS (LRAOR)</label>
+            </value>
+            <value>
+                <fullName>IRMLS - Northeastern Indiana MLS (NEIMLS)</fullName>
+                <default>false</default>
+                <label>IRMLS - Northeastern Indiana MLS (NEIMLS)</label>
+            </value>
+            <value>
+                <fullName>IRMLS - Southwest Indiana MLS (SWIMLS)</fullName>
+                <default>false</default>
+                <label>IRMLS - Southwest Indiana MLS (SWIMLS)</label>
+            </value>
+            <value>
+                <fullName>IRMLS - Upstar MLS (UMLS)</fullName>
+                <default>false</default>
+                <label>IRMLS - Upstar MLS (UMLS)</label>
+            </value>
+            <value>
+                <fullName>Iron County Board of Realtors</fullName>
+                <default>false</default>
+                <label>Iron County Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Jackson County Indiana MLS (JKIMLS)</fullName>
+                <default>false</default>
+                <label>Jackson County Indiana MLS (JKIMLS)</label>
+            </value>
+            <value>
+                <fullName>Jackson Michigan MLS (JMMLS)</fullName>
+                <default>false</default>
+                <label>Jackson Michigan MLS (JMMLS)</label>
+            </value>
+            <value>
+                <fullName>Jackson Mississippi MLS (JMLS)</fullName>
+                <default>false</default>
+                <label>Jackson Mississippi MLS (JMLS)</label>
+            </value>
+            <value>
+                <fullName>Jacksonville MLS (JBORMLS)</fullName>
+                <default>false</default>
+                <label>Jacksonville MLS (JBORMLS)</label>
+            </value>
+            <value>
+                <fullName>Jefferson-Lewis MLS (JLSMLS)</fullName>
+                <default>false</default>
+                <label>Jefferson-Lewis MLS (JLSMLS)</label>
+            </value>
+            <value>
+                <fullName>Jersey Shore MLS (OCBR)</fullName>
+                <default>false</default>
+                <label>Jersey Shore MLS (OCBR)</label>
+            </value>
+            <value>
+                <fullName>Jonesboro MLS (JMLS)</fullName>
+                <default>false</default>
+                <label>Jonesboro MLS (JMLS)</label>
+            </value>
+            <value>
+                <fullName>Junction City MLS (JCMLS)</fullName>
+                <default>false</default>
+                <label>Junction City MLS (JCMLS)</label>
+            </value>
+            <value>
+                <fullName>Jupiter Tequesta Hobe Sound</fullName>
+                <default>false</default>
+                <label>Jupiter Tequesta Hobe Sound</label>
+            </value>
+            <value>
+                <fullName>Kansas Property Ads MLS (KPAMLS)</fullName>
+                <default>false</default>
+                <label>Kansas Property Ads MLS (KPAMLS)</label>
+            </value>
+            <value>
+                <fullName>Kerrville MLS (KVMLS)</fullName>
+                <default>false</default>
+                <label>Kerrville MLS (KVMLS)</label>
+            </value>
+            <value>
+                <fullName>Key West MLS (KWMLS)</fullName>
+                <default>false</default>
+                <label>Key West MLS (KWMLS)</label>
+            </value>
+            <value>
+                <fullName>Kings County</fullName>
+                <default>false</default>
+                <label>Kings County</label>
+            </value>
+            <value>
+                <fullName>Lake Havasu Association of Realtors (LHAR)</fullName>
+                <default>false</default>
+                <label>Lake Havasu Association of Realtors (LHAR)</label>
+            </value>
+            <value>
+                <fullName>Lake of the Ozarks MLS (LOBR)</fullName>
+                <default>false</default>
+                <label>Lake of the Ozarks MLS (LOBR)</label>
+            </value>
+            <value>
+                <fullName>Laredo MLS (LBRMLS)</fullName>
+                <default>false</default>
+                <label>Laredo MLS (LBRMLS)</label>
+            </value>
+            <value>
+                <fullName>Lawrence MLS (LBORMLS)</fullName>
+                <default>false</default>
+                <label>Lawrence MLS (LBORMLS)</label>
+            </value>
+            <value>
+                <fullName>Lawton MLS (Lawton)</fullName>
+                <default>false</default>
+                <label>Lawton MLS (Lawton)</label>
+            </value>
+            <value>
+                <fullName>Lenawee County MLS (LCMLS)</fullName>
+                <default>false</default>
+                <label>Lenawee County MLS (LCMLS)</label>
+            </value>
+            <value>
+                <fullName>Lewis Clark MLS (LCBOR)</fullName>
+                <default>false</default>
+                <label>Lewis Clark MLS (LCBOR)</label>
+            </value>
+            <value>
+                <fullName>Long Island MLS (MLSLI) (Use OneKey MLS)</fullName>
+                <default>false</default>
+                <label>Long Island MLS (MLSLI) (Use OneKey MLS)</label>
+            </value>
+            <value>
+                <fullName>Longleaf Pine REALTORS</fullName>
+                <default>false</default>
+                <label>Longleaf Pine REALTORS</label>
+            </value>
+            <value>
+                <fullName>Longview Area Association of Realtors</fullName>
+                <default>false</default>
+                <label>Longview Area Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Lowcountry MLS</fullName>
+                <default>false</default>
+                <label>Lowcountry MLS</label>
+            </value>
+            <value>
+                <fullName>Lubbock MLS (LARMLS)</fullName>
+                <default>false</default>
+                <label>Lubbock MLS (LARMLS)</label>
+            </value>
+            <value>
+                <fullName>Lufkin Association of Realtors</fullName>
+                <default>false</default>
+                <label>Lufkin Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Luzerne County Association of Realtors - Greater Wilkes Barre MLS (GWBMLS)</fullName>
+                <default>false</default>
+                <label>Luzerne County Association of Realtors - Greater Wilkes Barre MLS (GWBMLS)</label>
+            </value>
+            <value>
+                <fullName>Lynchburg MLS (LMLS)</fullName>
+                <default>false</default>
+                <label>Lynchburg MLS (LMLS)</label>
+            </value>
+            <value>
+                <fullName>Maine MLS (Maine Real Estate Information System)</fullName>
+                <default>false</default>
+                <label>Maine MLS (Maine Real Estate Information System)</label>
+            </value>
+            <value>
+                <fullName>Mammoth Lakes MLS (MLBOR)</fullName>
+                <default>false</default>
+                <label>Mammoth Lakes MLS (MLBOR)</label>
+            </value>
+            <value>
+                <fullName>Manhattan Kansas MLS (MARMLS)</fullName>
+                <default>false</default>
+                <label>Manhattan Kansas MLS (MARMLS)</label>
+            </value>
+            <value>
+                <fullName>Manhattan New York MLS (MANMLS)</fullName>
+                <default>false</default>
+                <label>Manhattan New York MLS (MANMLS)</label>
+            </value>
+            <value>
+                <fullName>Marco MLS</fullName>
+                <default>false</default>
+                <label>Marco MLS</label>
+            </value>
+            <value>
+                <fullName>Martin County MLS (MCMLS)</fullName>
+                <default>false</default>
+                <label>Martin County MLS (MCMLS)</label>
+            </value>
+            <value>
+                <fullName>Massachusetts MLS Property Info Network (MLSPIN)</fullName>
+                <default>false</default>
+                <label>Massachusetts MLS Property Info Network (MLSPIN)</label>
+            </value>
+            <value>
+                <fullName>Maui MLS (RAMAUI)</fullName>
+                <default>false</default>
+                <label>Maui MLS (RAMAUI)</label>
+            </value>
+            <value>
+                <fullName>McAllen MLS (MAMLS)</fullName>
+                <default>false</default>
+                <label>McAllen MLS (MAMLS)</label>
+            </value>
+            <value>
+                <fullName>Melbourne AOR (use Space Coast MLS)</fullName>
+                <default>false</default>
+                <label>Melbourne AOR (use Space Coast MLS)</label>
+            </value>
+            <value>
+                <fullName>Memphis MLS (MAARMLS)</fullName>
+                <default>false</default>
+                <label>Memphis MLS (MAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Metro Milwaukee MLS (MetroMLS) BROKERS ONLY</fullName>
+                <default>false</default>
+                <label>Metro Milwaukee MLS (MetroMLS) BROKERS ONLY</label>
+            </value>
+            <value>
+                <fullName>Metro Search MLS (Metro Search)</fullName>
+                <default>false</default>
+                <label>Metro Search MLS (Metro Search)</label>
+            </value>
+            <value>
+                <fullName>Metro Wisconsin</fullName>
+                <default>false</default>
+                <label>Metro Wisconsin</label>
+            </value>
+            <value>
+                <fullName>MetroList - Sacramento (Metrolist)</fullName>
+                <default>false</default>
+                <label>MetroList - Sacramento (Metrolist)</label>
+            </value>
+            <value>
+                <fullName>Metropolitan Indianapolis MLS (MIBOR)</fullName>
+                <default>false</default>
+                <label>Metropolitan Indianapolis MLS (MIBOR)</label>
+            </value>
+            <value>
+                <fullName>MI Real Source</fullName>
+                <default>false</default>
+                <label>MI Real Source</label>
+            </value>
+            <value>
+                <fullName>Miami Association of Realtors</fullName>
+                <default>false</default>
+                <label>Miami Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Michigan Regional Information Center (MICHRIC)</fullName>
+                <default>false</default>
+                <label>Michigan Regional Information Center (MICHRIC)</label>
+            </value>
+            <value>
+                <fullName>Mid America Regional Info systems (MARIS)</fullName>
+                <default>false</default>
+                <label>Mid America Regional Info systems (MARIS)</label>
+            </value>
+            <value>
+                <fullName>Mid Georgia MLS (MGMLS)</fullName>
+                <default>false</default>
+                <label>Mid Georgia MLS (MGMLS)</label>
+            </value>
+            <value>
+                <fullName>Mid Ohio Valley MLS (MOVMLS)</fullName>
+                <default>false</default>
+                <label>Mid Ohio Valley MLS (MOVMLS)</label>
+            </value>
+            <value>
+                <fullName>Mid-Hudson Multiple Listing Service (MHMLS) (Merged with OneKey)</fullName>
+                <default>false</default>
+                <label>Mid-Hudson Multiple Listing Service (MHMLS) (Merged with OneKey)</label>
+            </value>
+            <value>
+                <fullName>Midland MLS (MIDMLS)</fullName>
+                <default>false</default>
+                <label>Midland MLS (MIDMLS)</label>
+            </value>
+            <value>
+                <fullName>Midwest Real Estate Data (MRED) (MLSNI) (MAPMLS)</fullName>
+                <default>false</default>
+                <label>Midwest Real Estate Data (MRED) (MLSNI) (MAPMLS)</label>
+            </value>
+            <value>
+                <fullName>Mini-Cassia MLS (MINIMLS)</fullName>
+                <default>false</default>
+                <label>Mini-Cassia MLS (MINIMLS)</label>
+            </value>
+            <value>
+                <fullName>Minot Board of Realtors</fullName>
+                <default>false</default>
+                <label>Minot Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>MiRealSource (MiRealSource)</fullName>
+                <default>false</default>
+                <label>MiRealSource (MiRealSource)</label>
+            </value>
+            <value>
+                <fullName>Mississippi Gulf Coast MLS (MGCMLS)</fullName>
+                <default>false</default>
+                <label>Mississippi Gulf Coast MLS (MGCMLS)</label>
+            </value>
+            <value>
+                <fullName>Missoula MLS (MMLS)</fullName>
+                <default>false</default>
+                <label>Missoula MLS (MMLS)</label>
+            </value>
+            <value>
+                <fullName>MLS of Greater Cincinnati (CincyMLS)</fullName>
+                <default>false</default>
+                <label>MLS of Greater Cincinnati (CincyMLS)</label>
+            </value>
+            <value>
+                <fullName>MLS of Southern Arizona</fullName>
+                <default>false</default>
+                <label>MLS of Southern Arizona</label>
+            </value>
+            <value>
+                <fullName>MLS United (MLSU)</fullName>
+                <default>false</default>
+                <label>MLS United (MLSU)</label>
+            </value>
+            <value>
+                <fullName>MLSListings Inc. (MLSListings)</fullName>
+                <default>false</default>
+                <label>MLSListings Inc. (MLSListings)</label>
+            </value>
+            <value>
+                <fullName>Monmouth Ocean MLS (MOMLS)</fullName>
+                <default>false</default>
+                <label>Monmouth Ocean MLS (MOMLS)</label>
+            </value>
+            <value>
+                <fullName>Monroe County MI MLS (MCAR)</fullName>
+                <default>false</default>
+                <label>Monroe County MI MLS (MCAR)</label>
+            </value>
+            <value>
+                <fullName>Montana Regional MLS</fullName>
+                <default>false</default>
+                <label>Montana Regional MLS</label>
+            </value>
+            <value>
+                <fullName>Montgomery MLS (MAARMLS)</fullName>
+                <default>false</default>
+                <label>Montgomery MLS (MAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Mountain Home MLS (MHMLS)</fullName>
+                <default>false</default>
+                <label>Mountain Home MLS (MHMLS)</label>
+            </value>
+            <value>
+                <fullName>Naples Board of Realtors</fullName>
+                <default>false</default>
+                <label>Naples Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Navarre Area MLS (NAMLS)</fullName>
+                <default>false</default>
+                <label>Navarre Area MLS (NAMLS)</label>
+            </value>
+            <value>
+                <fullName>Neuse River MLS (NRRAR)</fullName>
+                <default>false</default>
+                <label>Neuse River MLS (NRRAR)</label>
+            </value>
+            <value>
+                <fullName>Nevada County MLS (NCAOR)</fullName>
+                <default>false</default>
+                <label>Nevada County MLS (NCAOR)</label>
+            </value>
+            <value>
+                <fullName>New Jersey MLS (NJMLS)</fullName>
+                <default>false</default>
+                <label>New Jersey MLS (NJMLS)</label>
+            </value>
+            <value>
+                <fullName>New Mexico Multi-Board MLS (NMMLS)</fullName>
+                <default>false</default>
+                <label>New Mexico Multi-Board MLS (NMMLS)</label>
+            </value>
+            <value>
+                <fullName>New Smyrna Beach MLS (NSBMLS) (merged with Stellar MLS)</fullName>
+                <default>false</default>
+                <label>New Smyrna Beach MLS (NSBMLS) (merged with Stellar MLS)</label>
+            </value>
+            <value>
+                <fullName>New York State Alliance MLS (NYSAM) - Buffalo Niagara AOR</fullName>
+                <default>false</default>
+                <label>New York State Alliance MLS (NYSAM) - Buffalo Niagara AOR</label>
+            </value>
+            <value>
+                <fullName>New York State Alliance MLS (NYSAM) - Greater Rochester AOR</fullName>
+                <default>false</default>
+                <label>New York State Alliance MLS (NYSAM) - Greater Rochester AOR</label>
+            </value>
+            <value>
+                <fullName>New York State Alliance MLS (NYSAM) - Greater Syracuse AOR</fullName>
+                <default>false</default>
+                <label>New York State Alliance MLS (NYSAM) - Greater Syracuse AOR</label>
+            </value>
+            <value>
+                <fullName>North Carolina Regional MLS</fullName>
+                <default>false</default>
+                <label>North Carolina Regional MLS</label>
+            </value>
+            <value>
+                <fullName>North Central Indiana MLS (NCIAR)</fullName>
+                <default>false</default>
+                <label>North Central Indiana MLS (NCIAR)</label>
+            </value>
+            <value>
+                <fullName>North Central Washington Association Of Realtors</fullName>
+                <default>false</default>
+                <label>North Central Washington Association Of Realtors</label>
+            </value>
+            <value>
+                <fullName>North Central West Virginia REIN</fullName>
+                <default>false</default>
+                <label>North Central West Virginia REIN</label>
+            </value>
+            <value>
+                <fullName>North Central WV</fullName>
+                <default>false</default>
+                <label>North Central WV</label>
+            </value>
+            <value>
+                <fullName>North Florida MLS (NFMLS)</fullName>
+                <default>false</default>
+                <label>North Florida MLS (NFMLS)</label>
+            </value>
+            <value>
+                <fullName>North Santa Barbara County Regional MLS</fullName>
+                <default>false</default>
+                <label>North Santa Barbara County Regional MLS</label>
+            </value>
+            <value>
+                <fullName>North Texas Real Estate Info systems (NTREIS)</fullName>
+                <default>false</default>
+                <label>North Texas Real Estate Info systems (NTREIS)</label>
+            </value>
+            <value>
+                <fullName>Northeast Florida MLS (NEFMLS)</fullName>
+                <default>false</default>
+                <label>Northeast Florida MLS (NEFMLS)</label>
+            </value>
+            <value>
+                <fullName>Northeast Georgia MLS (NEGMLS)</fullName>
+                <default>false</default>
+                <label>Northeast Georgia MLS (NEGMLS)</label>
+            </value>
+            <value>
+                <fullName>Northeast Louisiana MLS (NELMLS)</fullName>
+                <default>false</default>
+                <label>Northeast Louisiana MLS (NELMLS)</label>
+            </value>
+            <value>
+                <fullName>Northeast Mississippi MLS (NMMLS)</fullName>
+                <default>false</default>
+                <label>Northeast Mississippi MLS (NMMLS)</label>
+            </value>
+            <value>
+                <fullName>Northeast Ohio Real Estate Exchange (NEOHREX)</fullName>
+                <default>false</default>
+                <label>Northeast Ohio Real Estate Exchange (NEOHREX)</label>
+            </value>
+            <value>
+                <fullName>Northeast Oklahoma Real Estate Services (NORES)</fullName>
+                <default>false</default>
+                <label>Northeast Oklahoma Real Estate Services (NORES)</label>
+            </value>
+            <value>
+                <fullName>Northeast Wyoming REALTOR Alliance</fullName>
+                <default>false</default>
+                <label>Northeast Wyoming REALTOR Alliance</label>
+            </value>
+            <value>
+                <fullName>Northern Arizona MLS (NAZMLS)</fullName>
+                <default>false</default>
+                <label>Northern Arizona MLS (NAZMLS)</label>
+            </value>
+            <value>
+                <fullName>Northern Great Lakes REALTORS MLS</fullName>
+                <default>false</default>
+                <label>Northern Great Lakes REALTORS MLS</label>
+            </value>
+            <value>
+                <fullName>Northern Kentucky MLS (NKAR)</fullName>
+                <default>false</default>
+                <label>Northern Kentucky MLS (NKAR)</label>
+            </value>
+            <value>
+                <fullName>Northern Nevada Regional MLS (NNRMLS)</fullName>
+                <default>false</default>
+                <label>Northern Nevada Regional MLS (NNRMLS)</label>
+            </value>
+            <value>
+                <fullName>Northern Ohio Real Estate Info systems (NORIS)</fullName>
+                <default>false</default>
+                <label>Northern Ohio Real Estate Info systems (NORIS)</label>
+            </value>
+            <value>
+                <fullName>Northern Ohio Regional MLS (NORMLS)</fullName>
+                <default>false</default>
+                <label>Northern Ohio Regional MLS (NORMLS)</label>
+            </value>
+            <value>
+                <fullName>Northstar MLS (Northstar)</fullName>
+                <default>false</default>
+                <label>Northstar MLS (Northstar)</label>
+            </value>
+            <value>
+                <fullName>Northwest Arkansas MLS</fullName>
+                <default>false</default>
+                <label>Northwest Arkansas MLS</label>
+            </value>
+            <value>
+                <fullName>Northwest Indiana Association of REALTORS</fullName>
+                <default>false</default>
+                <label>Northwest Indiana Association of REALTORS</label>
+            </value>
+            <value>
+                <fullName>Northwest Louisiana MLS (NWLMLS)</fullName>
+                <default>false</default>
+                <label>Northwest Louisiana MLS (NWLMLS)</label>
+            </value>
+            <value>
+                <fullName>Northwest Mississippi MLS (NWMAR)</fullName>
+                <default>false</default>
+                <label>Northwest Mississippi MLS (NWMAR)</label>
+            </value>
+            <value>
+                <fullName>Northwest Montana MLS (NMARMLS)</fullName>
+                <default>false</default>
+                <label>Northwest Montana MLS (NMARMLS)</label>
+            </value>
+            <value>
+                <fullName>Northwest Multiple Listing Service (NWMLS)</fullName>
+                <default>false</default>
+                <label>Northwest Multiple Listing Service (NWMLS)</label>
+            </value>
+            <value>
+                <fullName>Odessa MLS (ODMLS)</fullName>
+                <default>false</default>
+                <label>Odessa MLS (ODMLS)</label>
+            </value>
+            <value>
+                <fullName>Oklahoma City Metro MLS (OKCMAR)</fullName>
+                <default>false</default>
+                <label>Oklahoma City Metro MLS (OKCMAR)</label>
+            </value>
+            <value>
+                <fullName>Old Kentucky Home MLS (OKHMLS)</fullName>
+                <default>false</default>
+                <label>Old Kentucky Home MLS (OKHMLS)</label>
+            </value>
+            <value>
+                <fullName>Omaha Area Board of Realtors</fullName>
+                <default>false</default>
+                <label>Omaha Area Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Omaha MLS (OMLS)</fullName>
+                <default>false</default>
+                <label>Omaha MLS (OMLS)</label>
+            </value>
+            <value>
+                <fullName>OneKey MLS</fullName>
+                <default>false</default>
+                <label>OneKey MLS</label>
+            </value>
+            <value>
+                <fullName>Orange Belt MLS (OBMLS)</fullName>
+                <default>false</default>
+                <label>Orange Belt MLS (OBMLS)</label>
+            </value>
+            <value>
+                <fullName>Otero County MLS (OCMLS)</fullName>
+                <default>false</default>
+                <label>Otero County MLS (OCMLS)</label>
+            </value>
+            <value>
+                <fullName>Outer Banks MLS (OBMLS)</fullName>
+                <default>false</default>
+                <label>Outer Banks MLS (OBMLS)</label>
+            </value>
+            <value>
+                <fullName>Pacific Regional MLS (PACMLS)</fullName>
+                <default>false</default>
+                <label>Pacific Regional MLS (PACMLS)</label>
+            </value>
+            <value>
+                <fullName>Palm Beach Board of Realtors MLS (PBBORMLS)</fullName>
+                <default>false</default>
+                <label>Palm Beach Board of Realtors MLS (PBBORMLS)</label>
+            </value>
+            <value>
+                <fullName>Panama City MLS</fullName>
+                <default>false</default>
+                <label>Panama City MLS</label>
+            </value>
+            <value>
+                <fullName>Park City MLS (PCMLS)</fullName>
+                <default>false</default>
+                <label>Park City MLS (PCMLS)</label>
+            </value>
+            <value>
+                <fullName>Pensacola Association of Realtors</fullName>
+                <default>false</default>
+                <label>Pensacola Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Peoria MLS (PEMLS)</fullName>
+                <default>false</default>
+                <label>Peoria MLS (PEMLS)</label>
+            </value>
+            <value>
+                <fullName>Permian Basin Board of Realtors</fullName>
+                <default>false</default>
+                <label>Permian Basin Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Pike/Wayne MLS (PWMLS)</fullName>
+                <default>false</default>
+                <label>Pike/Wayne MLS (PWMLS)</label>
+            </value>
+            <value>
+                <fullName>Pikes Peak MLS (PPMLS)</fullName>
+                <default>false</default>
+                <label>Pikes Peak MLS (PPMLS)</label>
+            </value>
+            <value>
+                <fullName>Pinehurst-Southern Pines MLS (PSPMLS)</fullName>
+                <default>false</default>
+                <label>Pinehurst-Southern Pines MLS (PSPMLS)</label>
+            </value>
+            <value>
+                <fullName>Pocatello MLS (PCTMLS)</fullName>
+                <default>false</default>
+                <label>Pocatello MLS (PCTMLS)</label>
+            </value>
+            <value>
+                <fullName>Pocono Mountains MLS (PMMLS)</fullName>
+                <default>false</default>
+                <label>Pocono Mountains MLS (PMMLS)</label>
+            </value>
+            <value>
+                <fullName>Port Neches-Port Arthur-Nederland MLS (PNPANMLS)</fullName>
+                <default>false</default>
+                <label>Port Neches-Port Arthur-Nederland MLS (PNPANMLS)</label>
+            </value>
+            <value>
+                <fullName>Prescott MLS (PAARMLS)</fullName>
+                <default>false</default>
+                <label>Prescott MLS (PAARMLS)</label>
+            </value>
+            <value>
+                <fullName>PrimeMLS</fullName>
+                <default>false</default>
+                <label>PrimeMLS</label>
+            </value>
+            <value>
+                <fullName>Pueblo MLS (PARMLS)</fullName>
+                <default>false</default>
+                <label>Pueblo MLS (PARMLS)</label>
+            </value>
+            <value>
+                <fullName>Pulaski County MLS (PCBORMLS)</fullName>
+                <default>false</default>
+                <label>Pulaski County MLS (PCBORMLS)</label>
+            </value>
+            <value>
+                <fullName>Quad City MLS (QUAD)</fullName>
+                <default>false</default>
+                <label>Quad City MLS (QUAD)</label>
+            </value>
+            <value>
+                <fullName>Range MLS (RAORMLS)</fullName>
+                <default>false</default>
+                <label>Range MLS (RAORMLS)</label>
+            </value>
+            <value>
+                <fullName>Real Estate Board of New York (REBNY) - Do Not Sell</fullName>
+                <default>false</default>
+                <label>Real Estate Board of New York (REBNY) - Do Not Sell</label>
+            </value>
+            <value>
+                <fullName>Real Estate Information Network (REIN)</fullName>
+                <default>false</default>
+                <label>Real Estate Information Network (REIN)</label>
+            </value>
+            <value>
+                <fullName>RealComp (RealComp)</fullName>
+                <default>false</default>
+                <label>RealComp (RealComp)</label>
+            </value>
+            <value>
+                <fullName>Realtor Association of Southern Kentucky</fullName>
+                <default>false</default>
+                <label>Realtor Association of Southern Kentucky</label>
+            </value>
+            <value>
+                <fullName>REALTORS Association of Citrus County, Inc</fullName>
+                <default>false</default>
+                <label>REALTORS Association of Citrus County, Inc</label>
+            </value>
+            <value>
+                <fullName>REALTORS Association of Northeast Wisconsin</fullName>
+                <default>false</default>
+                <label>REALTORS Association of Northeast Wisconsin</label>
+            </value>
+            <value>
+                <fullName>Realtors Association of Northwest Wisconsin</fullName>
+                <default>false</default>
+                <label>Realtors Association of Northwest Wisconsin</label>
+            </value>
+            <value>
+                <fullName>RealTracs MLS (RTMLS)</fullName>
+                <default>false</default>
+                <label>RealTracs MLS (RTMLS)</label>
+            </value>
+            <value>
+                <fullName>REColorado</fullName>
+                <default>false</default>
+                <label>REColorado</label>
+            </value>
+            <value>
+                <fullName>Reelfoot Regional MLS (RRAR)</fullName>
+                <default>false</default>
+                <label>Reelfoot Regional MLS (RRAR)</label>
+            </value>
+            <value>
+                <fullName>Regional Multiple Listing Service-Oregon_Washington (RMLS)</fullName>
+                <default>false</default>
+                <label>Regional Multiple Listing Service-Oregon_Washington (RMLS)</label>
+            </value>
+            <value>
+                <fullName>REsides (Formerly Hilton Head MLS (HHMLS))</fullName>
+                <default>false</default>
+                <label>REsides (Formerly Hilton Head MLS (HHMLS))</label>
+            </value>
+            <value>
+                <fullName>Rhode Island MLS (RIMLS)</fullName>
+                <default>false</default>
+                <label>Rhode Island MLS (RIMLS)</label>
+            </value>
+            <value>
+                <fullName>Richmond County MLS (RCMLS)</fullName>
+                <default>false</default>
+                <label>Richmond County MLS (RCMLS)</label>
+            </value>
+            <value>
+                <fullName>River Counties MLS (RCMLS)</fullName>
+                <default>false</default>
+                <label>River Counties MLS (RCMLS)</label>
+            </value>
+            <value>
+                <fullName>Roanoke Valley MLS (RVAR)</fullName>
+                <default>false</default>
+                <label>Roanoke Valley MLS (RVAR)</label>
+            </value>
+            <value>
+                <fullName>Rockford MLS (RAARMLS)</fullName>
+                <default>false</default>
+                <label>Rockford MLS (RAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Rocky Mount Area MLS (RMAMLS)</fullName>
+                <default>false</default>
+                <label>Rocky Mount Area MLS (RMAMLS)</label>
+            </value>
+            <value>
+                <fullName>Roswell MLS (RWMLS)</fullName>
+                <default>false</default>
+                <label>Roswell MLS (RWMLS)</label>
+            </value>
+            <value>
+                <fullName>Royal Palm Coast Association</fullName>
+                <default>false</default>
+                <label>Royal Palm Coast Association</label>
+            </value>
+            <value>
+                <fullName>Saginaw MLS (SAGMLS)</fullName>
+                <default>false</default>
+                <label>Saginaw MLS (SAGMLS)</label>
+            </value>
+            <value>
+                <fullName>Salina MLS (SKMLS)</fullName>
+                <default>false</default>
+                <label>Salina MLS (SKMLS)</label>
+            </value>
+            <value>
+                <fullName>Salmon River MLS (Salmon)</fullName>
+                <default>false</default>
+                <label>Salmon River MLS (Salmon)</label>
+            </value>
+            <value>
+                <fullName>San Antonio (SABOR)</fullName>
+                <default>false</default>
+                <label>San Antonio (SABOR)</label>
+            </value>
+            <value>
+                <fullName>San Diego Regional MLS</fullName>
+                <default>false</default>
+                <label>San Diego Regional MLS</label>
+            </value>
+            <value>
+                <fullName>San Francisco MLS (SFARMLS)</fullName>
+                <default>false</default>
+                <label>San Francisco MLS (SFARMLS)</label>
+            </value>
+            <value>
+                <fullName>San Juan County MLS (SJCMLS)</fullName>
+                <default>false</default>
+                <label>San Juan County MLS (SJCMLS)</label>
+            </value>
+            <value>
+                <fullName>Sanibel and Captiva Islands MLS (SANCAPMLS)</fullName>
+                <default>false</default>
+                <label>Sanibel and Captiva Islands MLS (SANCAPMLS)</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara MLS (SBMLS)</fullName>
+                <default>false</default>
+                <label>Santa Barbara MLS (SBMLS)</label>
+            </value>
+            <value>
+                <fullName>Santa Fe MLS (SFARMLS)</fullName>
+                <default>false</default>
+                <label>Santa Fe MLS (SFARMLS)</label>
+            </value>
+            <value>
+                <fullName>Sauk Valley MLS (SVMLS)</fullName>
+                <default>false</default>
+                <label>Sauk Valley MLS (SVMLS)</label>
+            </value>
+            <value>
+                <fullName>Savannah Multi List (SMLMLS)</fullName>
+                <default>false</default>
+                <label>Savannah Multi List (SMLMLS)</label>
+            </value>
+            <value>
+                <fullName>Schuylkill County MLS (SCMLS)</fullName>
+                <default>false</default>
+                <label>Schuylkill County MLS (SCMLS)</label>
+            </value>
+            <value>
+                <fullName>Scotts Bluff County MLS (SBCMLS)</fullName>
+                <default>false</default>
+                <label>Scotts Bluff County MLS (SBCMLS)</label>
+            </value>
+            <value>
+                <fullName>Scranton MLS (SMLS)</fullName>
+                <default>false</default>
+                <label>Scranton MLS (SMLS)</label>
+            </value>
+            <value>
+                <fullName>Sedona Verde MLS (SVVAR)</fullName>
+                <default>false</default>
+                <label>Sedona Verde MLS (SVVAR)</label>
+            </value>
+            <value>
+                <fullName>Shasta MLS (SMLS)</fullName>
+                <default>false</default>
+                <label>Shasta MLS (SMLS)</label>
+            </value>
+            <value>
+                <fullName>Sheridan County MLS (SCMLS)</fullName>
+                <default>false</default>
+                <label>Sheridan County MLS (SCMLS)</label>
+            </value>
+            <value>
+                <fullName>Sierra North Valley MLS (SNVMLS)</fullName>
+                <default>false</default>
+                <label>Sierra North Valley MLS (SNVMLS)</label>
+            </value>
+            <value>
+                <fullName>Sioux Empire MLS (RASE)</fullName>
+                <default>false</default>
+                <label>Sioux Empire MLS (RASE)</label>
+            </value>
+            <value>
+                <fullName>Smart MLS</fullName>
+                <default>false</default>
+                <label>Smart MLS</label>
+            </value>
+            <value>
+                <fullName>Snake River MLS (SRMLS)</fullName>
+                <default>false</default>
+                <label>Snake River MLS (SRMLS)</label>
+            </value>
+            <value>
+                <fullName>Somerset-Lake Cumberland AOR</fullName>
+                <default>false</default>
+                <label>Somerset-Lake Cumberland AOR</label>
+            </value>
+            <value>
+                <fullName>South Central Indiana Listing Exchange (SCILEX)</fullName>
+                <default>false</default>
+                <label>South Central Indiana Listing Exchange (SCILEX)</label>
+            </value>
+            <value>
+                <fullName>South Central Kansas MLS (SCKMLS)</fullName>
+                <default>false</default>
+                <label>South Central Kansas MLS (SCKMLS)</label>
+            </value>
+            <value>
+                <fullName>South Central Wisconsin MLS (SCWMLS)</fullName>
+                <default>false</default>
+                <label>South Central Wisconsin MLS (SCWMLS)</label>
+            </value>
+            <value>
+                <fullName>South Jersey Shore Regional MLS (SJSRMLS)</fullName>
+                <default>false</default>
+                <label>South Jersey Shore Regional MLS (SJSRMLS)</label>
+            </value>
+            <value>
+                <fullName>South Padre Island MLS</fullName>
+                <default>false</default>
+                <label>South Padre Island MLS</label>
+            </value>
+            <value>
+                <fullName>South Texas MLS</fullName>
+                <default>false</default>
+                <label>South Texas MLS</label>
+            </value>
+            <value>
+                <fullName>Southeast Alaska MLS (SEAKMLS)</fullName>
+                <default>false</default>
+                <label>Southeast Alaska MLS (SEAKMLS)</label>
+            </value>
+            <value>
+                <fullName>Southeast Florida MLS (SEFL)</fullName>
+                <default>false</default>
+                <label>Southeast Florida MLS (SEFL)</label>
+            </value>
+            <value>
+                <fullName>Southeast Minnesota MLS (SEMAR)</fullName>
+                <default>false</default>
+                <label>Southeast Minnesota MLS (SEMAR)</label>
+            </value>
+            <value>
+                <fullName>Southeastern Indiana MLS (SEIMLS)</fullName>
+                <default>false</default>
+                <label>Southeastern Indiana MLS (SEIMLS)</label>
+            </value>
+            <value>
+                <fullName>Southern Indiana REALTORS Association (SIRA)</fullName>
+                <default>false</default>
+                <label>Southern Indiana REALTORS Association (SIRA)</label>
+            </value>
+            <value>
+                <fullName>Southern Kentucky MLS (SOKYMLS)</fullName>
+                <default>false</default>
+                <label>Southern Kentucky MLS (SOKYMLS)</label>
+            </value>
+            <value>
+                <fullName>Southern Minnesota</fullName>
+                <default>false</default>
+                <label>Southern Minnesota</label>
+            </value>
+            <value>
+                <fullName>Southern Missouri Regional MLS (SOMO MLS)</fullName>
+                <default>false</default>
+                <label>Southern Missouri Regional MLS (SOMO MLS)</label>
+            </value>
+            <value>
+                <fullName>Southern New Mexico MLS (Las Cruces Association of Realtors)</fullName>
+                <default>false</default>
+                <label>Southern New Mexico MLS (Las Cruces Association of Realtors)</label>
+            </value>
+            <value>
+                <fullName>Southern Oregon MLS (SOMLS)</fullName>
+                <default>false</default>
+                <label>Southern Oregon MLS (SOMLS)</label>
+            </value>
+            <value>
+                <fullName>Southwest Georgia MLS</fullName>
+                <default>false</default>
+                <label>Southwest Georgia MLS</label>
+            </value>
+            <value>
+                <fullName>Southwest MLS (SWMLS)</fullName>
+                <default>false</default>
+                <label>Southwest MLS (SWMLS)</label>
+            </value>
+            <value>
+                <fullName>Southwest Montana MLS (SWMMLS)</fullName>
+                <default>false</default>
+                <label>Southwest Montana MLS (SWMMLS)</label>
+            </value>
+            <value>
+                <fullName>Space Coast AOR</fullName>
+                <default>false</default>
+                <label>Space Coast AOR</label>
+            </value>
+            <value>
+                <fullName>Spartanburg MLS (SPTBGMLS)</fullName>
+                <default>false</default>
+                <label>Spartanburg MLS (SPTBGMLS)</label>
+            </value>
+            <value>
+                <fullName>Spokane MLS (SMLS)</fullName>
+                <default>false</default>
+                <label>Spokane MLS (SMLS)</label>
+            </value>
+            <value>
+                <fullName>Springfield Mult-List (SMLMLS)</fullName>
+                <default>false</default>
+                <label>Springfield Mult-List (SMLMLS)</label>
+            </value>
+            <value>
+                <fullName>St Augustine and St Johns County Board of Realtors</fullName>
+                <default>false</default>
+                <label>St Augustine and St Johns County Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Staten Island MLS (SIBORMLS)</fullName>
+                <default>false</default>
+                <label>Staten Island MLS (SIBORMLS)</label>
+            </value>
+            <value>
+                <fullName>Steamboat Springs MLS (SSBRMLS) (use Summit MLS)</fullName>
+                <default>false</default>
+                <label>Steamboat Springs MLS (SSBRMLS) (use Summit MLS)</label>
+            </value>
+            <value>
+                <fullName>Stellar MLS (Formerly My Florida Regional MLS) (MFRMLS)</fullName>
+                <default>false</default>
+                <label>Stellar MLS (Formerly My Florida Regional MLS) (MFRMLS)</label>
+            </value>
+            <value>
+                <fullName>Sullivan County MLS (SCMLS)</fullName>
+                <default>false</default>
+                <label>Sullivan County MLS (SCMLS)</label>
+            </value>
+            <value>
+                <fullName>Sumter MLS (SMLS)</fullName>
+                <default>false</default>
+                <label>Sumter MLS (SMLS)</label>
+            </value>
+            <value>
+                <fullName>Sun Valley MLS (SVBR)</fullName>
+                <default>false</default>
+                <label>Sun Valley MLS (SVBR)</label>
+            </value>
+            <value>
+                <fullName>Sunflower MLS</fullName>
+                <default>false</default>
+                <label>Sunflower MLS</label>
+            </value>
+            <value>
+                <fullName>Sunshine MLS (SSMLS)</fullName>
+                <default>false</default>
+                <label>Sunshine MLS (SSMLS)</label>
+            </value>
+            <value>
+                <fullName>Sussex County MLS (Deleware MLS)</fullName>
+                <default>false</default>
+                <label>Sussex County MLS (Deleware MLS)</label>
+            </value>
+            <value>
+                <fullName>Sutter-Yuba AOR</fullName>
+                <default>false</default>
+                <label>Sutter-Yuba AOR</label>
+            </value>
+            <value>
+                <fullName>Tahoe Sierra MLS (TSMLS)</fullName>
+                <default>false</default>
+                <label>Tahoe Sierra MLS (TSMLS)</label>
+            </value>
+            <value>
+                <fullName>Tallahassee MLS (TBRMLS)</fullName>
+                <default>false</default>
+                <label>Tallahassee MLS (TBRMLS)</label>
+            </value>
+            <value>
+                <fullName>Telluride MLS (TMLS)</fullName>
+                <default>false</default>
+                <label>Telluride MLS (TMLS)</label>
+            </value>
+            <value>
+                <fullName>Tennessee Virginia Regional MLS (TVRMLS)</fullName>
+                <default>false</default>
+                <label>Tennessee Virginia Regional MLS (TVRMLS)</label>
+            </value>
+            <value>
+                <fullName>Teton MLS (Teton)</fullName>
+                <default>false</default>
+                <label>Teton MLS (Teton)</label>
+            </value>
+            <value>
+                <fullName>Texarkana MLS (TMLS)</fullName>
+                <default>false</default>
+                <label>Texarkana MLS (TMLS)</label>
+            </value>
+            <value>
+                <fullName>Thomasville MLS (TABRMLS)</fullName>
+                <default>false</default>
+                <label>Thomasville MLS (TABRMLS)</label>
+            </value>
+            <value>
+                <fullName>Tillamook Topeka MLS (TAARMLS)</fullName>
+                <default>false</default>
+                <label>Tillamook Topeka MLS (TAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Toronto Real Estate Board (TREB)</fullName>
+                <default>false</default>
+                <label>Toronto Real Estate Board (TREB)</label>
+            </value>
+            <value>
+                <fullName>Tri Lakes Board of Realtors</fullName>
+                <default>false</default>
+                <label>Tri Lakes Board of Realtors</label>
+            </value>
+            <value>
+                <fullName>Triad MLS (TRIADMLS)</fullName>
+                <default>false</default>
+                <label>Triad MLS (TRIADMLS)</label>
+            </value>
+            <value>
+                <fullName>Triangle MLS (TMLS)</fullName>
+                <default>false</default>
+                <label>Triangle MLS (TMLS)</label>
+            </value>
+            <value>
+                <fullName>Tulare County MLS</fullName>
+                <default>false</default>
+                <label>Tulare County MLS</label>
+            </value>
+            <value>
+                <fullName>Tuolumne County MLS (TCMLS)</fullName>
+                <default>false</default>
+                <label>Tuolumne County MLS (TCMLS)</label>
+            </value>
+            <value>
+                <fullName>Ulster County MLS (ULSTER)</fullName>
+                <default>false</default>
+                <label>Ulster County MLS (ULSTER)</label>
+            </value>
+            <value>
+                <fullName>Unlock MLS / Austin MLS (ACTRIS)</fullName>
+                <default>false</default>
+                <label>Unlock MLS / Austin MLS (ACTRIS)</label>
+            </value>
+            <value>
+                <fullName>Upper Cumberland Association of Realtors</fullName>
+                <default>false</default>
+                <label>Upper Cumberland Association of Realtors</label>
+            </value>
+            <value>
+                <fullName>Upstate MLS (UMLS)</fullName>
+                <default>false</default>
+                <label>Upstate MLS (UMLS)</label>
+            </value>
+            <value>
+                <fullName>UtahRealEstate.com</fullName>
+                <default>false</default>
+                <label>UtahRealEstate.com</label>
+            </value>
+            <value>
+                <fullName>Vail Multi List (VBRMLS)</fullName>
+                <default>false</default>
+                <label>Vail Multi List (VBRMLS)</label>
+            </value>
+            <value>
+                <fullName>Valdosta MLS (VALMLS)</fullName>
+                <default>false</default>
+                <label>Valdosta MLS (VALMLS)</label>
+            </value>
+            <value>
+                <fullName>Valley MLS (Formerly North Alabama Multiple Listing Service) (NALMLS)</fullName>
+                <default>false</default>
+                <label>Valley MLS (Formerly North Alabama Multiple Listing Service) (NALMLS)</label>
+            </value>
+            <value>
+                <fullName>Ventura County Regional Data Share (VCRDS)</fullName>
+                <default>false</default>
+                <label>Ventura County Regional Data Share (VCRDS)</label>
+            </value>
+            <value>
+                <fullName>Waco MLS (WMLS)</fullName>
+                <default>false</default>
+                <label>Waco MLS (WMLS)</label>
+            </value>
+            <value>
+                <fullName>Warren County MLS (WCMLS)</fullName>
+                <default>false</default>
+                <label>Warren County MLS (WCMLS)</label>
+            </value>
+            <value>
+                <fullName>Washington County MLS (WCMLS)</fullName>
+                <default>false</default>
+                <label>Washington County MLS (WCMLS)</label>
+            </value>
+            <value>
+                <fullName>West Alabama Multiple Listing Service (Tuscaloosa AOR)</fullName>
+                <default>false</default>
+                <label>West Alabama Multiple Listing Service (Tuscaloosa AOR)</label>
+            </value>
+            <value>
+                <fullName>West Central Association of Realtors (Warsaw Sedalia MLS - Missouri)</fullName>
+                <default>false</default>
+                <label>West Central Association of Realtors (Warsaw Sedalia MLS - Missouri)</label>
+            </value>
+            <value>
+                <fullName>West Central Association of REALTORS (WCARE) (Ohio)</fullName>
+                <default>false</default>
+                <label>West Central Association of REALTORS (WCARE) (Ohio)</label>
+            </value>
+            <value>
+                <fullName>West Penn Multi-List MLS (WPMLS)</fullName>
+                <default>false</default>
+                <label>West Penn Multi-List MLS (WPMLS)</label>
+            </value>
+            <value>
+                <fullName>Western Arizona Realtor Data Exchange (WARDEX)</fullName>
+                <default>false</default>
+                <label>Western Arizona Realtor Data Exchange (WARDEX)</label>
+            </value>
+            <value>
+                <fullName>Western Kentucky Regional MLS (WKRMLS)</fullName>
+                <default>false</default>
+                <label>Western Kentucky Regional MLS (WKRMLS)</label>
+            </value>
+            <value>
+                <fullName>Western Regional Information Systems &amp; Technology (WRIST)</fullName>
+                <default>false</default>
+                <label>Western Regional Information Systems &amp; Technology (WRIST)</label>
+            </value>
+            <value>
+                <fullName>White Mountain MLS (WMMLS)</fullName>
+                <default>false</default>
+                <label>White Mountain MLS (WMMLS)</label>
+            </value>
+            <value>
+                <fullName>Wichita Falls MLS (WFMLS)</fullName>
+                <default>false</default>
+                <label>Wichita Falls MLS (WFMLS)</label>
+            </value>
+            <value>
+                <fullName>Wichita MLS</fullName>
+                <default>false</default>
+                <label>Wichita MLS</label>
+            </value>
+            <value>
+                <fullName>Willamette Valley MLS (WVMLS)</fullName>
+                <default>false</default>
+                <label>Willamette Valley MLS (WVMLS)</label>
+            </value>
+            <value>
+                <fullName>Williamsburg MLS (WAARMLS)</fullName>
+                <default>false</default>
+                <label>Williamsburg MLS (WAARMLS)</label>
+            </value>
+            <value>
+                <fullName>Wilmington Regional MLS (WRARMLS)</fullName>
+                <default>false</default>
+                <label>Wilmington Regional MLS (WRARMLS)</label>
+            </value>
+            <value>
+                <fullName>Wilson MLS (Wilson)</fullName>
+                <default>false</default>
+                <label>Wilson MLS (Wilson)</label>
+            </value>
+            <value>
+                <fullName>Wiregrass MLS (WMLS)</fullName>
+                <default>false</default>
+                <label>Wiregrass MLS (WMLS)</label>
+            </value>
+            <value>
+                <fullName>Wisconsin Real Estate Exchange (WIREX)</fullName>
+                <default>false</default>
+                <label>Wisconsin Real Estate Exchange (WIREX)</label>
+            </value>
+            <value>
+                <fullName>Wyoming MLS (WYOMLS)</fullName>
+                <default>false</default>
+                <label>Wyoming MLS (WYOMLS)</label>
+            </value>
+            <value>
+                <fullName>Yakima MLS</fullName>
+                <default>false</default>
+                <label>Yakima MLS</label>
+            </value>
+            <value>
+                <fullName>YAR MLS</fullName>
+                <default>false</default>
+                <label>YAR MLS</label>
+            </value>
+            <value>
+                <fullName>Yuma Association of REALTORS</fullName>
+                <default>false</default>
+                <label>Yuma Association of REALTORS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

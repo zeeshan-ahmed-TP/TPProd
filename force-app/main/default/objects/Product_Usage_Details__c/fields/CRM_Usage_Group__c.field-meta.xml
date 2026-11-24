@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Usage_Group__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(Pendo_TPX_Active_Days_Last_90__c  &lt;= 1 ,Pendo_TP8i_Active_Days_Last_90__c   &lt;= 1),&apos;Non-User&apos;, 
+IF(TPX_Usage_Percent__c&gt;=0.8,&apos;Mainly TPX&apos;,
+IF(TP8i_Usage_Percent__c&gt;=0.8,&apos;Mainly TP8i&apos;,&apos;Dual-User&apos;)))</formula>
+    <label>CRM Usage Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

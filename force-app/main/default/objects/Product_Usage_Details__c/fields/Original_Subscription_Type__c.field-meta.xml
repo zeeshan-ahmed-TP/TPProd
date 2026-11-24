@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Original_Subscription_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR( User_Licensing_ID__r.Account__r.TP_Pro_Trial__c, 
+AND(TEXT(User_Licensing_ID__r.Subscription__r.SBQQ__SubscriptionType__c)=&quot;Renewable&quot;
+, User_Licensing_ID__r.Subscription__r.SBQQ__NetPrice__c=0))
+,&quot;Free Trial&quot;,&quot;Standard&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Original Subscription Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

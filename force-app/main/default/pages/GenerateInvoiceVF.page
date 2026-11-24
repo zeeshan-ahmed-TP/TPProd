@@ -1,0 +1,339 @@
+<apex:page applyBodyTag="false" renderAs="PDF"
+           showHeader="false" sidebar="false" standardStylesheets="false"
+           applyHtmlTag="false" contentType="application/pdf#{!PdfFileName}.pdf"
+           controller="TopProducerInvoiceController">
+    <head>
+        <style>
+            * {
+            	margin: 0;
+            	padding: 0;
+            }
+            @page {
+            	size:A4;
+            	margin:15mm;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10pt;
+                color: #333333;
+                background: #ffffff;
+            }
+
+            .page-wrapper {
+            	width: 100%;
+            /*padding: 15px 20px;*/
+            }
+
+            /* ── Header ── */
+            .header-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 24px;
+            	table-layout: fixed;
+            }
+
+            .header-table td {
+                vertical-align: top;
+            }
+
+            .logo-cell {
+                width: 50%;
+            }
+
+            .logo-img {
+                width: 180px;
+            }
+
+            .company-address {
+                margin-top: 14px;
+                font-size: 9pt;
+                line-height: 1.5;
+            }
+
+            .company-address strong {
+                font-size: 9.5pt;
+            }
+
+            .invoice-meta-cell {
+                width: 50%;
+                text-align: right;
+            }
+
+            .meta-grid table {
+                border-collapse: collapse;
+                margin-left: auto;
+            }
+
+            .meta-grid td {
+                font-size: 9pt;
+                padding: 1px 6px 1px 0;
+                vertical-align: top;
+            }
+
+            .meta-label {
+                font-weight: bold;
+                white-space: nowrap;
+            }
+
+            /* ── Bill To ── */
+            .bill-to-section {
+                margin-bottom: 20px;
+            }
+
+            .bill-to-label {
+                font-weight: bold;
+                font-size: 10pt;
+                text-decoration: underline;
+                display: block;
+                margin-bottom: 6px;
+            }
+
+            .bill-to-name {
+                font-size: 10pt;
+                margin-bottom: 4px;
+            }
+
+            .bill-to-address {
+                font-size: 10pt;
+                line-height: 1.5;
+            }
+
+            /* ── Line Items ── */
+            
+            .line-items-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 16px;
+            	table-layout: fixed;
+            }
+
+            .line-items-table thead tr {
+                background-color: #00AEEF;
+                color: #ffffff;
+            }
+
+            .line-items-table thead th {
+                font-size: 9.5pt;
+                font-weight: bold;
+                padding: 4px 6px;
+                text-align: left;
+                border: 1px solid #00AEEF;
+            }
+
+            .line-items-table thead th.right {
+                text-align: right;
+            }
+
+            .line-items-table tbody td {
+                font-size: 9.5pt;
+                padding: 6px 10px;
+                border: 1px solid #cccccc;
+                vertical-align: top;
+            }
+
+            .line-items-table tbody td.right {
+                text-align: right;
+            }
+
+            .line-items-table tbody tr:nth-child(even) {
+                background-color: #f7f7f7;
+            }
+
+            /* ── Totals ── */
+            .totals-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 6px;
+            }
+
+            .totals-table td {
+                font-size: 10pt;
+                padding: 3px 10px;
+            }
+
+            .totals-table .label-cell {
+                text-align: right;
+                font-weight: bold;
+                width: 85%;
+            }
+
+            .totals-table .amount-cell {
+                text-align: right;
+                width: 15%;
+                font-weight: bold;
+            }
+
+            /* ── Footer ── */
+            .footer {
+                margin-top: 60px;
+                text-align: right;
+                font-size: 7.5pt;
+                color: #aaaaaa;
+                letter-spacing: 0.5px;
+            }
+
+            .footer span {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+
+            <!-- ══ HEADER ══ -->
+            <table class="header-table">
+                <tr>
+                    <td class="logo-cell">
+                        <!--
+                            Upload your logo as a Static Resource named "TopProducerLogo"
+                            and replace the img tag below with:
+                            <apex:image url="{!$Resource.TopProducerLogo}" styleClass="logo-img"/>
+                        -->
+                        <apex:image rendered="{!invoice.Record_Type__c == 'Top Producer'}" url="{!$Resource.TPLogo}" styleClass="logo-img"/>
+                        <apex:image rendered="{!invoice.Record_Type__c == 'Zurple'}" url="{!$Resource.ZurpleLogo}" styleClass="logo-img"/>
+                        <apex:image rendered="{!invoice.Record_Type__c == 'Z57'}" url="{!$Resource.Z57Logo}" styleClass="logo-img"/>
+                        <apex:image rendered="{!invoice.Record_Type__c == 'TorchX'}" url="{!$Resource.TorchXLogo}" styleClass="logo-img"/>
+
+                        <div class="company-address">
+                            <apex:outputPanel rendered="{!invoice.Record_Type__c == 'Z57'}">
+                                <strong>Z57 Inc.</strong><br/>
+                                11350 McCormick Road Executive Plaza 3 Suite 200<br/>
+                                Hunt Valley MD 21031<br/> United States<br/>
+                            </apex:outputPanel>
+                            
+                            <apex:outputPanel rendered="{!invoice.Record_Type__c == 'TorchX'}">
+                                <strong>TorchX Inc.</strong><br/>
+                                11350 McCormick Road Executive Plaza 3 Suite 200<br/>
+                                Hunt Valley MD 21031<br/> United States<br/>
+                            </apex:outputPanel>
+                            
+							<apex:outputPanel rendered="{!invoice.Record_Type__c == 'Zurple'}">
+                                <strong>Zurple Inc.</strong><br/>
+                                11350 McCormick Road Executive Plaza 3 Suite 200<br/>
+                                Hunt Valley MD 21031<br/> United States<br/>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!invoice.Record_Type__c == 'Top Producer'}">
+                                <apex:outputPanel rendered="{!invoice.Shipping_Country__c != 'Canada'}">
+                                    <strong>Top Producer Software Inc.</strong><br/>
+                                    11350 McCormick RD EP3 Ste 200<br/>
+                                    Hunt Valley<br/>
+                                    MD 21031
+                                </apex:outputPanel>
+                            
+                                <apex:outputPanel rendered="{!invoice.Shipping_Country__c == 'Canada'}">
+                                    <strong>Top Producer Software Corp</strong><br/>
+                                    8133 Warden Ave. 7th Floor<br/>
+                                    Markham<br/>
+                                    ON L6G 1B3
+                                </apex:outputPanel>
+                            </apex:outputPanel>    
+                        </div>
+                    </td>
+
+                    <td class="invoice-meta-cell">
+                        <div class="meta-grid">
+                            <table>
+                                <tr>
+                                    <td class="meta-label">Invoice #</td>
+                                    <td class="meta-label">Invoice Date</td>
+                                </tr>
+                                <tr>
+                                    <td>{!invoice.Name}</td>
+                                    <td>
+                                        <apex:outputText value="{0,date,dd MMM yyyy}">
+                                            <apex:param value="{!invoice.blng__InvoiceDate__c}"/>
+                                        </apex:outputText>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="meta-label" style="padding-top:10px;">Payment Terms</td>
+                                    <td class="meta-label" style="padding-top:10px;">Due Date</td>
+                                </tr>
+                                <tr>
+                                    <td>{!invoice.Payment_Term__c}</td>
+                                    <td>
+                                        <apex:outputText value="{0,date,dd MMM yyyy}">
+                                            <apex:param value="{!invoice.blng__DueDate__c}"/>
+                                        </apex:outputText>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- ══ BILL TO ══ -->
+            <div class="bill-to-section">
+                <span class="bill-to-label">BILL TO</span>
+                <div class="bill-to-name">{!billToName}</div>
+                <div class="bill-to-address">
+                    {!billToStreet}<br/>
+                    {!billToCity}, {!billToState}&nbsp;&nbsp;{!billToPostalCode}
+                </div>
+            </div>
+
+            <!-- ══ LINE ITEMS ══ -->
+            <table class="line-items-table">
+                <thead>
+                    <tr>
+                        <th style="width:55%;">Product Name</th>
+                        <th class="right" style="width:15%;">Quantity</th>
+                        <th class="right" style="width:15%;">Unit Price</th>
+                        <th class="right" style="width:15%;">Line Item Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!invoiceLines}" var="line">
+                        <tr>
+                            <td>{!line.blng__Product__r.Name}</td>
+                            <td class="right">
+                                <apex:outputText value="{0,number,#,##0}">
+                                    <apex:param value="{!line.blng__Quantity__c}"/>
+                                </apex:outputText>
+                            </td>
+                            <td class="right">
+                                <apex:outputText value="${0,number,#,##0.00}">
+                                    <apex:param value="{!line.blng__UnitPrice__c}"/>
+                                </apex:outputText>
+                            </td>
+                            <td class="right">
+                                <apex:outputText value="${0,number,#,##0.00}">
+                                    <apex:param value="{!line.blng__TotalAmount__c}"/>
+                                </apex:outputText>
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+
+            <!-- ══ TOTALS ══ -->
+            <table class="totals-table">
+                <tr>
+                    <td class="label-cell">Subtotal:</td>
+                    <td class="amount-cell">
+                        <apex:outputText value="${0,number,#,##0.00}">
+                            <apex:param value="{!invoice.blng__Subtotal__c}"/>
+                        </apex:outputText>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Tax:</td>
+                    <td class="amount-cell">
+                        <apex:outputText value="${0,number,#,##0.00}">
+                            <apex:param value="{!invoice.blng__TaxAmount__c}"/>
+                        </apex:outputText>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Invoice Total:</td>
+                    <td class="amount-cell">
+                        <apex:outputText value="${0,number,#,##0.00}">
+                            <apex:param value="{!invoice.blng__TotalAmount__c}"/>
+                        </apex:outputText>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</apex:page>

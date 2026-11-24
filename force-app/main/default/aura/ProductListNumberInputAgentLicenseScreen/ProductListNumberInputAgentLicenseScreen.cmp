@@ -1,0 +1,40 @@
+<aura:component implements="force:hasRecordId" access="global">
+    <aura:attribute name="picklistvalue" default=",, ,," type="String[]" access="global"/>
+    <aura:attribute name="index" type="integer" default="0"/>
+    <aura:attribute name="selectedValue" type="String" access="global"/>
+    <aura:attribute name="selectedReocrdId" type="String" access="global"/>
+    <aura:attribute name="numberValue" type="Integer" access="global"/>
+    <aura:attribute name="Labels" type="String" access="global" default="No Of License:"/>
+    <aura:attribute name="AccountDetails" type="sObject" default="{'name':'Account'}"/>
+    <aura:registerEvent name="oSelectedRecordEvent" type="c:selectedsObjectRecordEventAgentLicense"/>
+    <aura:attribute name="PrevNumberValue" type="Integer" access="global"/>
+    <aura:attribute name="PrevSelectedValue" type="String" access="global"/>
+    <aura:attribute name="SharedOrNot" type="String" />
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-3">
+            <lightning:select  name="colorId" label="Select product:"  value="{!v.selectedValue}" onchange = "{!c.checkLimit}">
+                <option value="">--Choose One--</option>
+                <aura:iteration items="{!v.picklistvalue}" var="item">
+                    <option value="{!item}" disabled="{! ( (v.SharedOrNot=='Standard' &amp;&amp; item=='FiveStreet') || 
+                                                      (v.SharedOrNot=='Shared' &amp;&amp; item=='Top Producer Assistant License ') || 
+                                                      (v.SharedOrNot=='Shared' &amp;&amp; item=='Market Snapshot') || 
+                                                      (v.SharedOrNot=='Shared' &amp;&amp; item=='Top Producer Website') )}">
+                        {!item}
+                    </option>
+                </aura:iteration>
+            </lightning:select>
+        </div>
+        <!--<div class="slds-col slds-size_1-of-7">
+        </div>-->
+        <div class="slds-col slds-size_1-of-3" >
+            <lightning:input aura:id="expname" type="number" name="input2" label="{!v.Labels}"  value="{!v.numberValue}" onchange = "{!c.checkLimit}" />
+        </div>
+        <div class="slds-col slds-size_1-of-3"> 
+            <lightning:select  name="colorId" label="License Type:"  value="{!v.SharedOrNot}" onchange = "{!c.checkLimit}">
+                <option value="">--Choose One--</option>
+                <option value="Shared" disabled="{!(v.selectedValue=='Top Producer Website' || v.selectedValue=='Top Producer Assistant License' || v.selectedValue=='Market Snapshot')}">Shared</option>
+                <option value="Standard" disabled="{!v.selectedValue=='FiveStreet'}">Standard</option>
+            </lightning:select>       
+        </div>
+    </div>
+</aura:component>

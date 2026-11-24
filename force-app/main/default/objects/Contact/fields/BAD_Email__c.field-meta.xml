@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BAD_Email__c</fullName>
+    <description>Today we have multiple Contacts sharing same Email Address. We are going to use this to stop sync these Contacts to Eloqua and will mark them as BAD Email</description>
+    <externalId>false</externalId>
+    <label>BAD Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>BAD Email</fullName>
+                <default>false</default>
+                <label>BAD Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

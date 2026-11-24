@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Software_after_Resolution__c</fullName>
+    <externalId>false</externalId>
+    <label>Software after Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Top Producer 8i</fullName>
+                <default>false</default>
+                <label>Top Producer 8i</label>
+            </value>
+            <value>
+                <fullName>Top Producer X</fullName>
+                <default>false</default>
+                <label>Top Producer X</label>
+            </value>
+            <value>
+                <fullName>Market Snapshot</fullName>
+                <default>false</default>
+                <label>Market Snapshot</label>
+            </value>
+            <value>
+                <fullName>Five Street</fullName>
+                <default>false</default>
+                <label>Five Street</label>
+            </value>
+            <value>
+                <fullName>Top Producer Website</fullName>
+                <default>false</default>
+                <label>Top Producer Website</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

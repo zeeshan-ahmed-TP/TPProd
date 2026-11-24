@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DaScoopComposer__Unique_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is same as the Salesforce created Id. This is created as Id is of Custom Settings is not accissible at all times from the object and will be filled in at creation time</description>
+    <externalId>true</externalId>
+    <inlineHelpText>This is same as the Salesforce created Id. This is created as Id is of Custom Settings is not accissible at all times from the object and will be filled in at creation time</inlineHelpText>
+    <label>Unique_Id</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

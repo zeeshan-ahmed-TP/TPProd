@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <assignments>
+        <name>Assign_Timestamp_to_iDistribute_Assignee</name>
+        <label>Assign Timestamp to iDistribute Assignee</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>Get_iDistribute_Assignment_Configuration.Last_Assignment_Timestamp__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_iDistribute_Assignee_Update_Timestamp</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_an_Assignee_Available</name>
+        <label>Is an Assignee Available?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_iDistribute_Assignment_Configuration</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_Assign_Success_Owner</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Account - Assign Success Owner {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - Assign Success Owner</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_iDistribute_Assignment_Configuration</name>
+        <label>Get iDistribute - Assignment Configuration</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_an_Assignee_Available</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Active_User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Active_Assignee__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Assignment_For__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Account - Success Owner</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>iDistribute_Assignment_Configuration__c</object>
+        <sortField>Last_Assignment_Timestamp__c</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Account_Assign_Success_Owner</name>
+        <label>Update Account - Assign Success Owner</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Timestamp_to_iDistribute_Assignee</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Onboarding_Assignment_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Success_Owner__c</field>
+            <value>
+                <elementReference>Get_iDistribute_Assignment_Configuration.Assignee__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_iDistribute_Assignee_Update_Timestamp</name>
+        <label>Update iDistribute Assignee - Update Timestamp</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>Get_iDistribute_Assignment_Configuration</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_iDistribute_Assignment_Configuration</targetReference>
+        </connector>
+        <filterFormula>AND(
+ OR(
+  {!$Record.RecordType.DeveloperName} = &quot;Agent&quot;, {!$Record.RecordType.DeveloperName} = &quot;Broker&quot;, {!$Record.RecordType.DeveloperName} = &quot;Account_Team&quot;
+ ) ,
+OR(
+  AND(ISCHANGED({!$Record.Product_Start_Date_CRM__c}), NOT(ISBLANK({!$Record.Product_Start_Date_CRM__c}))),
+  AND(ISCHANGED({!$Record.Product_Start_Date_SC__c}), NOT(ISBLANK({!$Record.Product_Start_Date_SC__c})))
+ ),
+ISBLANK({!$Record.Onboarding_Assignment_Date__c}),
+ISBLANK({!$Record.Success_Owner__c})
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

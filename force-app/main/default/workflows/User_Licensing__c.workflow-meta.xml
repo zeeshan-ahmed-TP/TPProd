@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Welcome_Email_TPCRM</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for TP CRM</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_CRM_Basic</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for CRM Basic</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_CRM_Basic</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_CRM_Concierge</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for CRM Concierge</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_CRM_Concierge</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_CRM_Premium</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for CRM Premium</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_CRM_Premium</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_CRM_Standard</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for CRM Standard</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_CRM_Standard</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_HomeIntel</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for HomeIntel</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_HomeIntel_1728576808938</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_TP_Pro_Trial</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for TP Pro Trial</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_TP_Pro_Trial</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_TP_Pro_Trial_Webinar</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for TP Pro Trial Webinar</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_TP_Pro_Trial_Webinar</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_TP_Website</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for TP Website</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_Email_TWS</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_TWS_Basic</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for TWS Basic</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_TWS_Basic</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_TWS_Concierge</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for TWS Concierge</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_TWS_Concierge</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_Email_for_TWS_Premium</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Welcome Email for TWS Premium</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Welcome_TWS_Premium</template>
+    </alerts>
+</Workflow>

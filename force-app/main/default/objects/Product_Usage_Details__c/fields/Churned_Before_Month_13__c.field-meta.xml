@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Churned_Before_Month_13__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(Days_Until_Closed__c&lt;=395,ISNULL(Days_Until_Closed__c)=FALSE),TRUE,FALSE)</formula>
+    <label>Churned Before Month 13</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reassigned_Upsells_New_Reps</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Phone__c</columns>
+    <columns>Email__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>contains</operation>
+        <value>upsell</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>luke.mcm,jeremy.e,jake.mcm</value>
+    </filters>
+    <label>Reassigned Upsells - New Reps</label>
+    <sharedTo>
+        <portalRoleAndSubordinates>jeremyeCustomerPersonAccount</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>lukemcmCustomerPersonAccount</portalRoleAndSubordinates>
+    </sharedTo>
+</ListView>

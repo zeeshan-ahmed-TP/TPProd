@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <description>This field will be populated when the Contact Us Form is submitted on support.realtor.com</description>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent</fullName>
+                <default>false</default>
+                <label>Agent</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Lender</fullName>
+                <default>false</default>
+                <label>Lender</label>
+            </value>
+            <value>
+                <fullName>Loan Officer</fullName>
+                <default>false</default>
+                <label>Loan Officer</label>
+            </value>
+            <value>
+                <fullName>Settlement Provider</fullName>
+                <default>false</default>
+                <label>Settlement Provider</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Team Lead</fullName>
+                <default>false</default>
+                <label>Team Lead</label>
+            </value>
+            <value>
+                <fullName>Attorney</fullName>
+                <default>false</default>
+                <label>Attorney</label>
+            </value>
+            <value>
+                <fullName>Managing Broker</fullName>
+                <default>false</default>
+                <label>Managing Broker</label>
+            </value>
+            <value>
+                <fullName>Real Estate Broker</fullName>
+                <default>false</default>
+                <label>Real Estate Broker</label>
+            </value>
+            <value>
+                <fullName>Home Buyer &amp; Seller</fullName>
+                <default>false</default>
+                <label>Home Buyer &amp; Seller</label>
+            </value>
+            <value>
+                <fullName>Renter</fullName>
+                <default>false</default>
+                <label>Renter</label>
+            </value>
+            <value>
+                <fullName>HomeBuyer</fullName>
+                <default>false</default>
+                <label>HomeBuyer</label>
+            </value>
+            <value>
+                <fullName>Home Seller</fullName>
+                <default>false</default>
+                <label>Home Seller</label>
+            </value>
+            <value>
+                <fullName>Real Estate Agent</fullName>
+                <default>false</default>
+                <label>Real Estate Agent</label>
+            </value>
+            <value>
+                <fullName>Investor</fullName>
+                <default>false</default>
+                <label>Investor</label>
+            </value>
+            <value>
+                <fullName>Landlord/Owner</fullName>
+                <default>false</default>
+                <label>Landlord/Owner</label>
+            </value>
+            <value>
+                <fullName>Lender / Title Officer</fullName>
+                <default>false</default>
+                <label>Lender / Title Officer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

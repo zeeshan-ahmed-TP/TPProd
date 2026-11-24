@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MLS2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>ZP MLS 2</label>
+    <referenceTo>MLS_Board__c</referenceTo>
+    <relationshipLabel>ZP MLS 2</relationshipLabel>
+    <relationshipName>ZPMLS</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generatea51OL00000K2XHNYA3</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Z57 Quote Template</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &apos;/s&apos;,&apos;/apex/dfsle__gendocumentgenerator&apos;, $Site.Prefix +&apos;/apex/dfsle__gendocumentgenerator&apos;), null, [sId = Opportunity.Id, templateId = &apos;a51OL00000K2XHNYA3&apos;, recordId = Opportunity.Id, title = &apos;Z57 Quote Template&apos;])}</url>
+</WebLink>

@@ -1,0 +1,15 @@
+.THIS label.uiLabel {
+    padding-right: 12px;
+}
+.THIS .slds-form-element__label{
+    font-size: 15px;
+}
+.THIS .field{
+  padding: 5px;
+  border: 1px solid #dce4ec;
+  border-radius: 2px;
+}
+.THIS .btn{
+    height: 15px;
+    width:30 px;
+}

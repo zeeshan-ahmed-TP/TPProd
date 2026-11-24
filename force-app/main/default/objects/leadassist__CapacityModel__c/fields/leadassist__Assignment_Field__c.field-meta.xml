@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__Assignment_Field__c</fullName>
+    <defaultValue>&quot;OwnerId&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Normally the OwnerId, but if you want to treat another User Lookup field as the &apos;owner&apos; then specify the API name of that field here.  Don&apos;t forget the __c at the end of the field name.</inlineHelpText>
+    <label>Assignment Field</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

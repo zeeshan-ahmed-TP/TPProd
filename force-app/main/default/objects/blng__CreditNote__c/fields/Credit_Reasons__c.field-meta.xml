@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Credit Reasons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Complaint about Support</fullName>
+                <default>false</default>
+                <label>Complaint about Support</label>
+            </value>
+            <value>
+                <fullName>Complaint about Sales</fullName>
+                <default>false</default>
+                <label>Complaint about Sales</label>
+            </value>
+            <value>
+                <fullName>Product downtime/tech issue</fullName>
+                <default>false</default>
+                <label>Product downtime/tech issue</label>
+            </value>
+            <value>
+                <fullName>Product deficiency/sunset</fullName>
+                <default>false</default>
+                <label>Product deficiency/sunset</label>
+            </value>
+            <value>
+                <fullName>Incorrect product info at PoS</fullName>
+                <default>false</default>
+                <label>Incorrect product info at PoS</label>
+            </value>
+            <value>
+                <fullName>Clear Past Due when W/O not possible</fullName>
+                <default>false</default>
+                <label>Clear Past Due when W/O not possible</label>
+            </value>
+            <value>
+                <fullName>Incorrect T&amp;C at PoS</fullName>
+                <default>false</default>
+                <label>Incorrect T&amp;C at PoS</label>
+            </value>
+            <value>
+                <fullName>Product did not close correctly</fullName>
+                <default>false</default>
+                <label>Product did not close correctly</label>
+            </value>
+            <value>
+                <fullName>RDC Responsible</fullName>
+                <default>false</default>
+                <label>RDC Responsible</label>
+            </value>
+            <value>
+                <fullName>Refund for Payment</fullName>
+                <default>false</default>
+                <label>Refund for Payment</label>
+            </value>
+            <value>
+                <fullName>Promo</fullName>
+                <default>false</default>
+                <label>Promo</label>
+            </value>
+            <value>
+                <fullName>Testing2</fullName>
+                <default>false</default>
+                <label>Testing2</label>
+            </value>
+            <value>
+                <fullName>Testing</fullName>
+                <default>false</default>
+                <label>Testing</label>
+            </value>
+            <value>
+                <fullName>After 30 days</fullName>
+                <default>false</default>
+                <label>After 30 days</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Retention Offer</fullName>
+                <default>false</default>
+                <label>Retention Offer</label>
+            </value>
+            <value>
+                <fullName>SF Issue</fullName>
+                <default>false</default>
+                <label>SF Issue</label>
+            </value>
+            <value>
+                <fullName>Life/Finance/Covid</fullName>
+                <default>false</default>
+                <label>Life/Finance/Covid</label>
+            </value>
+            <value>
+                <fullName>Double Billing</fullName>
+                <default>false</default>
+                <label>Double Billing</label>
+            </value>
+            <value>
+                <fullName>Netapp Issue</fullName>
+                <default>false</default>
+                <label>Netapp Issue</label>
+            </value>
+            <value>
+                <fullName>Write-off</fullName>
+                <default>false</default>
+                <label>Write-off</label>
+            </value>
+            <value>
+                <fullName>Disaster Relief</fullName>
+                <default>false</default>
+                <label>Disaster Relief</label>
+            </value>
+            <value>
+                <fullName>Support - Failed to close correctly</fullName>
+                <default>false</default>
+                <label>Support - Failed to close correctly</label>
+            </value>
+            <value>
+                <fullName>Natural Disaster</fullName>
+                <default>false</default>
+                <label>Natural Disaster</label>
+            </value>
+            <value>
+                <fullName>Life/Finance</fullName>
+                <default>false</default>
+                <label>Life/Finance</label>
+            </value>
+            <value>
+                <fullName>Chargeback W/O</fullName>
+                <default>false</default>
+                <label>Chargeback W/O</label>
+            </value>
+            <value>
+                <fullName>SC Lead Estimate</fullName>
+                <default>false</default>
+                <label>SC Lead Estimate</label>
+            </value>
+            <value>
+                <fullName>SC Lead Commitment</fullName>
+                <default>false</default>
+                <label>SC Lead Commitment</label>
+            </value>
+            <value>
+                <fullName>SC Tech Issue</fullName>
+                <default>false</default>
+                <label>SC Tech Issue</label>
+            </value>
+            <value>
+                <fullName>TWS SSL</fullName>
+                <default>false</default>
+                <label>TWS SSL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

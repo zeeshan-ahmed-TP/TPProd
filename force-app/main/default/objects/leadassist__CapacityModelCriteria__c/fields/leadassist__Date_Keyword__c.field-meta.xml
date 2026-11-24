@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__Date_Keyword__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>For date comparisons, use one of these date keywords.  If you select a keyword with _N_ in it, you also have to enter the number N into the Date Keyword Number field.  For more information about using these keywords search for Date Keyword in the Help tab.</inlineHelpText>
+    <label>Date Keyword</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TODAY</fullName>
+                <default>false</default>
+                <label>TODAY</label>
+            </value>
+            <value>
+                <fullName>YESTERDAY</fullName>
+                <default>false</default>
+                <label>YESTERDAY</label>
+            </value>
+            <value>
+                <fullName>TOMORROW</fullName>
+                <default>false</default>
+                <label>TOMORROW</label>
+            </value>
+            <value>
+                <fullName>LAST_N_DAYS</fullName>
+                <default>false</default>
+                <label>LAST_N_DAYS</label>
+            </value>
+            <value>
+                <fullName>LAST_N_WEEKS</fullName>
+                <default>false</default>
+                <label>LAST_N_WEEKS</label>
+            </value>
+            <value>
+                <fullName>NEXT_N_DAYS</fullName>
+                <default>false</default>
+                <label>NEXT_N_DAYS</label>
+            </value>
+            <value>
+                <fullName>NEXT_N_WEEKS</fullName>
+                <default>false</default>
+                <label>NEXT_N_WEEKS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inquiry_Topic__c</fullName>
+    <description>CRM-4431: This field will be populated during &quot;Web-to-Case&quot; for the Contact Us form on the new Support.Realtor.com site. We will use this picklist for future web-to-case contact us forms through out the realtor.com group of sites.</description>
+    <externalId>false</externalId>
+    <label>Inquiry Topic</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+                <label>Dashboard</label>
+            </value>
+            <value>
+                <fullName>General Inquiry/Other</fullName>
+                <default>false</default>
+                <label>General Inquiry/Other</label>
+            </value>
+            <value>
+                <fullName>Products</fullName>
+                <default>false</default>
+                <label>Products</label>
+            </value>
+            <value>
+                <fullName>Billing and Referral Fees</fullName>
+                <default>false</default>
+                <label>Billing and Referral Fees</label>
+            </value>
+            <value>
+                <fullName>Login Help</fullName>
+                <default>false</default>
+                <label>Login Help</label>
+            </value>
+            <value>
+                <fullName>Technical Help</fullName>
+                <default>false</default>
+                <label>Technical Help</label>
+            </value>
+            <value>
+                <fullName>Referral Questions</fullName>
+                <default>false</default>
+                <label>Referral Questions</label>
+            </value>
+            <value>
+                <fullName>Make an Update to your Account</fullName>
+                <default>false</default>
+                <label>Make an Update to your Account</label>
+            </value>
+            <value>
+                <fullName>How Can I Join?</fullName>
+                <default>false</default>
+                <label>How Can I Join?</label>
+            </value>
+            <value>
+                <fullName>How Do I Update my Referral</fullName>
+                <default>false</default>
+                <label>How Do I Update my Referral</label>
+            </value>
+            <value>
+                <fullName>Listings</fullName>
+                <default>false</default>
+                <label>Listings</label>
+            </value>
+            <value>
+                <fullName>Login</fullName>
+                <default>false</default>
+                <label>Login</label>
+            </value>
+            <value>
+                <fullName>Broker Inquiries</fullName>
+                <default>false</default>
+                <label>Broker Inquiries</label>
+            </value>
+            <value>
+                <fullName>Lead Question</fullName>
+                <default>false</default>
+                <label>Lead Question</label>
+            </value>
+            <value>
+                <fullName>Profile</fullName>
+                <default>false</default>
+                <label>Profile</label>
+            </value>
+            <value>
+                <fullName>Trackable Phone Number</fullName>
+                <default>false</default>
+                <label>Trackable Phone Number</label>
+            </value>
+            <value>
+                <fullName>Featured Websites</fullName>
+                <default>false</default>
+                <label>Featured Websites</label>
+            </value>
+            <value>
+                <fullName>Market Snapshot</fullName>
+                <default>false</default>
+                <label>Market Snapshot</label>
+            </value>
+            <value>
+                <fullName>Advantage Pro</fullName>
+                <default>false</default>
+                <label>Advantage Pro</label>
+            </value>
+            <value>
+                <fullName>Connections Plus</fullName>
+                <default>false</default>
+                <label>Connections Plus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

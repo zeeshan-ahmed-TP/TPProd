@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This was deactivated as automation was written in the trigger - EmailMessageTrigger</description>
+    <masterLabel>Email Message - Create or Reopen Case</masterLabel>
+</FlowDefinition>

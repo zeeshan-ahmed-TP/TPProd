@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retention_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Retention Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+                <label>Cancel</label>
+            </value>
+            <value>
+                <fullName>Save</fullName>
+                <default>false</default>
+                <label>Save</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Discount</fullName>
+                <default>false</default>
+                <label>Discount</label>
+            </value>
+            <value>
+                <fullName>DNR</fullName>
+                <default>false</default>
+                <label>DNR</label>
+            </value>
+            <value>
+                <fullName>Term Swap</fullName>
+                <default>false</default>
+                <label>Term Swap</label>
+            </value>
+            <value>
+                <fullName>Extension</fullName>
+                <default>false</default>
+                <label>Extension</label>
+            </value>
+            <value>
+                <fullName>Tech Resolution</fullName>
+                <default>false</default>
+                <label>Tech Resolution</label>
+            </value>
+            <value>
+                <fullName>Buyout</fullName>
+                <default>false</default>
+                <label>Buyout</label>
+            </value>
+            <value>
+                <fullName>Coaching Call</fullName>
+                <default>false</default>
+                <label>Coaching Call</label>
+            </value>
+            <value>
+                <fullName>Ret Callback</fullName>
+                <default>false</default>
+                <label>Ret Callback</label>
+            </value>
+            <value>
+                <fullName>Spam</fullName>
+                <default>false</default>
+                <label>Spam</label>
+            </value>
+            <value>
+                <fullName>Save - convert to annual</fullName>
+                <default>false</default>
+                <label>Save - convert to annual</label>
+            </value>
+            <value>
+                <fullName>Save - without discount</fullName>
+                <default>false</default>
+                <label>Save - without discount</label>
+            </value>
+            <value>
+                <fullName>Save - with discount</fullName>
+                <default>false</default>
+                <label>Save - with discount</label>
+            </value>
+            <value>
+                <fullName>Save - Upgrade</fullName>
+                <default>false</default>
+                <label>Save - Upgrade</label>
+            </value>
+            <value>
+                <fullName>Save - Coaching</fullName>
+                <default>false</default>
+                <label>Save - Coaching</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

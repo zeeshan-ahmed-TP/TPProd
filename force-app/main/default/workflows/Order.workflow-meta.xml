@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Order_Confirmation_Alert</fullName>
+        <ccEmails>sfemails@topproducersoftware.com</ccEmails>
+        <description>Order Confirmation Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Order_Confirmation</template>
+    </alerts>
+</Workflow>

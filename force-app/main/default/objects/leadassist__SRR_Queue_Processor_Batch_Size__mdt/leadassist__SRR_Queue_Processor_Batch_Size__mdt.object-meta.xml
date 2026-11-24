@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SRR attempts to assign QUEUED records using scheduled jobs.  Change the batch size for the number of records queried here.  If you set this to 20, then this will be the batch size per ObjectType per Job Run.  So if you have MatchGroups for Leads and Opportunities, it will select the top 20 oldest QUEUED Leads and the top 20 oldest QUEUED Opps in a single scheduled job run (which by default runs every 10 minutes).</description>
+    <label>SRR Queue Processor Batch Size</label>
+    <pluralLabel>SRR Queue Processor Batch Size</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

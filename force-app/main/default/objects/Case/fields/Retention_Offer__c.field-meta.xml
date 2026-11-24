@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retention_Offer__c</fullName>
+    <externalId>false</externalId>
+    <label>Retention Offer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Discount</fullName>
+                <default>false</default>
+                <label>Discount</label>
+            </value>
+            <value>
+                <fullName>EHC</fullName>
+                <default>false</default>
+                <label>EHC</label>
+            </value>
+            <value>
+                <fullName>MBG Extension</fullName>
+                <default>false</default>
+                <label>MBG Extension</label>
+            </value>
+            <value>
+                <fullName>Not Discussed</fullName>
+                <default>false</default>
+                <label>Not Discussed</label>
+            </value>
+            <value>
+                <fullName>Personalized Coaching</fullName>
+                <default>false</default>
+                <label>Personalized Coaching</label>
+            </value>
+            <value>
+                <fullName>Realsuite Free Trial</fullName>
+                <default>false</default>
+                <label>Realsuite Free Trial</label>
+            </value>
+            <value>
+                <fullName>Realsuite Migration</fullName>
+                <default>false</default>
+                <label>Realsuite Migration</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Technical Resolution</fullName>
+                <default>false</default>
+                <label>Technical Resolution</label>
+            </value>
+            <value>
+                <fullName>Trial Period Extension</fullName>
+                <default>false</default>
+                <label>Trial Period Extension</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>Billed in Onyx</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billed in Onyx</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

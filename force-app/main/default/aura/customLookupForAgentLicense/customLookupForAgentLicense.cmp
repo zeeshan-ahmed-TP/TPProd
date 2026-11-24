@@ -1,0 +1,99 @@
+<aura:component implements="force:hasRecordId" access="global" controller="customLookUpController">
+    <aura:attribute name="selectedRecord" type="string" default="" description="Use,for store SELECTED sObject Record Name"/>
+    <aura:attribute name="listOfSearchRecords" type="List" description="Use,for store the list of search records which returns from apex class"/>
+    <aura:attribute name="SearchKeyWord" type="string"/>
+    <aura:attribute name="objectAPIName" type="string" default=""/>
+    <aura:attribute name="IconName" type="string" default=""/>
+    <aura:attribute name="label" type="string" default=""/>
+    <aura:attribute name="Message" type="String" default=""/>
+    <aura:attribute name="index" type="integer" default="0"/>
+     <aura:attribute name="recordFromParentId" type="String" />
+    <aura:attribute name="pillList" type="sObject[]" default="[]"/> 
+    <aura:attribute name="showPill" type="boolean" />
+    <aura:attribute name="accId" type="String"/>
+    <aura:attribute name="prodName" type="String" />
+    <aura:attribute name="stateVal" type="String"/>
+    <aura:attribute name="subId" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <!--<aura:attribute name="SObjectList" type= "Object[]" />-->
+    <!--declare events hendlers-->  
+    <!--<aura:handler name="oSelectedRecordEvent" event="c:selectedsObjectRecordEvent" action="{!c.handleComponentEvent}"/>-->
+    <aura:registerEvent name="oSelectedRecordEvent" type="c:selectedsObjectRecordEventAgentLicense"/>
+    
+    <!-- https://www.lightningdesignsystem.com/components/lookups/ --> 
+    
+    <div onmouseleave="{!c.onblur}" aura:id="searchRes" class="slds-form-element slds-lookup slds-is-close" data-select="single">
+        <label class="slds-form-element__label" for="lookup-348">{!v.label}:</label>
+        <!--This part is for display search bar for lookup-->  
+        <div class="slds-form-element__control">
+            
+            <div class="slds-input-has-icon slds-input-has-icon--right">
+                <!-- This markup is for when an record is selected -->
+                <div aura:id="lookup-pill" class="slds-pill-container slds-hide">
+                    <lightning:pill class="pillSize" label="{!v.selectedRecord}" name="{!v.selectedRecord}" onremove="{! c.clear }">
+                        <aura:set attribute="media">
+                            
+                            <lightning:icon iconName="{!v.IconName}" size="x-small" alternativeText="{!v.IconName}"/>
+                        </aura:set>
+                    </lightning:pill>
+                </div>
+                <div aura:id="lookupField" class="slds-show" id="lookupField">
+                    <lightning:icon class="slds-input__icon slds-show" iconName="utility:search" size="x-small" alternativeText="search"/>
+                    <span class="slds-icon_container  slds-combobox__input-entity-icon" title="record">
+                        <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="{!v.IconName}" size="x-small" alternativeText="icon"/>
+                        <span class="slds-assistive-text"></span>
+                    </span>
+                    <ui:inputText click="{!c.onfocus}" updateOn="keyup" disabled="{!or(v.prodName == 'Five Street',v.prodName == 'Top Producer Websites')}" keyup="{!c.keyPressController}" class="slds-lookup__search-input slds-input leftPaddingClass" value="{!v.SearchKeyWord}" placeholder="search.."/>
+                </div>   
+            </div>
+        </div>
+        <!--This part is for Display typehead lookup result List-->  
+        <ul style="min-height:40px;margin-top:0px !important" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-lookup__menu slds" role="listbox">
+            <lightning:spinner class="slds-hide" variant="brand" size="small" aura:id="mySpinner"/>
+            <center> {!v.Message}</center>
+            <aura:iteration items="{!v.listOfSearchRecords}" var="item">
+                <!--<c:customLookupResult oRecord="{!singleRec}" IconName="{!v.IconName}"/>-->
+                <li data-id="{!item.Id}" data-name="{!item.Name}" role="presentation" class="slds-listbox__item" onclick="{!c.selectRecord}">
+                    <span   id="listbox-option-unique-id-01" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                        <span class="slds-media__figure">
+                            <span  class="slds-icon_container" title="Description of icon when needed">
+                                <lightning:icon  iconName="{!v.IconName}" class="slds-icon slds-icon_small" size="small" alternativeText="icon"/>
+                            </span>
+                        </span>    
+                        <span  class="slds-media__body">  
+                            <span  class="slds-listbox__option-text slds-listbox__option-text_entity">{!item.Name}</span>
+                        </span>
+                    </span>
+                </li>
+            </aura:iteration>
+        </ul>
+    </div>
+    <aura:if isTrue="{!not(or(v.prodName == 'Five Street',v.prodName == 'Top Producer Websites'))}">
+        <aura:if isTrue="{!and(v.showPill,not(empty(v.pillList))) }">
+            <div class="slds-box">
+                <ul class="slds-listbox slds-listbox_inline slds-p-top_xxx-small" role="group" aria-label="Inputted Options:">
+                    
+                    <aura:iteration items="{!v.pillList}" var="record" indexVar="indx">
+                        <li role="presentation" class="slds-listbox__item">
+                            
+                            <span aura:id="look-pill" class="slds-pill " style="width:8rem;">
+                                <span class="slds-pill__icon_container">
+                                    <span class="slds-icon_container slds-icon-standard-account slds-icon_xx-small" title="Account">
+                                        <lightning:icon iconName="{!v.IconName}"  alternativeText="Approved" title="Approved" />
+                                        <span class="slds-assistive-text">Account</span>
+                                    </span>
+                                </span>
+                                <span class="slds-pill__label slds-p-left_xx-small" style="font-size: 11px;font-weight: bolder;">{!record.Name}</span>
+                                <button data-index="{!indx}" class="slds-button slds-button_icon slds-button_icon slds-pill__remove" title="Remove" onclick="{!c.ClearPill}">
+                                    <lightning:icon iconName="utility:close"  alternativeText="Approved" title="Approved" />
+                                    
+                                    <span class="slds-assistive-text">Remove</span>
+                                </button>
+                            </span>
+                        </li>
+                    </aura:iteration>
+                </ul>
+            </div>
+        </aura:if>
+    </aura:if>
+</aura:component>
